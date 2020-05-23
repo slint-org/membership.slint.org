@@ -1,0 +1,20 @@
+uuid: 0d25f182-a2d8-4acd-8848-9fe5cd0a8d69
+langcode: en
+status: true
+dependencies:
+  theme:
+    - groovyplus
+_core:
+  default_config_hash: 8M_ocV58_7BVXSPk4pagMi2KbrGS1RoNSOIyN1v169A
+id: groovyplus_local_actions
+theme: groovyplus
+region: content
+weight: -17
+provider: null
+plugin: local_actions_block
+settings:
+  id: local_actions_block
+  label: 'Primary admin actions'
+  provider: core
+  label_display: '0'
+visibility: {  }

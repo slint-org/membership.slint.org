@@ -1,0 +1,25 @@
+uuid: e5c24d95-ca6b-43c2-b45d-ca04132c36d4
+langcode: en
+status: true
+dependencies:
+  content:
+    - 'block_content:basic:f11746b5-a911-43bf-ab9f-747dbe630e68'
+  module:
+    - block_content
+  theme:
+    - groovyplus
+id: copyright
+theme: groovyplus
+region: sub_footer_first
+weight: 0
+provider: null
+plugin: 'block_content:f11746b5-a911-43bf-ab9f-747dbe630e68'
+settings:
+  id: 'block_content:f11746b5-a911-43bf-ab9f-747dbe630e68'
+  label: Copyright
+  provider: block_content
+  label_display: '0'
+  status: true
+  info: ''
+  view_mode: full
+visibility: {  }

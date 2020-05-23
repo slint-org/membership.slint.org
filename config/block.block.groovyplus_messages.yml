@@ -1,0 +1,22 @@
+uuid: f8b27f14-9b07-481c-ac4d-3742a7b20b1d
+langcode: en
+status: true
+dependencies:
+  module:
+    - system
+  theme:
+    - groovyplus
+_core:
+  default_config_hash: TW7DcvCbLsCPDoCQGEKbdQ73875G-s6s-OOCC3uMsG0
+id: groovyplus_messages
+theme: groovyplus
+region: system_messages
+weight: -16
+provider: null
+plugin: system_messages_block
+settings:
+  id: system_messages_block
+  label: 'Status messages'
+  provider: system
+  label_display: '0'
+visibility: {  }

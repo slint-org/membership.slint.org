@@ -1,0 +1,21 @@
+uuid: 2dc96063-f41a-4a2f-9fe6-15345c566cc0
+langcode: en
+status: true
+dependencies:
+  module:
+    - search
+  theme:
+    - groovyplus
+id: searchform
+theme: groovyplus
+region: header
+weight: 0
+provider: null
+plugin: search_form_block
+settings:
+  id: search_form_block
+  label: 'Search form'
+  provider: search
+  label_display: '0'
+  page_id: ''
+visibility: {  }

@@ -1,0 +1,14 @@
+uuid: 49706c36-9ab6-48e7-927f-c9fdff681222
+name: SLINT
+mail: noreply@slint.org
+slogan: 'Sierra Leoneans in Technology'
+page:
+  403: ''
+  404: ''
+  front: /node
+admin_compact_mode: false
+weight_select_max: 100
+langcode: en
+default_langcode: en
+_core:
+  default_config_hash: yTxtFqBHnEWxQswuWvkjE8mKw2t8oKuCL1q8KnfHuGE
