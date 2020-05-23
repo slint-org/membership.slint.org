@@ -28,6 +28,8 @@ class ComposerStaticInit48d66cb5465d039f638a968314d18c40
         '3919eeb97e98d4648304477f8ef734ba' => __DIR__ . '/..' . '/phpseclib/phpseclib/phpseclib/Crypt/Random.php',
         '9e4824c5afbdc1482b6025ce3d4dfde8' => __DIR__ . '/..' . '/league/csv/src/functions_include.php',
         'bad842bce63596a608e2623519fb382c' => __DIR__ . '/..' . '/xkerman/restricted-unserialize/src/function.php',
+        '74ed299072414d276bb7568fe71d5b0c' => __DIR__ . '/..' . '/tinify/tinify/lib/Tinify.php',
+        '9635627915aaea7a98d6d14d04ca5b56' => __DIR__ . '/..' . '/tinify/tinify/lib/Tinify/Exception.php',
         'ef21c97c3c18a4683e4225f8acbe0f50' => __DIR__ . '/..' . '/composer/autoload_civicrm_asset.php',
     );
 
@@ -54,6 +56,7 @@ class ComposerStaticInit48d66cb5465d039f638a968314d18c40
         'T' => 
         array (
             'Twig\\' => 5,
+            'Tinify\\' => 7,
             'TYPO3\\PharStreamWrapper\\' => 24,
         ),
         'S' => 
@@ -98,6 +101,8 @@ class ComposerStaticInit48d66cb5465d039f638a968314d18c40
         array (
             'MimeTyper\\' => 10,
             'Masterminds\\' => 12,
+            'Mailchimp\\http\\' => 15,
+            'Mailchimp\\' => 10,
             'MJS\\TopSort\\Tests\\' => 18,
             'MJS\\TopSort\\' => 12,
         ),
@@ -138,6 +143,7 @@ class ComposerStaticInit48d66cb5465d039f638a968314d18c40
         array (
             'Composer\\Semver\\' => 16,
             'Composer\\Installers\\' => 20,
+            'CloudFlarePhpSdk\\' => 17,
             'Civi\\Cxn\\Rpc\\' => 13,
             'Civi\\AssetPlugin\\' => 17,
             'Civi\\' => 5,
@@ -182,6 +188,10 @@ class ComposerStaticInit48d66cb5465d039f638a968314d18c40
         'Twig\\' => 
         array (
             0 => __DIR__ . '/..' . '/twig/twig/src',
+        ),
+        'Tinify\\' => 
+        array (
+            0 => __DIR__ . '/..' . '/tinify/tinify/lib/Tinify',
         ),
         'TYPO3\\PharStreamWrapper\\' => 
         array (
@@ -323,6 +333,14 @@ class ComposerStaticInit48d66cb5465d039f638a968314d18c40
         array (
             0 => __DIR__ . '/..' . '/masterminds/html5/src',
         ),
+        'Mailchimp\\http\\' => 
+        array (
+            0 => __DIR__ . '/..' . '/thinkshout/mailchimp-api-php/src/http',
+        ),
+        'Mailchimp\\' => 
+        array (
+            0 => __DIR__ . '/..' . '/thinkshout/mailchimp-api-php/src',
+        ),
         'MJS\\TopSort\\Tests\\' => 
         array (
             0 => __DIR__ . '/..' . '/marcj/topsort/tests/Tests',
@@ -411,6 +429,10 @@ class ComposerStaticInit48d66cb5465d039f638a968314d18c40
         array (
             0 => __DIR__ . '/..' . '/composer/installers/src/Composer/Installers',
         ),
+        'CloudFlarePhpSdk\\' => 
+        array (
+            0 => __DIR__ . '/..' . '/d8-contrib-modules/cloudflarephpsdk/src',
+        ),
         'Civi\\Cxn\\Rpc\\' => 
         array (
             0 => __DIR__ . '/..' . '/civicrm/civicrm-cxn-rpc/src',
@@ -492,6 +514,10 @@ class ComposerStaticInit48d66cb5465d039f638a968314d18c40
             'Math' => 
             array (
                 0 => __DIR__ . '/..' . '/phpseclib/phpseclib/phpseclib',
+            ),
+            'Mailchimp' => 
+            array (
+                0 => __DIR__ . '/../..' . '/web/modules/contrib/mailchimp/src',
             ),
             'Mail' => 
             array (

@@ -15,6 +15,7 @@ return array(
     'PHPUnit_' => array($vendorDir . '/civicrm/civicrm-core/packages'),
     'Net' => array($vendorDir . '/pear/net_smtp', $vendorDir . '/pear/net_socket', $vendorDir . '/phpseclib/phpseclib/phpseclib'),
     'Math' => array($vendorDir . '/phpseclib/phpseclib/phpseclib'),
+    'Mailchimp' => array($baseDir . '/web/modules/contrib/mailchimp/src'),
     'Mail' => array($vendorDir . '/pear/mail'),
     'Log' => array($vendorDir . '/pear/log'),
     'File' => array($vendorDir . '/phpseclib/phpseclib/phpseclib'),
