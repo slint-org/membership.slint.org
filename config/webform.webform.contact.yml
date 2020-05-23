@@ -17,7 +17,7 @@ id: contact
 title: Contact
 description: 'Basic email contact webform.'
 category: ''
-elements: "name:\n  '#title': 'Your Name'\n  '#type': textfield\n  '#required': true\n  '#default_value': '[current-user:display-name]'\nemail:\n  '#title': 'Your Email'\n  '#type': email\n  '#required': true\n  '#default_value': '[current-user:mail]'\nsubject:\n  '#title': Subject\n  '#type': textfield\n  '#required': true\n  '#test': 'Testing contact webform from [site:name]'\nmessage:\n  '#title': Message\n  '#type': textarea\n  '#required': true\n  '#test': 'Please ignore this email.'\nactions:\n  '#type': webform_actions\n  '#title': 'Submit button(s)'\n  '#submit__label': 'Send message'\n"
+elements: "subject_of_message:\n  '#type': webform_select_other\n  '#title': Subject\n  '#options':\n    Membership: Membership\n    'Donations and other ways to support us': 'Donations and other ways to support us'\n    'Website Technical Support': 'Website Technical Support'\n    'General Enquiry': 'General Enquiry'\n  '#required': true\nmessage:\n  '#title': Message\n  '#type': textarea\n  '#required': true\n  '#test': 'Please ignore this email.'\nemail:\n  '#title': 'Your Email'\n  '#type': email\n  '#required': true\n  '#default_value': '[current-user:mail]'\nname:\n  '#title': 'Your Name'\n  '#type': textfield\n  '#required': true\n  '#default_value': '[current-user:display-name]'\nphone:\n  '#type': tel\n  '#title': Phone\nactions:\n  '#type': webform_actions\n  '#title': 'Submit button(s)'\n  '#submit__label': 'Send message'"
 css: ''
 javascript: ''
 settings:
@@ -192,7 +192,7 @@ handlers:
     settings:
       states:
         - completed
-      to_mail: '[webform_submission:values:email:raw]'
+      to_mail: info@slint.org
       to_options: {  }
       cc_mail: ''
       cc_options: {  }
@@ -201,7 +201,7 @@ handlers:
       from_mail: _default
       from_options: {  }
       from_name: _default
-      subject: '[webform_submission:values:subject:raw]'
+      subject: '[webform_submission:values:subject_of_message:raw]'
       body: '[webform_submission:values:message:value]'
       excluded_elements: {  }
       ignore_access: false
@@ -228,7 +228,7 @@ handlers:
     settings:
       states:
         - completed
-      to_mail: _default
+      to_mail: '[webform_submission:values:email:raw]'
       to_options: {  }
       cc_mail: ''
       cc_options: {  }
@@ -237,7 +237,7 @@ handlers:
       from_mail: '[webform_submission:values:email:raw]'
       from_options: {  }
       from_name: '[webform_submission:values:name:raw]'
-      subject: '[webform_submission:values:subject:raw]'
+      subject: '[webform_submission:values:subject_of_message:raw]'
       body: '[webform_submission:values:message:value]'
       excluded_elements: {  }
       ignore_access: false

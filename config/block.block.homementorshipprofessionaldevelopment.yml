@@ -1,0 +1,25 @@
+uuid: 0d4d9831-963a-44eb-803e-39247d6ff33b
+langcode: en
+status: true
+dependencies:
+  content:
+    - 'block_content:basic:6f720a3b-8ed7-4766-9c01-d802410c02c8'
+  module:
+    - block_content
+  theme:
+    - groovyplus
+id: homementorshipprofessionaldevelopment
+theme: groovyplus
+region: hidden_blocks_collection
+weight: 0
+provider: null
+plugin: 'block_content:6f720a3b-8ed7-4766-9c01-d802410c02c8'
+settings:
+  id: 'block_content:6f720a3b-8ed7-4766-9c01-d802410c02c8'
+  label: 'Home: Mentorship/Professional Development'
+  provider: block_content
+  label_display: '0'
+  status: true
+  info: ''
+  view_mode: full
+visibility: {  }

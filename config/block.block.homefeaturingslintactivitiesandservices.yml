@@ -1,0 +1,31 @@
+uuid: b00a5db9-4190-4392-b749-316ecae4a7b5
+langcode: en
+status: true
+dependencies:
+  content:
+    - 'block_content:mt_fancy_linked_images:32592bdb-5665-485b-af91-6d44b8707c35'
+  module:
+    - block_content
+    - system
+  theme:
+    - groovyplus
+id: homefeaturingslintactivitiesandservices
+theme: groovyplus
+region: content_top_highlighted
+weight: 0
+provider: null
+plugin: 'block_content:32592bdb-5665-485b-af91-6d44b8707c35'
+settings:
+  id: 'block_content:32592bdb-5665-485b-af91-6d44b8707c35'
+  label: 'Home: Featuring SLINT Activities and Services'
+  provider: block_content
+  label_display: '0'
+  status: true
+  info: ''
+  view_mode: full
+visibility:
+  request_path:
+    id: request_path
+    pages: '<front>'
+    negate: false
+    context_mapping: {  }

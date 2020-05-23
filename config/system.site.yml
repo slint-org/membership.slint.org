@@ -4,8 +4,8 @@ mail: noreply@slint.org
 slogan: 'Sierra Leoneans in Technology'
 page:
   403: ''
-  404: ''
-  front: /node
+  404: /node/4
+  front: /node/1
 admin_compact_mode: false
 weight_select_max: 100
 langcode: en

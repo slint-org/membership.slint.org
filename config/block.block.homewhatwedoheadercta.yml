@@ -1,0 +1,31 @@
+uuid: 38a34f44-2135-4045-b310-49501cfb249b
+langcode: en
+status: true
+dependencies:
+  content:
+    - 'block_content:basic:65eb7748-07b7-4019-8862-5c3418848090'
+  module:
+    - block_content
+    - system
+  theme:
+    - groovyplus
+id: homewhatwedoheadercta
+theme: groovyplus
+region: content_top
+weight: 0
+provider: null
+plugin: 'block_content:65eb7748-07b7-4019-8862-5c3418848090'
+settings:
+  id: 'block_content:65eb7748-07b7-4019-8862-5c3418848090'
+  label: 'Home: What we do Header CTA'
+  provider: block_content
+  label_display: '0'
+  status: true
+  info: ''
+  view_mode: full
+visibility:
+  request_path:
+    id: request_path
+    pages: '<front>'
+    negate: false
+    context_mapping: {  }

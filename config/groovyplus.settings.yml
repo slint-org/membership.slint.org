@@ -66,7 +66,7 @@ featured_top_layout_container: container
 featured_top_region_paddings: 1
 featured_top_separator: region--no-separator
 fixed_header: 1
-fixed_header_behavior: fixed-header-enabled--scroll-up
+fixed_header_behavior: fixed-header-enabled--scroll
 font_resize: 1
 footer_animation_effect: no-animation
 footer_background_color: 'region--dark-typography region--default-background'
@@ -263,7 +263,8 @@ features:
   comment_user_verification: true
   favicon: true
 logo:
-  use_default: true
+  use_default: false
+  path: 'public://slint-logo.png'
 favicon:
   use_default: true
 font_title: ''
