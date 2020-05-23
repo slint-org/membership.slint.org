@@ -33,6 +33,7 @@
         "drupal/core-project-message": "^8.8",
         "drupal/core-recommended": "^8.8",
         "drupal/crop": "^2.1",
+        "drupal/entity_browser_enhanced": "^1.0",
         "drupal/entity_embed": "^1.1",
         "drupal/field_group": "^3.0",
         "drupal/file_browser": "^1.2",

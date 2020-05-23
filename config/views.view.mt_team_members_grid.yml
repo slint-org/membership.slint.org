@@ -242,7 +242,7 @@ display:
           expose:
             label: ''
           granularity: second
-      title: 'Leadership & Management'
+      title: 'Interim Board Members'
       header: {  }
       footer: {  }
       empty: {  }
@@ -311,7 +311,7 @@ display:
       row:
         type: fields
         options: {  }
-      path: team-members-2
+      path: about-us/board-members
       fields:
         path:
           id: path
@@ -585,6 +585,7 @@ display:
       menu:
         enabled: true
         expanded: false
+      enabled: false
     cache_metadata:
       max-age: -1
       contexts:

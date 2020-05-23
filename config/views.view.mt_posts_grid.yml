@@ -743,7 +743,7 @@ display:
       use_more: true
       use_more_always: true
       use_more_text: 'View all blog posts'
-      link_display: page_2
+      link_display: page_1
       link_url: ''
     cache_metadata:
       max-age: -1
@@ -761,7 +761,7 @@ display:
     position: 1
     display_options:
       display_extenders: {  }
-      path: posts-2-col
+      path: blog
       display_description: ''
       style:
         type: html_list
@@ -860,7 +860,7 @@ display:
           empty: false
           tokenize: false
           content:
-            value: '<div class="mt-view-header">Stay informed. Our latest news and announcements.</div>'
+            value: '<div class="mt-view-header">Stay informed. Our latest insights.</div>'
             format: full_html
           plugin_id: text
     cache_metadata:
@@ -1004,6 +1004,7 @@ display:
             value: '<div class="mt-view-header">Stay informed. Our latest news and announcements.</div>'
             format: full_html
           plugin_id: text
+      enabled: false
     cache_metadata:
       max-age: -1
       contexts:
