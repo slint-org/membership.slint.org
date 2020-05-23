@@ -24,3 +24,4 @@ permissions:
   - 'use text format restricted_html'
   - 'view event info'
   - 'view event participants'
+  - 'view media'

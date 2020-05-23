@@ -1,0 +1,19 @@
+uuid: 201f20b9-4a11-4a01-a8b2-0c833b8a6662
+langcode: en
+status: true
+dependencies:
+  module:
+    - link
+    - node
+id: node.field_mt_srv_link
+field_name: field_mt_srv_link
+entity_type: node
+type: link
+settings: {  }
+module: link
+locked: false
+cardinality: 1
+translatable: true
+indexes: {  }
+persist_with_no_fields: false
+custom_storage: false

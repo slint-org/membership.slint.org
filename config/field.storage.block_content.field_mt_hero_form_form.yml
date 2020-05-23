@@ -1,0 +1,20 @@
+uuid: fb769cd7-48b8-4d70-bb95-08c63dcdbe4d
+langcode: en
+status: true
+dependencies:
+  module:
+    - block_content
+    - webform
+id: block_content.field_mt_hero_form_form
+field_name: field_mt_hero_form_form
+entity_type: block_content
+type: webform
+settings:
+  target_type: webform
+module: webform
+locked: false
+cardinality: 1
+translatable: true
+indexes: {  }
+persist_with_no_fields: false
+custom_storage: false

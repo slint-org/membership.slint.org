@@ -27,3 +27,4 @@ permissions:
   - 'use text format basic_html'
   - 'view event info'
   - 'view event participants'
+  - 'view media'

@@ -1,0 +1,30 @@
+uuid: 92613b64-bccd-41f1-bf7e-77d35a84e337
+langcode: en
+status: true
+dependencies:
+  module:
+    - block_content
+    - options
+id: block_content.field_mt_hero_v2_layout
+field_name: field_mt_hero_v2_layout
+entity_type: block_content
+type: list_string
+settings:
+  allowed_values:
+    -
+      value: two-col-image-left
+      label: '2 Columns - Image Left'
+    -
+      value: two-col-image-right
+      label: '2 Columns - Image Right'
+    -
+      value: one-col-center
+      label: '1 Columns - Center'
+  allowed_values_function: ''
+module: options
+locked: false
+cardinality: 1
+translatable: true
+indexes: {  }
+persist_with_no_fields: false
+custom_storage: false
