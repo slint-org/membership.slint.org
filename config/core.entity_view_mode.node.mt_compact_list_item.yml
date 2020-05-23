@@ -1,0 +1,10 @@
+uuid: 9c0862f3-fc15-4450-8f00-b1c27b924329
+langcode: en
+status: true
+dependencies:
+  module:
+    - node
+id: node.mt_compact_list_item
+label: 'Compact List Item'
+targetEntityType: node
+cache: true

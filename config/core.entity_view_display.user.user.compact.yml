@@ -9,8 +9,6 @@ dependencies:
   module:
     - image
     - user
-_core:
-  default_config_hash: '-cLsS3M3JycipXQt9rEb81_HxKneReoGuRh8ijcOPXs'
 id: user.user.compact
 targetEntityType: user
 bundle: user
@@ -26,4 +24,7 @@ content:
     third_party_settings: {  }
     label: hidden
 hidden:
+  civicrm_dashboard: true
+  civicrm_profiles: true
+  civicrm_record: true
   member_for: true

@@ -1,0 +1,17 @@
+uuid: 14d6beef-6fdc-4f51-bd42-ac0815815b8a
+langcode: en
+status: true
+dependencies:
+  config:
+    - crop.type.mt_team_member_photo_landscape
+  module:
+    - crop
+name: mt_member_photo_landscape
+label: 'Member Photo (1300x650)'
+effects:
+  b362bd99-419c-4e0e-b986-9acd19f540f8:
+    uuid: b362bd99-419c-4e0e-b986-9acd19f540f8
+    id: crop_crop
+    weight: 1
+    data:
+      crop_type: mt_team_member_photo_landscape

@@ -1,0 +1,24 @@
+uuid: f7c5a2a8-2ab5-4938-9564-4fac74a0697d
+langcode: en
+status: true
+dependencies:
+  config:
+    - block_content.type.mt_media_tabs
+    - field.field.block_content.mt_media_tabs.field_mt_mdtb_tab
+  module:
+    - entity_reference_revisions
+id: block_content.mt_media_tabs.default
+targetEntityType: block_content
+bundle: mt_media_tabs
+mode: default
+content:
+  field_mt_mdtb_tab:
+    type: entity_reference_revisions_entity_view
+    weight: 2
+    label: hidden
+    settings:
+      view_mode: default
+      link: ''
+    third_party_settings: {  }
+    region: content
+hidden: {  }

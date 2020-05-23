@@ -1,0 +1,28 @@
+uuid: 4c71b1df-a7cb-465a-98bc-a0eb6a885acc
+langcode: en
+status: true
+dependencies:
+  config:
+    - field.field.node.mt_canvas_page.field_mt_cnv_body
+    - node.type.mt_canvas_page
+  module:
+    - text
+    - user
+id: node.mt_canvas_page.default
+targetEntityType: node
+bundle: mt_canvas_page
+mode: default
+content:
+  field_mt_cnv_body:
+    weight: 0
+    label: hidden
+    settings: {  }
+    third_party_settings: {  }
+    type: text_default
+    region: content
+  links:
+    weight: 1
+    region: content
+    settings: {  }
+    third_party_settings: {  }
+hidden: {  }

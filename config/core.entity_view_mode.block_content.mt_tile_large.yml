@@ -1,0 +1,10 @@
+uuid: accb61a3-74ac-42cb-b1f5-dff1c8d4d9c9
+langcode: en
+status: true
+dependencies:
+  module:
+    - block_content
+id: block_content.mt_tile_large
+label: 'Tile Large'
+targetEntityType: block_content
+cache: true

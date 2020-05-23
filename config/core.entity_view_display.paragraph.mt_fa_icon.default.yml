@@ -1,0 +1,37 @@
+uuid: 036cd268-a796-40b7-83ec-655010846f4d
+langcode: en
+status: true
+dependencies:
+  config:
+    - field.field.paragraph.mt_fa_icon.field_mt_fa_icon_icon
+    - field.field.paragraph.mt_fa_icon.field_mt_fa_icon_link
+    - paragraphs.paragraphs_type.mt_fa_icon
+  module:
+    - fontawesome
+    - link
+id: paragraph.mt_fa_icon.default
+targetEntityType: paragraph
+bundle: mt_fa_icon
+mode: default
+content:
+  field_mt_fa_icon_icon:
+    weight: 0
+    label: hidden
+    settings:
+      layers: false
+    third_party_settings: {  }
+    type: fontawesome_icon_formatter
+    region: content
+  field_mt_fa_icon_link:
+    weight: 1
+    label: hidden
+    settings:
+      trim_length: 80
+      url_only: false
+      url_plain: false
+      rel: ''
+      target: ''
+    third_party_settings: {  }
+    type: link
+    region: content
+hidden: {  }

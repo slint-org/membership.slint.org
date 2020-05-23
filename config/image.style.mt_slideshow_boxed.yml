@@ -1,0 +1,17 @@
+uuid: 3d05a0ef-22b7-4487-b251-ff5862bba3b1
+langcode: en
+status: true
+dependencies:
+  config:
+    - crop.type.mt_boxedwidth_slide_image
+  module:
+    - crop
+name: mt_slideshow_boxed
+label: 'Slideshow Boxed Width (1140x650)'
+effects:
+  125d1014-d3f8-4189-a5b1-c258754e4889:
+    uuid: 125d1014-d3f8-4189-a5b1-c258754e4889
+    id: crop_crop
+    weight: 1
+    data:
+      crop_type: mt_boxedwidth_slide_image

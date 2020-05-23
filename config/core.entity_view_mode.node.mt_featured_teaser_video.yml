@@ -1,0 +1,10 @@
+uuid: 864538a4-80d1-450e-bb13-39cb157e1a8a
+langcode: en
+status: true
+dependencies:
+  module:
+    - node
+id: node.mt_featured_teaser_video
+label: 'Featured Teaser Video'
+targetEntityType: node
+cache: true

@@ -1,0 +1,10 @@
+uuid: 79fd5ac0-b103-439d-bc99-fdb5f74ef7b4
+langcode: en
+status: true
+dependencies:
+  module:
+    - node
+id: node.mt_teaser_compact
+label: 'Teaser Compact'
+targetEntityType: node
+cache: true

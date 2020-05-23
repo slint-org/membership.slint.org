@@ -1,0 +1,26 @@
+uuid: 921ed5fb-f328-4adc-a830-ef2f820c6eb2
+langcode: en
+status: true
+dependencies:
+  config:
+    - field.field.paragraph.mt_image_button.field_mt_image_button_image
+    - field.field.paragraph.mt_image_button.field_mt_image_button_link
+    - paragraphs.paragraphs_type.mt_image_button
+  module:
+    - image
+id: paragraph.mt_image_button.default
+targetEntityType: paragraph
+bundle: mt_image_button
+mode: default
+content:
+  field_mt_image_button_image:
+    weight: 0
+    label: hidden
+    settings:
+      image_style: ''
+      image_link: ''
+    third_party_settings: {  }
+    type: image
+    region: content
+hidden:
+  field_mt_image_button_link: true

@@ -1,0 +1,24 @@
+uuid: 5ead6391-af64-4a5e-98ca-a4d7e35e6717
+langcode: en
+status: true
+dependencies:
+  config:
+    - block_content.type.mt_icon_features
+    - field.field.block_content.mt_icon_features.field_mt_if_item
+  module:
+    - entity_reference_revisions
+id: block_content.mt_icon_features.default
+targetEntityType: block_content
+bundle: mt_icon_features
+mode: default
+content:
+  field_mt_if_item:
+    type: entity_reference_revisions_entity_view
+    weight: 2
+    label: hidden
+    settings:
+      view_mode: mt_tile
+      link: ''
+    third_party_settings: {  }
+    region: content
+hidden: {  }

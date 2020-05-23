@@ -1,0 +1,15 @@
+uuid: 8fe0cc3d-db35-451d-985a-fdc8ad9f3058
+langcode: en
+status: true
+dependencies: {  }
+name: mt_detailed_feature
+label: 'Detailed Feature (Scale width to 850)'
+effects:
+  dd926ba3-bcce-40da-b4c1-e58158b22a9b:
+    uuid: dd926ba3-bcce-40da-b4c1-e58158b22a9b
+    id: image_scale
+    weight: 1
+    data:
+      width: 850
+      height: null
+      upscale: false

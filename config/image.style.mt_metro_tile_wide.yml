@@ -1,0 +1,25 @@
+uuid: fe4e6196-1679-44b6-bfe7-3af4c36ecd43
+langcode: en
+status: true
+dependencies:
+  config:
+    - crop.type.mt_metro_tile_wide
+  module:
+    - crop
+name: mt_metro_tile_wide
+label: 'Metro Tile Wide'
+effects:
+  ce5514ce-3161-4cae-a508-d87509d46996:
+    uuid: ce5514ce-3161-4cae-a508-d87509d46996
+    id: crop_crop
+    weight: 1
+    data:
+      crop_type: mt_metro_tile_wide
+  d08bed7e-da63-4260-8911-39292951d825:
+    uuid: d08bed7e-da63-4260-8911-39292951d825
+    id: image_scale_and_crop
+    weight: 2
+    data:
+      width: 800
+      height: 391
+      anchor: center-center

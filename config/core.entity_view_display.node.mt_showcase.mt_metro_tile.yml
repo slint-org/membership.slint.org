@@ -1,0 +1,51 @@
+uuid: e1338d37-7db5-461d-998f-c17102bfd514
+langcode: en
+status: true
+dependencies:
+  config:
+    - core.entity_view_mode.node.mt_metro_tile
+    - field.field.node.mt_showcase.field_mt_shw_banner_image
+    - field.field.node.mt_showcase.field_mt_shw_body
+    - field.field.node.mt_showcase.field_mt_shw_comments
+    - field.field.node.mt_showcase.field_mt_shw_content_collapses
+    - field.field.node.mt_showcase.field_mt_shw_image
+    - field.field.node.mt_showcase.field_mt_shw_subheader_body
+    - field.field.node.mt_showcase.field_mt_shw_subtitle
+    - field.field.node.mt_showcase.field_mt_shw_tags
+    - field.field.node.mt_showcase.field_mt_shw_video
+    - image.style.mt_metro_tile_square
+    - node.type.mt_showcase
+  module:
+    - image
+    - user
+id: node.mt_showcase.mt_metro_tile
+targetEntityType: node
+bundle: mt_showcase
+mode: mt_metro_tile
+content:
+  field_mt_shw_image:
+    weight: 0
+    label: hidden
+    settings:
+      image_style: mt_metro_tile_square
+      image_link: content
+    third_party_settings: {  }
+    type: image
+    region: content
+  field_mt_shw_tags:
+    weight: 1
+    label: hidden
+    settings:
+      link: true
+    third_party_settings: {  }
+    type: entity_reference_label
+    region: content
+hidden:
+  field_mt_shw_banner_image: true
+  field_mt_shw_body: true
+  field_mt_shw_comments: true
+  field_mt_shw_content_collapses: true
+  field_mt_shw_subheader_body: true
+  field_mt_shw_subtitle: true
+  field_mt_shw_video: true
+  links: true

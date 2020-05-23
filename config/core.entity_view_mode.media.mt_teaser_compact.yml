@@ -1,0 +1,10 @@
+uuid: da6aadae-77cd-4325-b80b-e1db33014d2e
+langcode: en
+status: true
+dependencies:
+  module:
+    - media
+id: media.mt_teaser_compact
+label: 'Teaser Compact'
+targetEntityType: media
+cache: true

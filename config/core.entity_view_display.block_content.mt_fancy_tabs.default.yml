@@ -1,0 +1,24 @@
+uuid: dfe6ecbb-da72-4b18-8b79-371bf6514fb5
+langcode: en
+status: true
+dependencies:
+  config:
+    - block_content.type.mt_fancy_tabs
+    - field.field.block_content.mt_fancy_tabs.field_mt_ft_tab
+  module:
+    - entity_reference_revisions
+id: block_content.mt_fancy_tabs.default
+targetEntityType: block_content
+bundle: mt_fancy_tabs
+mode: default
+content:
+  field_mt_ft_tab:
+    type: entity_reference_revisions_entity_view
+    weight: 2
+    label: hidden
+    settings:
+      view_mode: default
+      link: ''
+    third_party_settings: {  }
+    region: content
+hidden: {  }

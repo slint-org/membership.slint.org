@@ -1,0 +1,54 @@
+uuid: 94083e7f-fb21-44f2-86d7-1693805e308f
+langcode: en
+status: true
+dependencies:
+  config:
+    - core.entity_view_mode.node.mt_teaser_tile_video
+    - field.field.node.mt_post.field_mt_pst_banner_image
+    - field.field.node.mt_post.field_mt_pst_body
+    - field.field.node.mt_post.field_mt_pst_category
+    - field.field.node.mt_post.field_mt_pst_comment
+    - field.field.node.mt_post.field_mt_pst_image
+    - field.field.node.mt_post.field_mt_pst_slideshow_image
+    - field.field.node.mt_post.field_mt_pst_slideshow_text
+    - field.field.node.mt_post.field_mt_pst_subheader
+    - field.field.node.mt_post.field_mt_pst_tags
+    - field.field.node.mt_post.field_mt_pst_video
+    - image.style.mt_large
+    - node.type.mt_post
+  module:
+    - user
+    - video_embed_field
+id: node.mt_post.mt_teaser_tile_video
+targetEntityType: node
+bundle: mt_post
+mode: mt_teaser_tile_video
+content:
+  field_mt_pst_category:
+    type: entity_reference_label
+    weight: 0
+    region: content
+    label: hidden
+    settings:
+      link: true
+    third_party_settings: {  }
+  field_mt_pst_video:
+    weight: 1
+    label: hidden
+    settings:
+      image_style: mt_large
+      link_image_to: provider
+    third_party_settings: {  }
+    type: video_embed_field_thumbnail
+    region: content
+hidden:
+  field_mt_pst_banner_image: true
+  field_mt_pst_body: true
+  field_mt_pst_comment: true
+  field_mt_pst_image: true
+  field_mt_pst_slideshow_image: true
+  field_mt_pst_slideshow_text: true
+  field_mt_pst_subheader: true
+  field_mt_pst_tags: true
+  flippy_pager: true
+  links: true

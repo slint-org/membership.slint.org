@@ -1,0 +1,63 @@
+uuid: 37574ed2-c9b6-4a0b-be28-f44c2af43dce
+langcode: en
+status: true
+dependencies:
+  config:
+    - core.entity_view_mode.node.mt_featured_teaser
+    - field.field.node.mt_showcase.field_mt_shw_banner_image
+    - field.field.node.mt_showcase.field_mt_shw_body
+    - field.field.node.mt_showcase.field_mt_shw_comments
+    - field.field.node.mt_showcase.field_mt_shw_content_collapses
+    - field.field.node.mt_showcase.field_mt_shw_image
+    - field.field.node.mt_showcase.field_mt_shw_subheader_body
+    - field.field.node.mt_showcase.field_mt_shw_subtitle
+    - field.field.node.mt_showcase.field_mt_shw_tags
+    - field.field.node.mt_showcase.field_mt_shw_video
+    - image.style.mt_large
+    - node.type.mt_showcase
+  module:
+    - image
+    - text
+    - user
+id: node.mt_showcase.mt_featured_teaser
+targetEntityType: node
+bundle: mt_showcase
+mode: mt_featured_teaser
+content:
+  field_mt_shw_body:
+    weight: 1
+    label: hidden
+    settings:
+      trim_length: 150
+    third_party_settings: {  }
+    type: text_summary_or_trimmed
+    region: content
+  field_mt_shw_image:
+    weight: 0
+    label: hidden
+    settings:
+      image_style: mt_large
+      image_link: content
+    third_party_settings: {  }
+    type: image
+    region: content
+  field_mt_shw_tags:
+    weight: 2
+    label: hidden
+    settings:
+      link: true
+    third_party_settings: {  }
+    type: entity_reference_label
+    region: content
+  links:
+    weight: 3
+    region: content
+    settings: {  }
+    third_party_settings: {  }
+hidden:
+  field_mt_shw_banner_image: true
+  field_mt_shw_comments: true
+  field_mt_shw_content_collapses: true
+  field_mt_shw_subheader_body: true
+  field_mt_shw_subtitle: true
+  field_mt_shw_video: true

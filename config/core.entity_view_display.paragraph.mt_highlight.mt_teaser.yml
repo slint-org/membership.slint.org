@@ -1,0 +1,58 @@
+uuid: a149b3af-c0c6-4110-9afc-3d7660f56755
+langcode: en
+status: true
+dependencies:
+  config:
+    - core.entity_view_mode.paragraph.mt_teaser
+    - field.field.paragraph.mt_highlight.field_mt_highlight_body
+    - field.field.paragraph.mt_highlight.field_mt_highlight_image
+    - field.field.paragraph.mt_highlight.field_mt_highlight_link
+    - field.field.paragraph.mt_highlight.field_mt_highlight_title
+    - image.style.mt_large
+    - paragraphs.paragraphs_type.mt_highlight
+  module:
+    - image
+    - link
+    - text
+id: paragraph.mt_highlight.mt_teaser
+targetEntityType: paragraph
+bundle: mt_highlight
+mode: mt_teaser
+content:
+  field_mt_highlight_body:
+    weight: 2
+    label: hidden
+    settings: {  }
+    third_party_settings: {  }
+    type: text_default
+    region: content
+  field_mt_highlight_image:
+    weight: 0
+    label: hidden
+    settings:
+      image_style: mt_large
+      image_link: ''
+    third_party_settings: {  }
+    type: image
+    region: content
+  field_mt_highlight_link:
+    weight: 3
+    label: hidden
+    settings:
+      trim_length: 80
+      url_only: false
+      url_plain: false
+      rel: ''
+      target: ''
+    third_party_settings: {  }
+    type: link
+    region: content
+  field_mt_highlight_title:
+    weight: 1
+    label: hidden
+    settings:
+      link_to_entity: false
+    third_party_settings: {  }
+    type: string
+    region: content
+hidden: {  }
