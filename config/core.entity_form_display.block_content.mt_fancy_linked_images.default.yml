@@ -1,0 +1,34 @@
+uuid: dffbf657-48bd-4af1-b0d4-0924f1e1f10c
+langcode: en
+status: true
+dependencies:
+  config:
+    - block_content.type.mt_fancy_linked_images
+    - field.field.block_content.mt_fancy_linked_images.field_mt_fancy_linked_image
+  module:
+    - paragraphs
+id: block_content.mt_fancy_linked_images.default
+targetEntityType: block_content
+bundle: mt_fancy_linked_images
+mode: default
+content:
+  field_mt_fancy_linked_image:
+    type: entity_reference_paragraphs
+    weight: 4
+    settings:
+      title: Paragraph
+      title_plural: Paragraphs
+      edit_mode: open
+      add_mode: dropdown
+      form_display_mode: default
+    third_party_settings: {  }
+    region: content
+  info:
+    type: string_textfield
+    weight: -5
+    settings:
+      size: 60
+      placeholder: ''
+    third_party_settings: {  }
+    region: content
+hidden: {  }

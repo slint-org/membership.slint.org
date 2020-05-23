@@ -1,0 +1,35 @@
+uuid: e8ad790a-1aa0-4c4d-b058-715c474ffe06
+langcode: en
+status: true
+dependencies:
+  config:
+    - block_content.type.mt_how_it_works
+    - field.field.block_content.mt_how_it_works.field_mt_hiw_item
+  module:
+    - paragraphs
+id: block_content.mt_how_it_works.default
+targetEntityType: block_content
+bundle: mt_how_it_works
+mode: default
+content:
+  field_mt_hiw_item:
+    type: entity_reference_paragraphs
+    weight: 27
+    settings:
+      title: Paragraph
+      title_plural: Paragraphs
+      edit_mode: open
+      add_mode: dropdown
+      form_display_mode: default
+      default_paragraph_type: ''
+    third_party_settings: {  }
+    region: content
+  info:
+    type: string_textfield
+    weight: -5
+    region: content
+    settings:
+      size: 60
+      placeholder: ''
+    third_party_settings: {  }
+hidden: {  }

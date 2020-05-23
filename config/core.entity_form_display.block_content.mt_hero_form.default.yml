@@ -1,0 +1,67 @@
+uuid: d91fbbcc-85b0-4d15-90dc-144ce775aa46
+langcode: en
+status: true
+dependencies:
+  config:
+    - block_content.type.mt_hero_form
+    - field.field.block_content.mt_hero_form.field_mt_hero_form_description
+    - field.field.block_content.mt_hero_form.field_mt_hero_form_form
+    - field.field.block_content.mt_hero_form.field_mt_hero_form_image
+    - field.field.block_content.mt_hero_form.field_mt_hero_form_layout
+    - field.field.block_content.mt_hero_form.field_mt_hero_form_title
+    - image.style.thumbnail
+  module:
+    - image
+    - text
+    - webform
+id: block_content.mt_hero_form.default
+targetEntityType: block_content
+bundle: mt_hero_form
+mode: default
+content:
+  field_mt_hero_form_description:
+    weight: 2
+    settings:
+      rows: 5
+      placeholder: ''
+    third_party_settings: {  }
+    type: text_textarea
+    region: content
+  field_mt_hero_form_form:
+    weight: 4
+    settings:
+      default_data: true
+    third_party_settings: {  }
+    type: webform_entity_reference_select
+    region: content
+  field_mt_hero_form_image:
+    weight: 3
+    settings:
+      progress_indicator: throbber
+      preview_image_style: thumbnail
+    third_party_settings: {  }
+    type: image_image
+    region: content
+  field_mt_hero_form_layout:
+    weight: 5
+    settings: {  }
+    third_party_settings: {  }
+    type: options_select
+    region: content
+  field_mt_hero_form_title:
+    weight: 1
+    settings:
+      size: 60
+      placeholder: ''
+    third_party_settings: {  }
+    type: string_textfield
+    region: content
+  info:
+    type: string_textfield
+    weight: 0
+    region: content
+    settings:
+      size: 60
+      placeholder: ''
+    third_party_settings: {  }
+hidden: {  }

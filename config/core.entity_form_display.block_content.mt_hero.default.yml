@@ -1,0 +1,91 @@
+uuid: 599a2d5b-85da-40c8-a070-298f0119f371
+langcode: en
+status: true
+dependencies:
+  config:
+    - block_content.type.mt_hero
+    - field.field.block_content.mt_hero.field_mt_hero_body
+    - field.field.block_content.mt_hero.field_mt_hero_image
+    - field.field.block_content.mt_hero.field_mt_hero_layout
+    - field.field.block_content.mt_hero.field_mt_hero_link
+    - field.field.block_content.mt_hero.field_mt_hero_social_icon
+    - field.field.block_content.mt_hero.field_mt_hero_teaser
+    - field.field.block_content.mt_hero.field_mt_hero_title
+    - image.style.thumbnail
+  module:
+    - image
+    - link
+    - paragraphs
+    - text
+id: block_content.mt_hero.default
+targetEntityType: block_content
+bundle: mt_hero
+mode: default
+content:
+  field_mt_hero_body:
+    weight: 3
+    settings:
+      rows: 5
+      placeholder: ''
+    third_party_settings: {  }
+    type: text_textarea
+    region: content
+  field_mt_hero_image:
+    weight: 26
+    settings:
+      progress_indicator: throbber
+      preview_image_style: thumbnail
+    third_party_settings: {  }
+    type: image_image
+    region: content
+  field_mt_hero_layout:
+    weight: 1
+    settings: {  }
+    third_party_settings: {  }
+    type: options_select
+    region: content
+  field_mt_hero_link:
+    weight: 4
+    settings:
+      placeholder_url: ''
+      placeholder_title: ''
+    third_party_settings: {  }
+    type: link_default
+    region: content
+  field_mt_hero_social_icon:
+    type: entity_reference_paragraphs
+    weight: 6
+    settings:
+      title: Paragraph
+      title_plural: Paragraphs
+      edit_mode: open
+      add_mode: dropdown
+      form_display_mode: default
+      default_paragraph_type: ''
+    third_party_settings: {  }
+    region: content
+  field_mt_hero_teaser:
+    weight: 5
+    settings:
+      rows: 5
+      placeholder: ''
+    third_party_settings: {  }
+    type: text_textarea
+    region: content
+  field_mt_hero_title:
+    weight: 2
+    settings:
+      size: 60
+      placeholder: ''
+    third_party_settings: {  }
+    type: text_textfield
+    region: content
+  info:
+    type: string_textfield
+    weight: 0
+    region: content
+    settings:
+      size: 60
+      placeholder: ''
+    third_party_settings: {  }
+hidden: {  }

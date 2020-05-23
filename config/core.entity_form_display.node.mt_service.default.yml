@@ -1,0 +1,169 @@
+uuid: bcee35e5-b486-4f38-9e56-34ef5d47c237
+langcode: en
+status: true
+dependencies:
+  config:
+    - field.field.node.mt_service.field_mt_srv_banner_image
+    - field.field.node.mt_service.field_mt_srv_body
+    - field.field.node.mt_service.field_mt_srv_highlight
+    - field.field.node.mt_service.field_mt_srv_image
+    - field.field.node.mt_service.field_mt_srv_link
+    - field.field.node.mt_service.field_mt_srv_subheader_body
+    - field.field.node.mt_service.field_mt_srv_tags
+    - field.field.node.mt_service.field_mt_srv_teaser_image
+    - field.field.node.mt_service.field_mt_srv_video
+    - image.style.thumbnail
+    - node.type.mt_service
+  module:
+    - image
+    - image_widget_crop
+    - link
+    - paragraphs
+    - path
+    - text
+    - video_embed_field
+id: node.mt_service.default
+targetEntityType: node
+bundle: mt_service
+mode: default
+content:
+  created:
+    type: datetime_timestamp
+    weight: 12
+    settings: {  }
+    third_party_settings: {  }
+    region: content
+  field_mt_srv_banner_image:
+    weight: 1
+    settings:
+      progress_indicator: throbber
+      preview_image_style: thumbnail
+    third_party_settings: {  }
+    type: image_image
+    region: content
+  field_mt_srv_body:
+    weight: 6
+    settings:
+      rows: 9
+      summary_rows: 3
+      placeholder: ''
+      show_summary: false
+    third_party_settings: {  }
+    type: text_textarea_with_summary
+    region: content
+  field_mt_srv_highlight:
+    type: entity_reference_paragraphs
+    weight: 5
+    settings:
+      title: Paragraph
+      title_plural: Paragraphs
+      edit_mode: open
+      add_mode: dropdown
+      form_display_mode: default
+      default_paragraph_type: ''
+    third_party_settings: {  }
+    region: content
+  field_mt_srv_image:
+    weight: 4
+    settings:
+      preview_image_style: thumbnail
+      progress_indicator: throbber
+    third_party_settings: {  }
+    type: image_image
+    region: content
+  field_mt_srv_link:
+    weight: 10
+    settings:
+      placeholder_url: ''
+      placeholder_title: ''
+    third_party_settings: {  }
+    type: link_default
+    region: content
+  field_mt_srv_subheader_body:
+    weight: 2
+    settings:
+      rows: 9
+      summary_rows: 3
+      placeholder: ''
+      show_summary: false
+    third_party_settings: {  }
+    type: text_textarea_with_summary
+    region: content
+  field_mt_srv_tags:
+    weight: 9
+    settings:
+      match_operator: CONTAINS
+      size: 60
+      placeholder: ''
+      match_limit: 10
+    third_party_settings: {  }
+    type: entity_reference_autocomplete_tags
+    region: content
+  field_mt_srv_teaser_image:
+    weight: 3
+    settings:
+      show_default_crop: true
+      warn_multiple_usages: true
+      preview_image_style: thumbnail
+      crop_preview_image_style: crop_thumbnail
+      crop_list:
+        - mt_metro_tile_square
+        - mt_metro_tile_wide
+      progress_indicator: throbber
+      crop_types_required: {  }
+      show_crop_area: false
+    third_party_settings: {  }
+    type: image_widget_crop
+    region: content
+  field_mt_srv_video:
+    weight: 7
+    settings: {  }
+    third_party_settings: {  }
+    type: video_embed_field_textfield
+    region: content
+  path:
+    type: path
+    weight: 15
+    settings: {  }
+    third_party_settings: {  }
+    region: content
+  promote:
+    type: boolean_checkbox
+    settings:
+      display_label: true
+    weight: 13
+    third_party_settings: {  }
+    region: content
+  status:
+    type: boolean_checkbox
+    settings:
+      display_label: true
+    weight: 16
+    third_party_settings: {  }
+    region: content
+  sticky:
+    type: boolean_checkbox
+    settings:
+      display_label: true
+    weight: 14
+    third_party_settings: {  }
+    region: content
+  title:
+    type: string_textfield
+    weight: 0
+    settings:
+      size: 60
+      placeholder: ''
+    third_party_settings: {  }
+    region: content
+  uid:
+    type: entity_reference_autocomplete
+    weight: 11
+    settings:
+      match_operator: CONTAINS
+      size: 60
+      placeholder: ''
+      match_limit: 10
+    third_party_settings: {  }
+    region: content
+hidden: {  }

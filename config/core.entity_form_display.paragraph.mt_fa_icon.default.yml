@@ -1,0 +1,34 @@
+uuid: b663b363-1d0e-4af6-9d10-4bc7184abe80
+langcode: en
+status: true
+dependencies:
+  config:
+    - field.field.paragraph.mt_fa_icon.field_mt_fa_icon_icon
+    - field.field.paragraph.mt_fa_icon.field_mt_fa_icon_link
+    - paragraphs.paragraphs_type.mt_fa_icon
+  module:
+    - fontawesome
+    - link
+id: paragraph.mt_fa_icon.default
+targetEntityType: paragraph
+bundle: mt_fa_icon
+mode: default
+content:
+  field_mt_fa_icon_icon:
+    weight: 0
+    settings: {  }
+    third_party_settings: {  }
+    type: fontawesome_icon_widget
+    region: content
+  field_mt_fa_icon_link:
+    weight: 1
+    settings:
+      placeholder_url: ''
+      placeholder_title: ''
+    third_party_settings: {  }
+    type: link_default
+    region: content
+hidden:
+  created: true
+  status: true
+  uid: true
