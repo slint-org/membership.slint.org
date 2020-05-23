@@ -1,0 +1,36 @@
+{#
+/**
+ * @file
+ * SLINT's theme implementation to display a Service node.
+ */
+#}
+
+{% extends "node.html.twig" %}
+{% block content %}
+  {{ attach_library('slint/node-service') }}
+  {% if content.field_mt_srv_image|render or content.field_mt_srv_subheader_body|render or content.field_mt_srv_buy_link|render or content.field_mt_srv_price|render %}
+  <div class="service-content-top {{ (content.field_mt_srv_image|render) ? ' service-content-top--image-enabled' : '' }}">
+    {% if content.field_mt_srv_image|render %}
+      <div class="service-content-top-first">
+        {{ content.field_mt_srv_image }}
+      </div>
+    {% elseif content.field_mt_srv_subheader_body|render %}
+      <div class="service-content-top-first">
+        {{ content.field_mt_srv_subheader_body }}
+      </div>
+    {% endif %}
+    {% if content.field_mt_srv_subheader_body|render or content.field_mt_srv_buy_link|render or content.field_mt_srv_price|render %}
+      <div class="service-content-top-second d-flex flex-column">
+        {% if content.field_mt_srv_image|render and content.field_mt_srv_subheader_body|render %}
+          {{ content.field_mt_srv_subheader_body }}
+        {% endif %}
+        <div class="mt-auto">
+          {{ content.field_mt_srv_price }}
+          {{ content.field_mt_srv_buy_link }}
+        </div>
+      </div>
+    {% endif %}
+  </div>
+  {% endif %}
+  {{ content|without('field_mt_srv_banner_image', 'field_mt_srv_image', 'field_mt_srv_subheader_body', 'field_mt_srv_buy_link', 'field_mt_srv_price') }}
+{% endblock %}

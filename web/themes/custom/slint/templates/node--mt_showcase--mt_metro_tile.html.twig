@@ -1,0 +1,57 @@
+{#
+/**
+ * @file
+ * SLINT's theme implementation to display a Service node in teaser tile view mode.
+ */
+#}
+{%
+  set classes = [
+    'node',
+    'node--type-' ~ node.bundle|clean_class,
+    node.isPromoted() ? 'node--promoted',
+    node.isSticky() ? 'node--sticky',
+    not node.isPublished() ? 'node--unpublished',
+    view_mode ? 'node--view-mode-' ~ view_mode|clean_class,
+  ]
+%}
+{{ attach_library('slint/node-view-mode-metro-tile') }}
+<article{{ attributes.addClass(classes) }}>
+  <div class="metro-tile-container">
+    {{ title_prefix }}
+    {{ title_suffix }}
+    {% if content.field_mt_shw_image|render %}
+      {% set view_row_index = elements['#mt_view_index'] %}
+      {% set view_page_index = elements['#mt_view_page_index'] %}
+      {% if view_page_index == 0 and (view_row_index == 2 or view_row_index == 3) %}
+        {% set field_mt_shw_image_styled = content.field_mt_shw_image.0 %}
+        {% set field_mt_shw_image_styled = field_mt_shw_image_styled|merge({'#image_style': 'mt_metro_tile_wide_image'}) %}
+      {% else %}
+        {% set field_mt_shw_image_styled = content.field_mt_shw_image %}
+      {% endif %}
+      {{ field_mt_shw_image_styled }}
+    {% endif %}
+
+    <div class="metro-tile__caption">
+      {% if content.field_mt_shw_tags|render %}
+        {{ content.field_mt_shw_tags }}
+      {% endif %}
+      {% if not page %}
+        <h4{{ title_attributes.addClass("my-0 node__title") }}>
+          <a href="{{ url }}" rel="bookmark">{{ label }}</a>
+        </h4>
+      {% endif %}
+      {% if display_submitted %}
+        {{ metadata }}
+        <div class="node__submitted-date">
+          {{ node.createdtime|format_date('custom', 'd') }}
+          {{ node.createdtime|format_date('custom', 'M, ') }}
+          {{ node.createdtime|format_date('custom', 'Y') }}
+        </div>
+      {% endif %}
+    </div>
+  </div>
+  <div{{ content_attributes.addClass('node__content') }}>
+    {{ content|without('field_mt_shw_image', 'field_mt_shw_tags') }}
+  </div>
+
+</article>

@@ -1,0 +1,36 @@
+/**
+ * @file
+ * Visual styles for SLINT's modal block.
+ */
+.block-type--mt-modal .modal-content {
+  border-radius: 0;
+  border: none;
+  background-color: transparent;
+}
+.modal-backdrop {
+  background-color: rgba(255, 255, 255, 0.95);
+}
+.modal-backdrop.show {
+  opacity: 1;
+}
+.block-type--mt-modal .modal-icon-button {
+  -webkit-appearance: none;
+  border-width: 0;
+  display: block;
+  margin-left: auto;
+  margin-top: 3px;
+  font-size: 18px;
+}
+.block-type--mt-modal .modal-icon-button:not(.button) {
+  background-color: transparent;
+}
+.block-type--mt-modal .modal-icon-button.button {
+  border-width: 1px;
+}
+.block-type--mt-modal button.close {
+  position: absolute;
+  top: 50px;
+  right: 50px;
+  font-size: 36px;
+  opacity: 1;
+}

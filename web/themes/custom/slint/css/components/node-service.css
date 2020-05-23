@@ -1,0 +1,202 @@
+/**
+ * @file
+ * Visual styles for SLINT's service content type.
+ */
+.node--type-mt-service .node__header {
+  padding: 0;
+}
+
+/*page title*/
+.page-node-type-mt-service .page-title {
+  font-size: 56px;
+  font-weight: 700;
+  margin-bottom: 20px;
+  line-height: 1.2;
+}
+
+/*service content top*/
+.service-content-top{
+  display: -ms-flexbox;
+  display: flex;
+  -ms-flex-wrap: wrap;
+  flex-wrap: wrap;
+  margin-right: -15px;
+  margin-left: -15px;
+  -ms-flex-pack: center!important;
+  justify-content: center!important;
+  margin-bottom: 50px;
+}
+.service-content-top-first,
+.service-content-top-second {
+  position: relative;
+  width: 100%;
+  min-height: 1px;
+  padding-right: 15px;
+  padding-left: 15px;
+}
+@media (min-width: 992px) {
+  .layout-no-sidebars .service-content-top-first {
+    -ms-flex: 0 0 66.666667%;
+    flex: 0 0 66.666667%;
+    max-width: 66.666667%;
+  }
+  .layout-no-sidebars .service-content-top-first + .service-content-top-second {
+    -ms-flex: 0 0 33.333333%;
+    flex: 0 0 33.333333%;
+    max-width: 33.333333%;
+    padding-left: 35px;
+  }
+}
+
+/*body*/
+.layout-no-sidebars .field--name-field-mt-srv-body {
+  max-width: 615px;
+  margin-left: auto;
+  margin-right: auto;
+}
+@media (min-width: 992px) {
+  .layout-no-sidebars .service-content-top--image-enabled ~ .field--name-field-mt-srv-body {
+    margin-right: 32.9%;
+    padding-right: 15px;
+  }
+}
+.field--name-field-mt-srv-body {
+  margin-bottom: 50px;
+}
+.field--name-field-mt-srv-body p:last-child {
+  padding-bottom: 0px;
+}
+
+/*subheader field*/
+.field--name-field-mt-srv-subheader-body {
+  font-size: 18px;
+  line-height: 1.4;
+  font-weight: 500;
+}
+@media (max-width: 991px) {
+  .service-content-top--image-enabled .field--name-field-mt-srv-subheader-body {
+    margin-bottom: 15px;
+  }
+}
+.field--name-field-mt-srv-subheader-body p:last-child {
+  padding-bottom: 0;
+}
+
+/*image field*/
+@media (max-width: 991px) {
+  .node--type-mt-service .field--name-field-mt-srv-image {
+    margin: 0 0 30px;
+  }
+}
+@media (max-width: 575px) {
+  .node--type-mt-service .field--name-field-mt-srv-image {
+    margin: 0 -15px 30px;
+  }
+}
+.node--type-mt-service.node--view-mode-teaser .images-container {
+  margin-bottom: 15px;
+}
+
+/* highlight field */
+.field--name-field-mt-srv-highlight > .field__item:first-child > .paragraph--type--mt-highlight {
+  padding-top: 15px;
+}
+
+/* video field */
+.layout-no-sidebars .field--name-field-mt-srv-video {
+  max-width: 615px;
+  margin-left: auto;
+  margin-right: auto;
+}
+@media (min-width: 992px) {
+  .layout-no-sidebars .service-content-top--image-enabled ~ .field--name-field-mt-srv-video {
+    margin-right: 32.9%;
+    padding-right: 15px;
+  }
+}
+.field--name-field-mt-srv-video {
+  margin-bottom: 50px;
+}
+
+/* tags */
+.layout-no-sidebars .field--name-field-mt-srv-service-tags {
+  max-width: 615px;
+  margin-left: auto;
+  margin-right: auto;
+}
+@media (min-width: 992px) {
+  .layout-no-sidebars .service-content-top--image-enabled ~ .field--name-field-mt-srv-service-tags {
+    margin-right: 32.9%;
+    padding-right: 15px;
+  }
+}
+.field--name-field-mt-srv-service-tags {
+  margin-bottom: 50px;
+}
+
+/*price field*/
+.node--type-mt-service .field--name-field-mt-srv-price {
+  font-size: 18px;
+  font-weight: 700;
+  margin: 10px 0;
+}
+.region--dark-typography .node--type-mt-service .field--name-field-mt-srv-price {
+  color: #333333;
+}
+
+/*buy link field*/
+.node--type-mt-service .field--name-field-mt-srv-buy-link {
+  text-align: center;
+}
+@media (min-width: 992px) {
+  .layout-no-sidebars .service-content-top-first + .service-content-top-second .field--name-field-mt-srv-buy-link a {
+    display: block;
+  }
+}
+.node--type-mt-service .field--name-field-mt-srv-buy-link a {
+  font-size: 14px;
+  font-weight: 500;
+  min-width: 190px;
+  padding: 16px 40px 16px;
+  text-decoration: none;
+  display: block;
+  line-height: 1;
+  border-width: 2px;
+  border-style: solid;
+  -webkit-border-radius: 0;
+  -moz-border-radius: 0;
+  border-radius: 0;
+  -webkit-transition: all 0.2s ease-in-out;
+  -moz-transition: all 0.2s ease-in-out;
+  -ms-transition: all 0.2s ease-in-out;
+  -o-transition: all 0.2s ease-in-out;
+  transition: all 0.2s ease-in-out;
+  margin: 0;
+  text-align: center;
+  background-color: transparent;
+}
+.node--type-mt-service .field--name-field-mt-srv-buy-link a:hover,
+.node--type-mt-service .field--name-field-mt-srv-buy-link a:focus {
+  color: #ffffff;
+}
+.headings-wide-spacing-enabled .node--type-mt-service .field--name-field-mt-srv-buy-link a {
+  letter-spacing: 0.25em;
+}
+
+/* node links */
+.layout-no-sidebars .node--type-mt-service.node--view-mode-full .node__links {
+  -ms-flex: 0 0 66.666667%;
+  flex: 0 0 66.666667%;
+  max-width: 66.666667%;
+  margin-left: auto;
+  margin-right: auto;
+}
+
+/* comments */
+.layout-no-sidebars .field--name-field-mt-srv-comments {
+  -ms-flex: 0 0 66.666667%;
+  flex: 0 0 66.666667%;
+  max-width: 66.666667%;
+  margin-left: auto;
+  margin-right: auto;
+}

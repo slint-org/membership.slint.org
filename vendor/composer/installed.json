@@ -1991,6 +1991,164 @@
         "description": "Locked core dependencies; require this project INSTEAD OF drupal/core."
     },
     {
+        "name": "drupal/imageapi_optimize",
+        "version": "2.0.0-beta1",
+        "version_normalized": "2.0.0.0-beta1",
+        "source": {
+            "type": "git",
+            "url": "https://git.drupalcode.org/project/imageapi_optimize.git",
+            "reference": "8.x-2.0-beta1"
+        },
+        "dist": {
+            "type": "zip",
+            "url": "https://ftp.drupal.org/files/projects/imageapi_optimize-8.x-2.0-beta1.zip",
+            "reference": "8.x-2.0-beta1",
+            "shasum": "41e369b62bb608611bad08719aac9e47dd2d6b53"
+        },
+        "require": {
+            "drupal/core": "^8.2"
+        },
+        "type": "drupal-module",
+        "extra": {
+            "branch-alias": {
+                "dev-2.x": "2.x-dev"
+            },
+            "drupal": {
+                "version": "8.x-2.0-beta1",
+                "datestamp": "1581436166",
+                "security-coverage": {
+                    "status": "not-covered",
+                    "message": "Beta releases are not covered by Drupal security advisories."
+                }
+            }
+        },
+        "installation-source": "dist",
+        "notification-url": "https://packages.drupal.org/8/downloads",
+        "license": [
+            "GPL-2.0-or-later"
+        ],
+        "authors": [
+            {
+                "name": "Deciphered",
+                "homepage": "https://www.drupal.org/user/103796"
+            },
+            {
+                "name": "Steven Jones",
+                "homepage": "https://www.drupal.org/user/99644"
+            },
+            {
+                "name": "jcisio",
+                "homepage": "https://www.drupal.org/user/210762"
+            }
+        ],
+        "description": "Define pipelines for image optimization and provide integration with core image styles.",
+        "homepage": "https://www.drupal.org/project/imageapi_optimize",
+        "support": {
+            "source": "https://git.drupalcode.org/project/imageapi_optimize"
+        }
+    },
+    {
+        "name": "drupal/imageapi_optimize_tinypng",
+        "version": "1.0.0-beta1",
+        "version_normalized": "1.0.0.0-beta1",
+        "source": {
+            "type": "git",
+            "url": "https://git.drupalcode.org/project/imageapi_optimize_tinypng.git",
+            "reference": "8.x-1.0-beta1"
+        },
+        "dist": {
+            "type": "zip",
+            "url": "https://ftp.drupal.org/files/projects/imageapi_optimize_tinypng-8.x-1.0-beta1.zip",
+            "reference": "8.x-1.0-beta1",
+            "shasum": "3bf6a1fe805b2729ad690ea096b856d7b6e54ce8"
+        },
+        "require": {
+            "drupal/core": "~8.0",
+            "drupal/imageapi_optimize": "*",
+            "tinify/tinify": "^1.5"
+        },
+        "type": "drupal-module",
+        "extra": {
+            "branch-alias": {
+                "dev-1.x": "1.x-dev"
+            },
+            "drupal": {
+                "version": "8.x-1.0-beta1",
+                "datestamp": "1535607784",
+                "security-coverage": {
+                    "status": "not-covered",
+                    "message": "Beta releases are not covered by Drupal security advisories."
+                }
+            }
+        },
+        "installation-source": "dist",
+        "notification-url": "https://packages.drupal.org/8/downloads",
+        "license": [
+            "GPL-2.0+"
+        ],
+        "authors": [
+            {
+                "name": "Steven Jones",
+                "homepage": "https://www.drupal.org/user/99644"
+            }
+        ],
+        "description": "Provides a TinyPNG optimizer for ImageAPI Optimize.",
+        "homepage": "https://www.drupal.org/project/imageapi_optimize_tinypng",
+        "support": {
+            "source": "https://git.drupalcode.org/project/imageapi_optimize_tinypng"
+        }
+    },
+    {
+        "name": "drupal/wkhtmltopdf",
+        "version": "1.2.0",
+        "version_normalized": "1.2.0.0",
+        "source": {
+            "type": "git",
+            "url": "https://git.drupalcode.org/project/wkhtmltopdf.git",
+            "reference": "8.x-1.2"
+        },
+        "dist": {
+            "type": "zip",
+            "url": "https://ftp.drupal.org/files/projects/wkhtmltopdf-8.x-1.2.zip",
+            "reference": "8.x-1.2",
+            "shasum": "296e1304920c3ec5ff601e7f4d6e23cabd157cc5"
+        },
+        "require": {
+            "drupal/core": "~8.0"
+        },
+        "type": "drupal-module",
+        "extra": {
+            "branch-alias": {
+                "dev-1.x": "1.x-dev"
+            },
+            "drupal": {
+                "version": "8.x-1.2",
+                "datestamp": "1550097180",
+                "security-coverage": {
+                    "status": "covered",
+                    "message": "Covered by Drupal's security advisory policy"
+                }
+            }
+        },
+        "installation-source": "dist",
+        "notification-url": "https://packages.drupal.org/8/downloads",
+        "license": [
+            "GPL-2.0+"
+        ],
+        "authors": [
+            {
+                "name": "Júlio Hidemi Kamizato",
+                "homepage": "https://www.drupal.org/user/2348128",
+                "email": "jkamizato@gmail.com"
+            }
+        ],
+        "description": "Provider a integration with wkhtmltopdf.",
+        "homepage": "https://www.drupal.org/project/wkhtmltopdf",
+        "support": {
+            "source": "https://git.drupalcode.org/project/wkhtmltopdf"
+        }
+    },
+    {
         "name": "easyrdf/easyrdf",
         "version": "0.9.1",
         "version_normalized": "0.9.1.0",
@@ -5536,6 +5694,64 @@
             "pdf",
             "pdf417",
             "qrcode"
+        ]
+    },
+    {
+        "name": "tinify/tinify",
+        "version": "1.5.2",
+        "version_normalized": "1.5.2.0",
+        "source": {
+            "type": "git",
+            "url": "https://github.com/tinify/tinify-php.git",
+            "reference": "b15d1f31d94d9b06e60251543cc918f426f0d55b"
+        },
+        "dist": {
+            "type": "zip",
+            "url": "https://api.github.com/repos/tinify/tinify-php/zipball/b15d1f31d94d9b06e60251543cc918f426f0d55b",
+            "reference": "b15d1f31d94d9b06e60251543cc918f426f0d55b",
+            "shasum": ""
+        },
+        "require": {
+            "ext-curl": "*",
+            "ext-json": "*",
+            "lib-curl": ">=7.20.0",
+            "php": ">=5.3.0"
+        },
+        "require-dev": {
+            "phpunit/phpunit": "~4.0",
+            "symfony/yaml": "~2.0"
+        },
+        "time": "2017-07-19T12:26:04+00:00",
+        "type": "library",
+        "installation-source": "dist",
+        "autoload": {
+            "files": [
+                "lib/Tinify.php",
+                "lib/Tinify/Exception.php"
+            ],
+            "psr-4": {
+                "Tinify\\": "lib/Tinify/"
+            }
+        },
+        "notification-url": "https://packagist.org/downloads/",
+        "license": [
+            "MIT"
+        ],
+        "authors": [
+            {
+                "name": "Rolf Timmermans",
+                "email": "rolftimmermans@voormedia.com"
+            }
+        ],
+        "description": "PHP client for the Tinify API. Tinify compresses your images intelligently. Read more at https://tinify.com.",
+        "homepage": "https://tinify.com/developers",
+        "keywords": [
+            "api",
+            "compress",
+            "images",
+            "tinify",
+            "tinyjpg",
+            "tinypng"
         ]
     },
     {

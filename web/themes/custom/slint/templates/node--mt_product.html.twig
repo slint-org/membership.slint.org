@@ -1,0 +1,96 @@
+{#
+/**
+ * @file
+ * SLINT's theme implementation to display a Product node.
+ */
+#}
+
+{% extends "node.html.twig" %}
+{% block content %}
+  {{ attach_library('slint/node-product') }}
+    {% if page %}
+      <div class="product-meta-info">
+        <div class="row justify-content-start align-items-center mb-3">
+          {% if content.field_mt_prd_categories|render %}
+            <div class="col-auto">
+              {{ content.field_mt_prd_categories }}
+            </div>
+          {% endif %}
+          <div class="col-auto">
+            <div class="product-share-links">
+              <ul class="list-inline mb-0">
+                <li class="facebook list-inline-item">
+                  <a href="https://www.facebook.com/sharer/sharer.php?u={{ url('entity.node.canonical', {'node': node.id}) }}&t={{node.label | url_encode(true)}}" onclick="window.open(this.href, 'facebook-share','width=580,height=296');return false;">
+                    <i class="fab fa-facebook"><span class="sr-only">facebook</span></i>
+                  </a>
+                </li>
+                <li class="twitter list-inline-item">
+                  <a href="https://twitter.com/share?text={{node.label | url_encode(true)}}&url={{ url('entity.node.canonical', {'node': node.id}) }}" onclick="window.open(this.href, 'twitter-share', 'width=550,height=235');return false;">
+                    <i class="fab fa-twitter"><span class="sr-only">twitter</span></i>
+                  </a>
+                </li>
+                <li class="list-inline-item">
+                  <a href="mailto:?Subject={{node.label | url_encode(true)}}&amp;Body={{ url('entity.node.canonical', {'node': node.id}) }}">
+                    <i class="far fa-envelope"><span class="sr-only">envelope</span></i>
+                  </a>
+                </li>
+                <li class="print list-inline-item">
+                  <div class="print">
+                    <a href="javascript:window.print()" class="print-button">
+                      <i class="fas fa-print"><span class="sr-only">print</span></i>
+                    </a>
+                  </div>
+                </li>
+              </ul>
+            </div>
+          </div>
+        </div>
+      </div>
+    {% endif %}
+    <div class="product-content-top two-columns">
+
+      {% if content.field_mt_prd_image|render %}
+        <div class="product-content-top-first">
+          {{ content.field_mt_prd_image }}
+        </div>
+      {% elseif content.field_mt_prd_subheader_body|render or content.field_mt_prd_subtitle|render %}
+        <div class="product-content-top-first">
+          {{ content.field_mt_prd_subtitle }}
+          {{ content.field_mt_prd_subheader_body }}
+        </div>
+      {% endif %}
+
+      {% if content.field_mt_prd_subtitle|render or content.field_mt_prd_subheader_body|render or content.field_mt_prd_buy_link|render or content.field_mt_prd_price|render or content.field_mt_prd_product_code|render or content.field_mt_prd_availability|render %}
+        <div class="product-content-top-second d-flex flex-column">
+          {% if content.field_mt_prd_image|render and (content.field_mt_prd_subheader_body|render or content.field_mt_prd_subtitle|render) %}
+            <div class="mb-auto">
+              {{ content.field_mt_prd_subtitle }}
+              {{ content.field_mt_prd_subheader_body }}
+            </div>
+          {% endif %}
+          {% if content.field_mt_prd_product_code|render or content.field_mt_prd_availability|render or content.field_mt_prd_price|render %}
+            <div class="row justify-content-start align-items-center">
+              {% if content.field_mt_prd_price|render %}
+                <div class="col-auto">
+                  {{ content.field_mt_prd_price }}
+                </div>
+              {% endif %}
+              {% if content.field_mt_prd_product_code|render %}
+                <div class="col-auto">
+                  {{ content.field_mt_prd_product_code }}
+                </div>
+              {% endif %}
+              {% if content.field_mt_prd_availability|render %}
+                <div class="col-auto {{ node.field_mt_prd_availability.value }}">
+                  {{ content.field_mt_prd_availability }}
+                </div>
+              {% endif %}
+            </div>
+          {% endif %}
+          {{ content.field_mt_prd_buy_link }}
+        </div>
+      {% endif %}
+
+    </div>
+    {{ content|without('field_mt_prd_banner_carousel', 'field_mt_prd_image', 'field_mt_prd_buy_link', 'field_mt_prd_price', 'field_mt_prd_product_code', 'field_mt_prd_availability', 'field_mt_prd_categories', 'field_mt_prd_subheader_body', 'field_mt_prd_subtitle') }}
+{% endblock %}

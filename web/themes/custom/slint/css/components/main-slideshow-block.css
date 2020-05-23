@@ -1,0 +1,16 @@
+/*main slider custom block caption*/
+.container-fluid .field--name-field-mt-main-slideshow-slide {
+  margin-left: -15px;
+  margin-right: -15px;
+}
+.ms-transparent-background .region--dark-typography.tp-caption__title a {
+  color: #000000;
+  text-shadow: none;
+}
+.ms-transparent-background .region--light-typography.tp-caption__title a {
+  text-decoration: none;
+}
+.ms-transparent-background .region--dark-typography.tp-caption__text {
+  color: #000000;
+  text-shadow: none;
+}

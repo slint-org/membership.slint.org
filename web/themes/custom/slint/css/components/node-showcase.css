@@ -1,0 +1,88 @@
+/**
+ * @file
+ * Visual styles for SLINT's showcase content type.
+ */
+.node--type-mt-showcase .node__meta {
+  margin-bottom: 0;
+}
+.node--type-mt-showcase .node__header {
+  padding-bottom: 0;
+}
+.node--type-mt-showcase .node__header + .field:not(.field--name-field-mt-shw-subtitle) {
+  padding-top: 10px;
+}
+
+/* subtitle */
+.node--type-mt-showcase .field--name-field-mt-shw-subtitle {
+  font-size: 20px;
+  line-height: 1.66;
+  color: #363636;
+  font-weight: 400;
+  text-transform: none;
+  padding-bottom: 15px;
+}
+
+/* showcase layout */
+@media (min-width: 768px) {
+  .node--type-mt-showcase.node--view-mode-full .node__container {
+    display: -ms-flexbox;
+    display: flex;
+    -ms-flex-wrap: wrap;
+    flex-wrap: wrap;
+    margin-right: -15px;
+    margin-left: -15px;
+  }
+  .node--type-mt-showcase.node--view-mode-full .node__main-content {
+    -ms-flex: 0 0 75%;
+    flex: 0 0 75%;
+    max-width: 75%;
+    padding-right: 15px;
+    padding-left: 15px;
+  }
+  .layout-no-sidebars .node--type-mt-showcase.node--view-mode-full:not(.node--display-submitted) .node__main-content {
+    margin-left: auto;
+    margin-right: auto;
+  }
+  .layout-one-sidebar .node--type-mt-showcase.node--view-mode-full:not(.node--display-submitted) .node__main-content,
+  .layout-two-sidebars .node--type-mt-showcase.node--view-mode-full:not(.node--display-submitted) .node__main-content {
+    -ms-flex: 0 0 100%;
+    flex: 0 0 100%;
+    max-width: 100%;
+  }
+  .node--type-mt-showcase.node--view-mode-full .node__side {
+    -ms-flex: 0 0 120px;
+    flex: 0 0 120px;
+    max-width: 120px;
+    margin-left: auto;
+    margin-right: auto;
+    padding-right: 15px;
+    padding-left: 15px;
+  }
+  .node--type-mt-showcase.node--view-mode-full .node__side + .node__main-content {
+    overflow: hidden;
+  }
+}
+@media (max-width: 767px) {
+  .node--type-mt-showcase.node--view-mode-full .node__side {
+    display: none;
+  }
+}
+
+/* node side */
+.node--type-mt-showcase.node--view-mode-full .node__side {
+  text-align: center;
+}
+.node--type-mt-showcase.node--view-mode-full .node__side .field--name-user-picture {
+  max-width: 65px;
+  margin-left: auto;
+  margin-right: auto;
+  float: none;
+}
+.node--type-mt-showcase.node--view-mode-full .node__side .field--name-user-picture img {
+  border-radius: 100%;
+}
+.node--type-mt-showcase.node--view-mode-full .node__side .node-date {
+  font-size: 14px;
+  color: #707070;
+  margin-bottom: 30px
+}

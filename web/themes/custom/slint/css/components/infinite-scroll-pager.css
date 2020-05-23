@@ -1,0 +1,49 @@
+/**
+ * @file
+ * Styles for SLINT's infinite scroll pager.
+ */
+
+.pager[data-drupal-views-infinite-scroll-pager] {
+  margin: 20px 0;
+  padding: 0;
+  font-size: 0;
+  text-align: center;
+}
+.pager[data-drupal-views-infinite-scroll-pager] a.button {
+  font-size: 14px;
+  font-weight: 500;
+  padding: 16px 40px 16px;
+  text-decoration: none;
+  display: inline-block;
+  line-height: 1;
+  border-width: 2px;
+  border-style: solid;
+  background-color: transparent;
+  -webkit-border-radius: 0;
+  -moz-border-radius: 0;
+  border-radius: 0;
+  -webkit-transition: all 0.2s ease-in-out;
+  -moz-transition: all 0.2s ease-in-out;
+  -ms-transition: all 0.2s ease-in-out;
+  -o-transition: all 0.2s ease-in-out;
+  transition: all 0.2s ease-in-out;
+  margin: 10px 0;
+  text-align: center;
+  background-color: transparent;
+  color: #ffffff;
+}
+.pager[data-drupal-views-infinite-scroll-pager] a.button:hover,
+.pager[data-drupal-views-infinite-scroll-pager] a.button:focus {
+  background-color: transparent;
+}
+.region--light-typography .pager[data-drupal-views-infinite-scroll-pager] a.button {
+  color: #ffffff;
+  border-color: #ffffff;
+  background-color: transparent;
+}
+.region--light-typography .pager[data-drupal-views-infinite-scroll-pager] a.button:hover,
+.region--light-typography .pager[data-drupal-views-infinite-scroll-pager] a.button:focus {
+  color: #424242;
+  background: #ffffff;
+  border-color: #ffffff;
+}

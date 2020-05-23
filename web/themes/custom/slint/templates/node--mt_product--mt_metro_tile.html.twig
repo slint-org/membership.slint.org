@@ -1,0 +1,59 @@
+{#
+/**
+ * @file
+ * SLINT's theme implementation to display a Service node in teaser tile view mode.
+ */
+#}
+{%
+  set classes = [
+    'node',
+    'node--type-' ~ node.bundle|clean_class,
+    node.isPromoted() ? 'node--promoted',
+    node.isSticky() ? 'node--sticky',
+    not node.isPublished() ? 'node--unpublished',
+    view_mode ? 'node--view-mode-' ~ view_mode|clean_class,
+  ]
+%}
+{{ attach_library('slint/node-view-mode-metro-tile') }}
+<article{{ attributes.addClass(classes) }}>
+  <div class="metro-tile-container">
+    {{ title_prefix }}
+    {{ title_suffix }}
+    {% if content.field_mt_prd_teaser_image|render %}
+      {% set view_row_index = elements['#mt_view_index'] %}
+      {% set view_page_index = elements['#mt_view_page_index'] %}
+      {% if view_page_index == 0 and (view_row_index == 2 or view_row_index == 3) %}
+        {% set field_mt_prd_teaser_image_styled = content.field_mt_prd_teaser_image.0 %}
+        {% set field_mt_prd_teaser_image_styled = field_mt_prd_teaser_image_styled|merge({'#image_style': 'mt_metro_tile_wide_image'}) %}
+      {% else %}
+        {% set field_mt_prd_teaser_image_styled = content.field_mt_prd_teaser_image %}
+      {% endif %}
+      {{ field_mt_prd_teaser_image_styled }}
+    {% endif %}
+
+    <div class="metro-tile__caption">
+      <div class="d-flex justify-content-between align-items-end">
+        <div class="metro-tile__title-and-tags">
+          {% if content.field_mt_prd_categories|render %}
+            {{ content.field_mt_prd_categories }}
+          {% endif %}
+
+          {% if not page %}
+            <h4{{ title_attributes.addClass("my-0 node__title") }}>
+              <a href="{{ url }}" rel="bookmark">{{ label }}</a>
+            </h4>
+          {% endif %}
+        </div>
+        {% if content.field_mt_prd_price|render %}
+          <div class="metro-tile__price">
+            {{ content.field_mt_prd_price }}
+          </div>
+        {% endif %}
+      </div>
+    </div>
+  </div>
+  <div{{ content_attributes.addClass('node__content') }}>
+    {{ content|without('field_mt_prd_teaser_image', 'field_mt_prd_categories', 'field_mt_prd_price') }}
+  </div>
+
+</article>

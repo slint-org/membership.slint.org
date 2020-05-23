@@ -1,0 +1,12 @@
+{#
+/**
+ * @file
+ * SLINT's theme implementation to display a Service node.
+ */
+#}
+
+{% extends "node.html.twig" %}
+{% block content %}
+  {{ attach_library('slint/node-album') }}
+  {{ content }}
+{% endblock %}

@@ -1,0 +1,43 @@
+{#
+/**
+ * @file
+ * Top+s's theme implementation to display a Showcase node.
+ */
+#}
+
+{% extends "node.html.twig" %}
+{% block node_side %}
+  {% if display_submitted %}
+    <div class="node__side">
+      {% if display_submitted or author_picture %}
+        {% if author_picture %}
+          <div class="user-picture">
+            <div{{ author_attributes.removeClass('node__meta-user node__meta-item') }}>
+              {{ author_picture }}
+            </div>
+          </div>
+        {% endif %}
+        <div{{ author_attributes.addClass('node-author') }}>
+          {{ author_name }}
+        </div>
+        <div class="node-date">
+          {{ node.createdtime|format_date('custom', 'M d, Y') }}
+        </div>
+        {{ metadata }}
+      {% endif %}
+    </div>
+  {% endif %}
+{% endblock %}
+{% block meta_area %}
+  {{ title_prefix }}
+  {% if not page %}
+    <h2{{ title_attributes.addClass('node__title') }}>
+      <a href="{{ url }}" rel="bookmark">{{ label }}</a>
+    </h2>
+  {% endif %}
+  {{ title_suffix }}
+{% endblock %}
+{% block content %}
+  {{ attach_library('slint/node-showcase') }}
+  {{ content }}
+{% endblock %}

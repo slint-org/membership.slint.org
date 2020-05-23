@@ -1,0 +1,107 @@
+{#
+/**
+ * @file
+ * SLINT's theme implementation to display a Showcase node in teaser tile view mode.
+ */
+#}
+{%
+  set classes = [
+    'node',
+    'node--type-' ~ node.bundle|clean_class,
+    node.isPromoted() ? 'node--promoted',
+    node.isSticky() ? 'node--sticky',
+    not node.isPublished() ? 'node--unpublished',
+    view_mode ? 'node--view-mode-' ~ view_mode|clean_class,
+  ]
+%}
+{{ attach_library('slint/node-view-mode-teaser-tile') }}
+{% if node.isSticky() %}
+  <article{{ attributes.addClass(classes) }}>
+    <div class="row">
+      <div class="col-lg-8">
+        {% if content.field_mt_shw_image|render or display_submitted %}
+          <div class="image-and-date-container">
+            {% if content.field_mt_shw_image|render %}
+              {{ content.field_mt_shw_image }}
+            {% endif %}
+            {% if display_submitted %}
+              {{ metadata }}
+              <div class="node__submitted-date">
+                <div class="day">{{ node.createdtime|format_date('custom', 'd') }}</div>
+                <div class="month-year">
+                  {{ node.createdtime|format_date('custom', 'M, ') }}
+                  {{ node.createdtime|format_date('custom', 'Y') }}
+                </div>
+              </div>
+            {% endif %}
+          </div>
+        {% endif %}
+      </div>
+      <div class="col-lg-4">
+
+        {% trans %}
+          <div class="promoted-label">Promoted</div>
+        {% endtrans %}
+
+        {% if content.field_mt_shw_tags|render %}
+          {{ content.field_mt_shw_tags }}
+        {% endif %}
+
+        {{ title_prefix }}
+        {% if not page %}
+          <h2{{ title_attributes.addClass("mt-0 node__title") }}>
+            <a href="{{ url }}" rel="bookmark">{{ label }}</a>
+          </h2>
+        {% endif %}
+        {{ title_suffix }}
+  
+        <div{{ content_attributes.addClass('node__content') }}>
+          {{ content|without('field_mt_shw_image', 'field_mt_shw_tags') }}
+        </div>
+
+        {% trans %}
+          <a class="link--alternative" href="{{ url }}">Read more</a>
+        {% endtrans %}
+
+      </div>
+    </div>
+  </article>
+{% else %}
+  <article{{ attributes.addClass(classes) }}>
+
+    {% if content.field_mt_shw_image|render or display_submitted %}
+      <div class="image-and-date-container">
+        {% if content.field_mt_shw_image|render %}
+          {{ content.field_mt_shw_image }}
+        {% endif %}
+        {% if display_submitted %}
+          {{ metadata }}
+          <div class="node__submitted-date">
+            <div class="day">{{ node.createdtime|format_date('custom', 'd') }}</div>
+            <div class="month-year">
+              {{ node.createdtime|format_date('custom', 'M, ') }}
+              {{ node.createdtime|format_date('custom', 'Y') }}
+            </div>
+          </div>
+        {% endif %}
+      </div>
+    {% endif %}
+
+    {% if content.field_mt_shw_tags|render %}
+      {{ content.field_mt_shw_tags }}
+    {% endif %}
+
+    {{ title_prefix }}
+    {% if not page %}
+      <h4{{ title_attributes.addClass("mt-0 node__title") }}>
+        <a href="{{ url }}" rel="bookmark">{{ label }}</a>
+      </h4>
+    {% endif %}
+    {{ title_suffix }}
+
+    <div{{ content_attributes.addClass('node__content') }}>
+      {{ content|without('field_mt_shw_image', 'field_mt_shw_body', 'field_mt_shw_tags') }}
+    </div>
+
+  </article>
+{% endif %}

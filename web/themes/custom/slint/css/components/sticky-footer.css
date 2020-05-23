@@ -1,0 +1,149 @@
+/**
+ * @file
+ * Visual styles for minimal+'s sticky footer.
+ */
+@media (min-width: 992px) {
+  .sticky-footer-container {
+    opacity: 0;
+    filter: alpha(opacity=0);
+    -webkit-transition: all 0.6s;
+    -moz-transition: all 0.6s;
+    -o-transition: all 0.6s;
+    -ms-transition: all 0.6s;
+    transition: all 0.6s;
+    z-index: 100;
+  }
+  .sticky-footer-container.sticky-footer-container--fixed {
+    position: fixed;
+    bottom: 0;
+    width: 100%;
+  }
+  .sticky-footer-container.slideToTop {
+    -webkit-animation-name: fadeToTop;
+    animation-name: fadeToTop;
+    -webkit-animation-duration: 0.6s;
+    animation-duration: 0.6s;
+    -webkit-animation-fill-mode: both;
+    animation-fill-mode: both;
+  }
+  @-webkit-keyframes fadeToTop {
+    0% {
+      opacity: 0;
+      -webkit-transform: translate3d(0, 100%, 0);
+      transform: translate3d(0, 100%, 0);
+    }
+
+    100% {
+      opacity: 1;
+      -webkit-transform: none;
+      transform: none;
+    }
+  }
+  @keyframes fadeToTop {
+    0% {
+      opacity: 0;
+      -webkit-transform: translate3d(0, 100%, 0);
+      -ms-transform: translate3d(0, 100%, 0);
+      transform: translate3d(0, 100%, 0);
+    }
+
+    100% {
+      opacity: 1;
+      -webkit-transform: none;
+      -ms-transform: none;
+      transform: none;
+    }
+  }
+  .sticky-footer-container.slideToBottom {
+    -webkit-animation-name: fadeToBottom;
+    animation-name: fadeToBottom;
+    -webkit-animation-duration: 0.6s;
+    animation-duration: 0.6s;
+    -webkit-animation-fill-mode: both;
+    animation-fill-mode: both;
+  }
+  @-webkit-keyframes fadeToBottom {
+    0% {
+      opacity: 1;
+      -webkit-transform: translate3d(0, 0, 0);
+      transform: translate3d(0, 0, 0);
+    }
+
+    100% {
+      opacity: 0;
+      -webkit-transform: translate3d(0, 100%, 0);
+      transform: translate3d(0, 100%, 0);
+    }
+  }
+  @keyframes fadeToBottom {
+    0% {
+      opacity: 1;
+      -webkit-transform: translate3d(0, 0, 0);
+      -ms-transform: translate3d(0, 0, 0);
+      transform: translate3d(0, 0, 0);
+    }
+
+    100% {
+      opacity: 0;
+      -webkit-transform: translate3d(0, 100%, 0);
+      -ms-transform: translate3d(0, 100%, 0);
+      transform: translate3d(0, 100%, 0);
+    }
+  }
+}
+.sticky-footer {
+  border-top-width: 2px;
+  border-top-style: solid;
+  border-top-color: #707070;
+}
+.region--light-typography.sticky-footer {
+  border-top-width: 0;
+}
+.collapsible-sticky-footer-trigger .button {
+  font-size: 22px;
+  background-color: inherit;
+  color: #333333;
+  border-color: #707070;
+  position: relative;
+  top: 2px;
+  padding: 12px 40px;
+}
+.collapsible-sticky-footer-trigger .button:hover,
+.collapsible-sticky-footer-trigger .button:focus {
+  color: #333333;
+  border-color: #333333;
+}
+.collapsible-sticky-footer-trigger .region--light-typography.button,
+.collapsible-sticky-footer-trigger .region--light-typography.button:hover,
+.collapsible-sticky-footer-trigger .region--light-typography.button:focus {
+  color: #ffffff;
+  border-color: transparent;
+}
+.collapsible-sticky-footer-trigger .region--white-background.button {
+  background-color: #ffffff;
+  border-bottom-color: #ffffff;
+}
+.collapsible-sticky-footer-trigger .region--gray-background.button {
+  background-color: #f6f6f6;
+  border-bottom-color: #f6f6f6;
+}
+.collapsible-sticky-footer-trigger .region--dark-gray-background.button {
+  background-color: #333333;
+  border-bottom-color: #333333;
+}
+.collapsible-sticky-footer-trigger .region--black-background.button {
+  background-color: #000000;
+  border-bottom-color: #000000;
+}
+.collapsible-sticky-footer-trigger .button.collapsed .collapsible-sticky-footer__collapse-icon {
+  display: inline-block;
+}
+.collapsible-sticky-footer-trigger .button.collapsed .collapsible-sticky-footer__expand-icon {
+  display: none;
+}
+.collapsible-sticky-footer-trigger .button .collapsible-sticky-footer__expand-icon {
+  display: inline-block;
+}
+.collapsible-sticky-footer-trigger .button .collapsible-sticky-footer__collapse-icon {
+  display: none;
+}

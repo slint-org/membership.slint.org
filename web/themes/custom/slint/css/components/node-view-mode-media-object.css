@@ -1,0 +1,13 @@
+/**
+ * @file
+ * Visual styles for SLINT's node in media object view.
+ */
+.node--view-mode-mt-media-object .field--name-field-mt-prd-image {
+  margin-right: 20px;
+}
+.node--view-mode-mt-media-object .node__title {
+  margin-bottom: 15px;
+}
+.node--view-mode-mt-media-object .field--name-field-mt-prd-body {
+  margin-bottom: 10px;
+}
