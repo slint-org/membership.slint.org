@@ -1,0 +1,186 @@
+/**
+ * @file
+ * Visual styles for Groovy+'s node in teaser tile view.
+ */
+.node--view-mode-mt-teaser-tile {
+  margin-bottom: 30px;
+}
+.node--view-mode-mt-teaser-tile.region--bright-background {
+  box-shadow: 0 4px 12px rgba(0, 0, 0, 0.1), 0 2px 4px rgba(0, 0, 0, 0.1);
+  color: var(--mt-color-base);
+}
+.node--view-mode-mt-teaser-tile .node__header {
+  padding-bottom: 0;
+}
+.node--view-mode-mt-teaser-tile .teaser-tile-image {
+  margin-bottom: 15px;
+}
+.node--view-mode-mt-teaser-tile .teaser-tile-image {
+  margin: -1.5rem -1.5rem 1.5rem;
+}
+.node--view-mode-mt-teaser-tile .teaser-tile-image img,
+.node--view-mode-mt-teaser-tile .teaser-tile-image .overlay {
+  border-bottom-left-radius: 0;
+  border-bottom-right-radius: 0;
+}
+.node--view-mode-mt-teaser-tile .field--entity-reference-target-type-taxonomy-term,
+.node--view-mode-mt-teaser-tile .field--entity-reference-target-type-taxonomy-term.field__item {
+  padding: 0;
+}
+.node--view-mode-mt-teaser-tile .field--entity-reference-target-type-taxonomy-term:before,
+.node--view-mode-mt-teaser-tile .field--entity-reference-target-type-taxonomy-term.field__item:before {
+  content: "";
+}
+.node--view-mode-mt-teaser-tile .teaser-tile-image-container .field--entity-reference-target-type-taxonomy-term a {
+  padding: 5px 15px;
+  display: inline-block;
+  font-size: 12px;
+  text-transform: uppercase;
+  background-color: #ffffff;
+  color: var(--mt-color-base);
+}
+.node--view-mode-mt-teaser-tile .teaser-tile-image-container .field--entity-reference-target-type-taxonomy-term .field__item:last-child {
+  margin-left: 3px;
+}
+.node--view-mode-mt-teaser-tile .field--entity-reference-target-type-taxonomy-term .field__item a,
+.node--view-mode-mt-teaser-tile .field--entity-reference-target-type-taxonomy-term.field__item a {
+  color: var(--mt-color-base-dark);
+  font-size: 15px;
+}
+.node--view-mode-mt-teaser-tile .field--entity-reference-target-type-taxonomy-term .field__item a:hover,
+.node--view-mode-mt-teaser-tile .field--entity-reference-target-type-taxonomy-term.field__item a:hover,
+.node--view-mode-mt-teaser-tile .field--entity-reference-target-type-taxonomy-term .field__item a:focus,
+.node--view-mode-mt-teaser-tile .field--entity-reference-target-type-taxonomy-term.field__item a:focus {
+  text-decoration: none;
+}
+.node--view-mode-mt-teaser-tile .node__title {
+  font-size: 26px;
+  margin-bottom: 20px;
+}
+.node--view-mode-mt-teaser-tile .node__title a {
+  color: var(--mt-color-base-dark);
+}
+.node--view-mode-mt-teaser-tile .node__title a:hover,
+.node--view-mode-mt-teaser-tile .node__title a:focus {
+  text-decoration: none;
+}
+.node--view-mode-mt-teaser-tile.node--view-mode-mt-teaser-tile--image-circle .overlay-container,
+.node--view-mode-mt-teaser-tile.node--view-mode-mt-teaser-tile--image-circle .teaser-tile-image img {
+  border-radius: 100%;
+}
+.node--view-mode-mt-teaser-tile.node--view-mode-mt-teaser-tile--image-circle .teaser-tile-image {
+  margin: 0 0 15px;
+}
+.node--view-mode-mt-teaser-tile .teaser-tile-image-container {
+  position: relative;
+}
+.node--view-mode-mt-teaser-tile .teaser-tile-image-container .teaser-tile-image ~ .node__submitted-date {
+  position: absolute;
+  right: 0px;
+  bottom: 0px;
+}
+.node--view-mode-mt-teaser-tile .teaser-tile-image-container .teaser-tile-image ~ .node__submitted-date {
+  right: -1.5rem;
+  border-bottom-right-radius: 0;
+}
+.node--view-mode-mt-teaser-tile .teaser-tile-image-container .node__submitted-date {
+  padding: 10px;
+  color: #333333;
+  text-align: center;
+}
+.node--view-mode-mt-teaser-tile .node__submitted-date .day {
+  font-size: 35px;
+  font-weight: 600;
+  display: block;
+  line-height: 1;
+}
+.node--view-mode-mt-teaser-tile .node__submitted-date .month-year {
+  font-size: 14px;
+  font-weight: 500;
+}
+.node--view-mode-mt-teaser-tile .image-caption {
+  position: absolute;
+  top: 10px;
+  bottom: auto;
+  right: 10px;
+  background-color: rgba(255, 255, 255, 0.8);
+  padding: 5px 15px;
+  font-size: 18px;
+  font-weight: 700;
+  color: var(--mt-color-base);
+}
+.node--view-mode-mt-teaser-tile .image-caption {
+  right: -0.8em;
+}
+.node--view-mode-mt-teaser-tile .teaser-tile-pre-content {
+  font-size: 14px;
+  margin-bottom: 15px;
+}
+.node--view-mode-mt-teaser-tile .teaser-tile-pre-content {
+  color: var(--mt-color-base);
+}
+.node--view-mode-mt-teaser-tile .teaser-tile-pre-content .node__submitted-date {
+  color: rgba(0, 0, 0, 0.55);
+}
+.node--view-mode-mt-teaser-tile .teaser-tile-pre-content .node__submitted-date ~ .field {
+  display: inline-block;
+  margin-left: 10px;
+}
+.node--view-mode-mt-teaser-tile .teaser-tile-content {
+  font-size: 20px;
+  font-weight: 700;
+  line-height: 1.5;
+  opacity: 0.7;
+  margin-bottom: 20px;
+}
+.node--view-mode-mt-teaser-tile .teaser-tile-content .field--name-uid {
+  font-size: 18px;
+  font-weight: 400;
+  opacity: 1;
+}
+.node--view-mode-mt-teaser-tile .teaser-tile-footer-wrapper {
+  border-top-style: solid;
+  border-top-width: 1px;
+  border-top-color: rgba(0, 0, 0, 0.1);
+  padding-top: 15px;
+}
+.node--view-mode-mt-teaser-tile .teaser-tile-footer {
+  font-weight: 700;
+  color: var(--mt-color-base);
+}
+.node--view-mode-mt-teaser-tile .icons-list {
+  margin: 0 -7px;
+}
+.node--view-mode-mt-teaser-tile .icons-list li {
+  padding: 7px;
+  margin: 0;
+}
+.node--view-mode-mt-teaser-tile .icons-list li a {
+  opacity: 0.7;
+}
+.node--view-mode-mt-teaser-tile .icons-list li a:hover,
+.node--view-mode-mt-teaser-tile .icons-list li a:focus {
+  opacity: 1;
+}
+.node--view-mode-mt-teaser-tile .icons-list .svg-inline--fa {
+  font-size: 18px;
+}
+.node--view-mode-mt-teaser-tile .field--name-uid {
+  text-transform: capitalize;
+}
+.node--view-mode-mt-teaser-tile .profile .field--name-user-picture {
+  max-width: 30px;
+  margin-bottom: 0;
+  margin-left: 15px;
+  margin-right: 0;
+}
+.node--view-mode-mt-teaser-tile .profile .field--name-user-picture img {
+  border-radius: 100%;
+}
+.mt-link-style-animated-underline-3 .node--view-mode-mt-teaser-tile .teaser-tile-footer-wrapper .mt-link-stylable {
+  color: var(--mt-color-base-dark);
+}
+.mt-link-style-animated-underline-3 .node--view-mode-mt-teaser-tile .teaser-tile-footer-wrapper .mt-link-stylable:hover,
+.mt-link-style-animated-underline-3 .node--view-mode-mt-teaser-tile .teaser-tile-footer-wrapper .mt-link-stylable:focus {
+  color: var(--mt-color-base-dark);
+}

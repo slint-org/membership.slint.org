@@ -1,0 +1,79 @@
+/**
+ * @file
+ * Red color styling for Groovy+ for Drupal 8.
+ */
+:root {
+  /*base color*/
+  --mt-color-base: hsl(225, 6%, 13%);
+  --mt-color-base-dark: hsl(225, 6%, 13%);
+  --mt-color-base-light: hsl(225, 6%, 13%);
+  --mt-color-base-contrast: #ffffff;
+
+  /*primary color*/
+  --mt-color-primary: hsl(0, 65%, 40%);
+  --mt-color-primary-dark: hsl(0, 65%, 40%);
+  --mt-color-primary-light: hsl(0, 65%, 50%);
+  --mt-color-primary-contrast: var(--mt-color-base-contrast);
+  --mt-color-primary-value: 0, 65%, 40%;
+  --mt-color-primary-light-value: 0, 65%, 50%;
+
+  /*accent color*/
+  --mt-color-accent: #f8f9fb;
+  --mt-color-accent-dark: #f8f9fb;
+  --mt-color-accent-light: #f8f9fb;
+  --mt-color-accent-contrast: var(--mt-color-base-dark);
+  --mt-color-accent-value: 220, 27%, 98%;
+
+  /*secondary color*/
+  --mt-color-secondary: hsl(0, 65%, 85%);
+  --mt-color-secondary-dark: hsl(0, 65%, 75%);
+  --mt-color-secondary-light: hsl(0, 65%, 85%);
+  --mt-color-secondary-contrast: var(--mt-color-base);
+  --mt-color-secondary-value: 0, 65%, 85%;
+  --mt-color-secondary-dark-value: 0, 65%, 75%;
+
+  /*tint background*/
+  --mt-color-tint: #f1f1f1;
+  --mt-color-tint-contrast: var(--mt-color-base);
+
+  /*shade background*/
+  --mt-color-shade: #333333;
+  --mt-color-shade-contrast: #ffffff;
+
+  /*dark colored background*/
+  --mt-color-dark-colored: var(--mt-color-primary);
+  --mt-color-dark-colored-contrast: var(--mt-color-primary-contrast);
+  --mt-color-dark-colored-value: var(--mt-color-primary-value);
+
+  /*colored background*/
+  --mt-color-colored: var(--mt-color-secondary);
+  --mt-color-colored-contrast: var(--mt-color-secondary-contrast);
+  --mt-color-colored-value: var(--mt-color-secondary-value);
+
+  /*bright background*/
+  --mt-color-bright: #ffffff;
+  --mt-color-bright-contrast: var(--mt-color-base);
+
+  /*dark background*/
+  --mt-color-dark: #000000;
+  --mt-color-dark-contrast: var(--mt-color-base-contrast);
+
+  /*default background*/
+  --mt-color-default: hsl(240, 60%, 98%);
+  --mt-color-default-contrast: var(--mt-color-base);
+
+  /*success*/
+  --mt-color-success: #3E9300;
+  --mt-color-success-dark: #547f1f;
+  --mt-color-success-contrast: #ffffff;
+
+  /*danger*/
+  --mt-color-danger: #CC0000;
+  --mt-color-danger-dark: #980a00;
+  --mt-color-danger-contrast: #ffffff;
+
+  /*warning*/
+  --mt-color-warning: #EA9900;
+  --mt-color-warning-dark: #e2630b;
+  --mt-color-warning-contrast: #ffffff;
+}

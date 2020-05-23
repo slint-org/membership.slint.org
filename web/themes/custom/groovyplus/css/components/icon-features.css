@@ -1,0 +1,58 @@
+/**
+ * @file
+ * Visual styles for Groovy+'s icon features.
+ */
+.paragraph--view-mode--mt-tile .feature {
+  margin: 0 0 30px;
+  box-shadow: 0 4px 12px rgba(0, 0, 0, 0.1), 0 2px 4px rgba(0, 0, 0, 0.1);
+}
+.paragraph--view-mode--mt-tile .feature__icon {
+  margin-bottom: 15px;
+  min-width: 55px;
+  text-align: center;
+  font-size: 32px;
+}
+.paragraph--view-mode--mt-tile .feature__icon .field--name-field-mt-if-fa-icon,
+.paragraph--view-mode--mt-tile .feature__icon .fontawesome-icons,
+.paragraph--view-mode--mt-tile .feature__icon .fontawesome-icon,
+.paragraph--view-mode--mt-tile .feature__icon .svg-inline--fa {
+  height: 100%;
+}
+.paragraph--view-mode--mt-tile .feature__title {
+  margin-bottom: 10px;
+  margin-top: 0;
+  font-size: 24px;
+}
+.paragraph--view-mode--mt-tile .feature__image {
+  margin-bottom: 30px;
+}
+.paragraph--view-mode--mt-tile .field--name-field-mt-if-body {
+  font-size: 16px;
+}
+.paragraph--view-mode--mt-tile .field--name-field-mt-if-body p:last-child {
+  padding-bottom: 0;
+}
+
+.paragraph--view-mode--mt-tile-large .feature {
+  margin: 0 0 60px;
+  box-shadow: 0 4px 12px rgba(0, 0, 0, 0.1), 0 2px 4px rgba(0, 0, 0, 0.1);
+}
+.paragraph--view-mode--mt-tile-large .feature__icon {
+  text-align: center;
+  margin-bottom: 40px;
+  font-size: 128px;
+}
+.paragraph--view-mode--mt-tile-large .feature__title {
+  margin-bottom: 10px;
+  margin-top: 0;
+  font-size: 24px;
+}
+.paragraph--view-mode--mt-tile-large .field--name-field-mt-if-body {
+  margin-bottom: 10px;
+}
+.paragraph--view-mode--mt-tile-large .feature__link {
+  border-top-style: solid;
+  border-top-width: 1px;
+  border-top-color: rgba(0, 0, 0, 0.1);
+  padding-top: 15px;
+}

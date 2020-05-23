@@ -1,0 +1,60 @@
+/**
+ * @file
+ * Visual styles for Groovy+'s views.
+ */
+.views-field-title a {
+  display: block;
+}
+.view-header .mt-view-header {
+  display: none;
+}
+.mt-view-header {
+  font-size: 20px;
+  text-transform: capitalize;
+  font-weight: 400;
+  text-align: center;
+}
+.region--dark-typography .mt-view-header {
+  color: var(--mt-color-base-dark);
+}
+.block-views .mt-view-header {
+  font-size: 1.5em;
+  margin-bottom: 60px;
+  margin-top: 20px;
+  text-transform: none;
+  line-height: 1.5;
+  font-weight: 400;
+  text-align: center;
+}
+.mt-view-header-enabled > h2.title {
+  margin-bottom: 0;
+}
+
+/*more links*/
+.headings-wide-spacing-enabled .view > .more-link a {
+  letter-spacing: 0.25em;
+  text-transform: uppercase;
+}
+.col-12 .view > .more-link {
+  text-align: center;
+  margin-top: 10px;
+}
+.col-12 .view.view-mt-showcases-metro-tiles > .more-link {
+  margin-top: 40px;
+}
+
+/*more links @sidebars and footer regions*/
+.footer__section .view > .more-link a {
+  margin: 10px 0 0;
+  text-transform: none;
+}
+
+/*clear grid floats*/
+.view.row .view-content:before,
+.view.row .view-content:after {
+  display: table;
+  content: " ";
+}
+.view.row .view-content:after {
+  clear: both;
+}

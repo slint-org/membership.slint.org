@@ -1,0 +1,35 @@
+/**
+ * @file
+ * Visual styles for Groovy+'s slider revolution full-screen.
+ */
+.slideshow-internal .tp-caption__title {
+  color: #ffffff;
+  padding: 1em;
+}
+.slidehow-internal-container {
+  overflow: hidden;
+}
+@media (max-width: 5757px) {
+  .slidehow-internal-container .container > .row > .col-12 {
+    padding-left: 0;
+    padding-right: 0;
+  }
+}
+.one-slide .tparrows,
+.one-slide .tp-bullets {
+  display: none;
+}
+.page-container-border-enabled .tp-leftarrow {
+  left: 10px!important;
+}
+.page-container-border-enabled .tp-rightarrow {
+  left: calc(100% - 10px)!important;
+}
+@media (min-width: 992px) {
+  .page-container-border-enabled .tp-leftarrow {
+    left: 15px!important;
+  }
+  .page-container-border-enabled .tp-rightarrow {
+    left: calc(100% - 15px)!important;
+  }
+}

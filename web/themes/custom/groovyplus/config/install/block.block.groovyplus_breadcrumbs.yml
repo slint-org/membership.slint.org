@@ -1,0 +1,26 @@
+langcode: en
+status: true
+dependencies:
+  module:
+    - system
+  theme:
+    - groovyplus
+_core:
+  default_config_hash: lbGiqnlIou0oLapkuSpwjmVDSGTI2GbNJDShl_opcwE
+id: groovyplus_breadcrumbs
+theme: groovyplus
+region: hero_top
+weight: -34
+provider: null
+plugin: system_breadcrumb_block
+settings:
+  id: system_breadcrumb_block
+  label: Breadcrumbs
+  provider: system
+  label_display: '0'
+visibility:
+  request_path:
+    id: request_path
+    pages: "/node/62\r\n/blocks\r\n/node/63\r\n/node/64\r\n/node/65\r\n/node/67\r\n/node/68\r\n/node/69\r\n/node/70"
+    negate: true
+    context_mapping: {  }
