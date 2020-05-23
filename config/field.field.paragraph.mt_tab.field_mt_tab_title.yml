@@ -1,0 +1,19 @@
+uuid: 04a7c11b-2b1b-4577-8b60-a1f1ddac7eeb
+langcode: en
+status: true
+dependencies:
+  config:
+    - field.storage.paragraph.field_mt_tab_title
+    - paragraphs.paragraphs_type.mt_tab
+id: paragraph.mt_tab.field_mt_tab_title
+field_name: field_mt_tab_title
+entity_type: paragraph
+bundle: mt_tab
+label: Title
+description: ''
+required: false
+translatable: false
+default_value: {  }
+default_value_callback: ''
+settings: {  }
+field_type: string

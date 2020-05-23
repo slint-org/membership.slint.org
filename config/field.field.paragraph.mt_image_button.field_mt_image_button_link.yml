@@ -1,0 +1,23 @@
+uuid: bd8be356-b399-40c9-883f-a8e69c5a5bdf
+langcode: en
+status: true
+dependencies:
+  config:
+    - field.storage.paragraph.field_mt_image_button_link
+    - paragraphs.paragraphs_type.mt_image_button
+  module:
+    - link
+id: paragraph.mt_image_button.field_mt_image_button_link
+field_name: field_mt_image_button_link
+entity_type: paragraph
+bundle: mt_image_button
+label: Link
+description: ''
+required: true
+translatable: false
+default_value: {  }
+default_value_callback: ''
+settings:
+  link_type: 17
+  title: 0
+field_type: link

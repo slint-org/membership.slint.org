@@ -1,0 +1,23 @@
+uuid: f9bc9ba4-f1fb-441d-ae28-6e24c1cea392
+langcode: en
+status: true
+dependencies:
+  config:
+    - block_content.type.mt_background_video
+    - field.storage.block_content.field_mt_bv_overlay_color
+  module:
+    - options
+id: block_content.mt_background_video.field_mt_bv_overlay_color
+field_name: field_mt_bv_overlay_color
+entity_type: block_content
+bundle: mt_background_video
+label: 'Background Video Overlay Color'
+description: 'From the drop-down menu, select the color you prefer.'
+required: true
+translatable: false
+default_value:
+  -
+    value: 'region--light-typography region--black-background'
+default_value_callback: ''
+settings: {  }
+field_type: list_string

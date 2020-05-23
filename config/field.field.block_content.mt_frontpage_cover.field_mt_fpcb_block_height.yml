@@ -1,0 +1,23 @@
+uuid: dd7b9eb8-e3dc-4cf8-939f-cfff49ecaf49
+langcode: en
+status: true
+dependencies:
+  config:
+    - block_content.type.mt_frontpage_cover
+    - field.storage.block_content.field_mt_fpcb_block_height
+id: block_content.mt_frontpage_cover.field_mt_fpcb_block_height
+field_name: field_mt_fpcb_block_height
+entity_type: block_content
+bundle: mt_frontpage_cover
+label: 'Block Height [px]'
+description: 'Set block height in px or leave it empty for auto height'
+required: false
+translatable: false
+default_value: {  }
+default_value_callback: ''
+settings:
+  min: null
+  max: null
+  prefix: ''
+  suffix: ''
+field_type: integer

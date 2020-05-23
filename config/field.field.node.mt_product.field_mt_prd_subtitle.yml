@@ -1,0 +1,19 @@
+uuid: 503032c5-e6e6-4de7-8c45-fee5653e7417
+langcode: en
+status: true
+dependencies:
+  config:
+    - field.storage.node.field_mt_prd_subtitle
+    - node.type.mt_product
+id: node.mt_product.field_mt_prd_subtitle
+field_name: field_mt_prd_subtitle
+entity_type: node
+bundle: mt_product
+label: Subtitle
+description: ''
+required: false
+translatable: false
+default_value: {  }
+default_value_callback: ''
+settings: {  }
+field_type: string

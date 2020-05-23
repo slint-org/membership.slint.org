@@ -1,0 +1,82 @@
+uuid: c168353b-712f-4fc4-81e3-d13a93c55d32
+langcode: en
+status: true
+dependencies:
+  config:
+    - block_content.type.mt_detailed_feature
+    - field.storage.block_content.field_mt_dfb_detailed_feature
+    - paragraphs.paragraphs_type.mt_detailed_feature
+  module:
+    - entity_reference_revisions
+id: block_content.mt_detailed_feature.field_mt_dfb_detailed_feature
+field_name: field_mt_dfb_detailed_feature
+entity_type: block_content
+bundle: mt_detailed_feature
+label: 'Detailed Feature'
+description: ''
+required: false
+translatable: false
+default_value: {  }
+default_value_callback: ''
+settings:
+  handler: 'default:paragraph'
+  handler_settings:
+    negate: 0
+    target_bundles:
+      mt_detailed_feature: mt_detailed_feature
+    target_bundles_drag_drop:
+      mt_additional_feature:
+        weight: 19
+        enabled: false
+      mt_collapse:
+        weight: 20
+        enabled: false
+      mt_detailed_feature:
+        enabled: true
+        weight: 21
+      mt_dropdown:
+        weight: 22
+        enabled: false
+      mt_fancy_linked_image:
+        weight: 23
+        enabled: false
+      mt_fancy_tab:
+        weight: 24
+        enabled: false
+      mt_feature:
+        weight: 25
+        enabled: false
+      mt_featured_linked_text_tile:
+        weight: 26
+        enabled: false
+      mt_highlight:
+        weight: 27
+        enabled: false
+      mt_how_it_works_item:
+        weight: 28
+        enabled: false
+      mt_icon_features:
+        weight: 29
+        enabled: false
+      mt_image_button:
+        weight: 30
+        enabled: false
+      mt_main_slideshow_slide:
+        weight: 31
+        enabled: false
+      mt_map_location:
+        weight: 32
+        enabled: false
+      mt_media_tab:
+        weight: 33
+        enabled: false
+      mt_tab:
+        weight: 34
+        enabled: false
+      mt_timeline_item:
+        weight: 35
+        enabled: false
+      mt_video_gallery_slide:
+        weight: 36
+        enabled: false
+field_type: entity_reference_revisions

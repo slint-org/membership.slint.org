@@ -1,0 +1,21 @@
+uuid: ca066fca-0b30-4244-8937-b8b29402f19d
+langcode: en
+status: true
+dependencies:
+  config:
+    - block_content.type.mt_hero_form
+    - field.storage.block_content.field_mt_hero_form_description
+  module:
+    - text
+id: block_content.mt_hero_form.field_mt_hero_form_description
+field_name: field_mt_hero_form_description
+entity_type: block_content
+bundle: mt_hero_form
+label: Description
+description: ''
+required: false
+translatable: false
+default_value: {  }
+default_value_callback: ''
+settings: {  }
+field_type: text_long

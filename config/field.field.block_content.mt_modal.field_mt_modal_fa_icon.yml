@@ -1,0 +1,21 @@
+uuid: 686451e0-a8fb-42d6-8330-6da357a32141
+langcode: en
+status: true
+dependencies:
+  config:
+    - block_content.type.mt_modal
+    - field.storage.block_content.field_mt_modal_fa_icon
+  module:
+    - fontawesome
+id: block_content.mt_modal.field_mt_modal_fa_icon
+field_name: field_mt_modal_fa_icon
+entity_type: block_content
+bundle: mt_modal
+label: 'Modal Trigger Icon'
+description: ''
+required: true
+translatable: false
+default_value: {  }
+default_value_callback: ''
+settings: {  }
+field_type: fontawesome_icon

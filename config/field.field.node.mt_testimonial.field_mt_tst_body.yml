@@ -1,0 +1,23 @@
+uuid: 7236d3b4-b155-43f4-8d14-18db4ccb2dc1
+langcode: en
+status: true
+dependencies:
+  config:
+    - field.storage.node.field_mt_tst_body
+    - node.type.mt_testimonial
+  module:
+    - text
+id: node.mt_testimonial.field_mt_tst_body
+field_name: field_mt_tst_body
+entity_type: node
+bundle: mt_testimonial
+label: Body
+description: ''
+required: false
+translatable: false
+default_value: {  }
+default_value_callback: ''
+settings:
+  display_summary: true
+  required_summary: false
+field_type: text_with_summary

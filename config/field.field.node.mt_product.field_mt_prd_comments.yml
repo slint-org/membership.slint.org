@@ -1,0 +1,33 @@
+uuid: 9e8990d0-3ca1-4e11-88ac-6bd2a25e18b7
+langcode: en
+status: true
+dependencies:
+  config:
+    - field.storage.node.field_mt_prd_comments
+    - node.type.mt_product
+  module:
+    - comment
+id: node.mt_product.field_mt_prd_comments
+field_name: field_mt_prd_comments
+entity_type: node
+bundle: mt_product
+label: Comments
+description: ''
+required: false
+translatable: false
+default_value:
+  -
+    status: 2
+    cid: 0
+    last_comment_timestamp: 0
+    last_comment_name: null
+    last_comment_uid: 0
+    comment_count: 0
+default_value_callback: ''
+settings:
+  default_mode: 1
+  per_page: 50
+  form_location: true
+  anonymous: 0
+  preview: 1
+field_type: comment

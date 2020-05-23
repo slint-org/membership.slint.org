@@ -1,0 +1,19 @@
+uuid: 995aa58c-1246-4e5a-8299-2b17b5de76d1
+langcode: en
+status: true
+dependencies:
+  config:
+    - block_content.type.mt_hero_form
+    - field.storage.block_content.field_mt_hero_form_title
+id: block_content.mt_hero_form.field_mt_hero_form_title
+field_name: field_mt_hero_form_title
+entity_type: block_content
+bundle: mt_hero_form
+label: Title
+description: ''
+required: false
+translatable: false
+default_value: {  }
+default_value_callback: ''
+settings: {  }
+field_type: string

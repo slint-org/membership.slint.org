@@ -1,0 +1,23 @@
+uuid: b3f95fa1-1db7-4e96-9630-5fec4000f7b5
+langcode: en
+status: true
+dependencies:
+  config:
+    - block_content.type.mt_main_slideshow
+    - field.storage.block_content.field_mt_main_slideshow_layout
+  module:
+    - options
+id: block_content.mt_main_slideshow.field_mt_main_slideshow_layout
+field_name: field_mt_main_slideshow_layout
+entity_type: block_content
+bundle: mt_main_slideshow
+label: 'Slideshow Layout'
+description: ''
+required: true
+translatable: false
+default_value:
+  -
+    value: fullwidth
+default_value_callback: ''
+settings: {  }
+field_type: list_string

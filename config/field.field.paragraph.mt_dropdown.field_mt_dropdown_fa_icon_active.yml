@@ -1,0 +1,21 @@
+uuid: db6ea56b-97aa-4e6d-b6cf-1e7aaa7c7440
+langcode: en
+status: true
+dependencies:
+  config:
+    - field.storage.paragraph.field_mt_dropdown_fa_icon_active
+    - paragraphs.paragraphs_type.mt_dropdown
+  module:
+    - fontawesome
+id: paragraph.mt_dropdown.field_mt_dropdown_fa_icon_active
+field_name: field_mt_dropdown_fa_icon_active
+entity_type: paragraph
+bundle: mt_dropdown
+label: 'Dropdown Trigger Icon active'
+description: ''
+required: false
+translatable: false
+default_value: {  }
+default_value_callback: ''
+settings: {  }
+field_type: fontawesome_icon

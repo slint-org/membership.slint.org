@@ -1,0 +1,73 @@
+uuid: ece8fee5-864f-4220-98ab-de6ec1d48ae2
+langcode: en
+status: true
+dependencies:
+  config:
+    - field.storage.node.field_mt_shw_content_collapses
+    - node.type.mt_showcase
+    - paragraphs.paragraphs_type.mt_collapse
+  module:
+    - entity_reference_revisions
+id: node.mt_showcase.field_mt_shw_content_collapses
+field_name: field_mt_shw_content_collapses
+entity_type: node
+bundle: mt_showcase
+label: Collapses
+description: ''
+required: false
+translatable: false
+default_value: {  }
+default_value_callback: ''
+settings:
+  handler: 'default:paragraph'
+  handler_settings:
+    negate: 0
+    target_bundles:
+      mt_collapse: mt_collapse
+    target_bundles_drag_drop:
+      mt_additional_feature:
+        weight: 16
+        enabled: false
+      mt_collapse:
+        enabled: true
+        weight: 17
+      mt_dropdown:
+        weight: 18
+        enabled: false
+      mt_fancy_linked_image:
+        weight: 19
+        enabled: false
+      mt_fancy_tab:
+        weight: 20
+        enabled: false
+      mt_feature:
+        weight: 21
+        enabled: false
+      mt_featured_linked_text_tile:
+        weight: 22
+        enabled: false
+      mt_highlight:
+        weight: 23
+        enabled: false
+      mt_icon_features:
+        weight: 24
+        enabled: false
+      mt_main_slideshow_slide:
+        weight: 25
+        enabled: false
+      mt_map_location:
+        weight: 26
+        enabled: false
+      mt_media_tab:
+        weight: 27
+        enabled: false
+      mt_tab:
+        weight: 28
+        enabled: false
+      mt_timeline_item:
+        weight: 29
+        enabled: false
+      mt_video_gallery_slide:
+        weight: 30
+        enabled: false
+field_type: entity_reference_revisions

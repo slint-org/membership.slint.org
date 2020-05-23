@@ -1,0 +1,23 @@
+uuid: 2d8bf880-0de1-4e00-9522-53789776f03b
+langcode: en
+status: true
+dependencies:
+  config:
+    - block_content.type.mt_modal
+    - field.storage.block_content.field_mt_modal_block
+id: block_content.mt_modal.field_mt_modal_block
+field_name: field_mt_modal_block
+entity_type: block_content
+bundle: mt_modal
+label: Block
+description: ''
+required: true
+translatable: false
+default_value: {  }
+default_value_callback: ''
+settings:
+  handler: 'default:block'
+  handler_settings:
+    target_bundles: null
+    auto_create: false
+field_type: entity_reference

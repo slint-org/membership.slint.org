@@ -1,0 +1,23 @@
+uuid: 6d5d9f09-a2c5-435e-9802-a448d0feea61
+langcode: en
+status: true
+dependencies:
+  config:
+    - block_content.type.mt_collapsible
+    - field.storage.block_content.field_mt_cb_trigger_position
+  module:
+    - options
+id: block_content.mt_collapsible.field_mt_cb_trigger_position
+field_name: field_mt_cb_trigger_position
+entity_type: block_content
+bundle: mt_collapsible
+label: 'Trigger Position'
+description: ''
+required: true
+translatable: false
+default_value:
+  -
+    value: bottom
+default_value_callback: ''
+settings: {  }
+field_type: list_string

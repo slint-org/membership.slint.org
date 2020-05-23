@@ -1,0 +1,21 @@
+uuid: 2474e1f5-651c-428a-ab73-89efb093a997
+langcode: en
+status: true
+dependencies:
+  config:
+    - field.storage.paragraph.field_mt_if_body
+    - paragraphs.paragraphs_type.mt_icon_features
+  module:
+    - text
+id: paragraph.mt_icon_features.field_mt_if_body
+field_name: field_mt_if_body
+entity_type: paragraph
+bundle: mt_icon_features
+label: Body
+description: ''
+required: false
+translatable: false
+default_value: {  }
+default_value_callback: ''
+settings: {  }
+field_type: text_long
