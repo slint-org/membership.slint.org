@@ -1,0 +1,8 @@
+uuid: d34ba11a-c734-4d87-b273-70f3b84f4047
+langcode: en
+status: true
+dependencies: {  }
+id: mt_how_it_works
+label: 'How it works'
+revision: 0
+description: ''

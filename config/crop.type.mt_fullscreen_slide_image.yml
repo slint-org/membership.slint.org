@@ -1,0 +1,12 @@
+uuid: ecc7a47b-a2cd-4aa6-b095-549141cd1186
+langcode: en
+status: true
+dependencies: {  }
+id: mt_fullscreen_slide_image
+label: 'Fullscreen Slide Image'
+description: ''
+aspect_ratio: '1920:1280'
+soft_limit_width: 1920
+soft_limit_height: 1280
+hard_limit_width: null
+hard_limit_height: null

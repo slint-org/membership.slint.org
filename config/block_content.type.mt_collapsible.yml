@@ -1,0 +1,8 @@
+uuid: 269a0eee-7ad4-4463-bfdc-2116abd911a1
+langcode: en
+status: true
+dependencies: {  }
+id: mt_collapsible
+label: Collapsible
+revision: 0
+description: 'Use this custom block type to display other blocks in a collapse, using the corresponding Bootstrap feature.'

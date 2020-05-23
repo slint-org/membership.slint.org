@@ -1,0 +1,8 @@
+uuid: c12dceca-699b-4e2d-afe4-5d987b211f85
+langcode: en
+status: true
+dependencies: {  }
+id: mt_hero_v2
+label: 'Hero v2'
+revision: 0
+description: ''

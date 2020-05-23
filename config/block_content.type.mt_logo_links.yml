@@ -1,0 +1,8 @@
+uuid: 0ea4d5bf-fe36-4a07-903a-0c40e93567cc
+langcode: en
+status: true
+dependencies: {  }
+id: mt_logo_links
+label: 'Logo Links'
+revision: 0
+description: ''
