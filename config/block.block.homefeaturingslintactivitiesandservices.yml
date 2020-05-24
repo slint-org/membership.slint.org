@@ -1,4 +1,4 @@
-uuid: b00a5db9-4190-4392-b749-316ecae4a7b5
+uuid: a0356668-c27e-42a2-be27-ab3c70f15c74
 langcode: en
 status: true
 dependencies:
@@ -11,7 +11,7 @@ dependencies:
     - groovyplus
 id: homefeaturingslintactivitiesandservices
 theme: groovyplus
-region: content_top_highlighted
+region: content_bottom_second
 weight: 0
 provider: null
 plugin: 'block_content:32592bdb-5665-485b-af91-6d44b8707c35'
@@ -26,6 +26,6 @@ settings:
 visibility:
   request_path:
     id: request_path
-    pages: '<front>'
+    pages: /about-us
     negate: false
     context_mapping: {  }

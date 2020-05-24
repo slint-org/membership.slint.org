@@ -1,0 +1,25 @@
+uuid: c5093091-f2b2-487d-b6fd-8366d6716d55
+langcode: en
+status: true
+dependencies:
+  content:
+    - 'block_content:basic:e2fc50f7-5029-43de-9104-ed98c087d762'
+  module:
+    - block_content
+  theme:
+    - groovyplus
+id: socialmediaandcontactinfo
+theme: groovyplus
+region: footer_top_first
+weight: 0
+provider: null
+plugin: 'block_content:e2fc50f7-5029-43de-9104-ed98c087d762'
+settings:
+  id: 'block_content:e2fc50f7-5029-43de-9104-ed98c087d762'
+  label: 'Social Media and Contact Info'
+  provider: block_content
+  label_display: '0'
+  status: true
+  info: ''
+  view_mode: full
+visibility: {  }

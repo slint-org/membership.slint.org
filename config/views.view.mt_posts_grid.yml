@@ -745,6 +745,7 @@ display:
       use_more_text: 'View all blog posts'
       link_display: page_1
       link_url: ''
+      block_description: 'Home: Featured Blogs'
     cache_metadata:
       max-age: -1
       contexts:

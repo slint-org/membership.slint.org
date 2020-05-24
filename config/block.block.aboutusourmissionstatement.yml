@@ -1,31 +1,31 @@
-uuid: 38a34f44-2135-4045-b310-49501cfb249b
+uuid: 95bc27b1-77f2-4fbe-9ca4-1f5150cb9c6f
 langcode: en
 status: true
 dependencies:
   content:
-    - 'block_content:basic:65eb7748-07b7-4019-8862-5c3418848090'
+    - 'block_content:basic:4f92ccf1-2832-4717-9393-1a0f01a0aacd'
   module:
     - block_content
     - system
   theme:
     - groovyplus
-id: homewhatwedoheadercta
+id: aboutusourmissionstatement
 theme: groovyplus
 region: content_top
 weight: 0
 provider: null
-plugin: 'block_content:65eb7748-07b7-4019-8862-5c3418848090'
+plugin: 'block_content:4f92ccf1-2832-4717-9393-1a0f01a0aacd'
 settings:
-  id: 'block_content:65eb7748-07b7-4019-8862-5c3418848090'
-  label: 'Home: What we do Header CTA'
+  id: 'block_content:4f92ccf1-2832-4717-9393-1a0f01a0aacd'
+  label: 'Mission Statement'
   provider: block_content
-  label_display: '0'
+  label_display: visible
   status: true
   info: ''
   view_mode: full
 visibility:
   request_path:
     id: request_path
-    pages: '<front>'
+    pages: /about-us
     negate: false
     context_mapping: {  }

@@ -6,11 +6,11 @@ _core:
   default_config_hash: btW6TFHajhy7Eo6YUvdFiPh4TcPggo8GBXYctjV6zag
 id: authenticated
 label: 'Authenticated user'
-weight: 1
+weight: -9
 is_admin: false
 permissions:
+  - 'access CiviEvent'
   - 'access CiviMail subscribe/unsubscribe pages'
-  - 'access all custom data'
   - 'access comments'
   - 'access content'
   - 'access shortcuts'
@@ -20,7 +20,6 @@ permissions:
   - 'post comments'
   - 'profile create'
   - 'profile edit'
-  - 'profile view'
   - 'register for events'
   - 'search content'
   - 'skip comment approval'

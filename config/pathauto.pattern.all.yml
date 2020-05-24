@@ -1,0 +1,24 @@
+uuid: 20699cdc-ccc1-452d-93e3-e02e4d84c819
+langcode: en
+status: true
+dependencies:
+  module:
+    - node
+id: all
+label: All
+type: 'canonical_entities:node'
+pattern: '[node:title]'
+selection_criteria:
+  154389f1-eceb-4efa-97ac-b9f08f3fb80d:
+    id: node_type
+    bundles:
+      mt_canvas_page: mt_canvas_page
+      mt_showcase: mt_showcase
+      page: page
+    negate: false
+    context_mapping:
+      node: node
+    uuid: 154389f1-eceb-4efa-97ac-b9f08f3fb80d
+selection_logic: and
+weight: -5
+relationships: {  }

@@ -5,6 +5,8 @@ dependencies:
   config:
     - core.entity_view_mode.node.teaser
     - field.field.node.mt_canvas_page.field_mt_cnv_body
+    - field.field.node.mt_canvas_page.field_mt_pst_slideshow_image
+    - field.field.node.mt_canvas_page.field_mt_pst_slideshow_text
     - node.type.mt_canvas_page
   module:
     - text
@@ -27,4 +29,6 @@ content:
     region: content
     settings: {  }
     third_party_settings: {  }
-hidden: {  }
+hidden:
+  field_mt_pst_slideshow_image: true
+  field_mt_pst_slideshow_text: true

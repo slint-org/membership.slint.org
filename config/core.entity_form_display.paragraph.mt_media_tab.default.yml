@@ -3,16 +3,16 @@ langcode: en
 status: true
 dependencies:
   config:
+    - entity_browser.browser.browse_files
     - field.field.paragraph.mt_media_tab.field_mt_media_body
     - field.field.paragraph.mt_media_tab.field_mt_media_button
     - field.field.paragraph.mt_media_tab.field_mt_media_image
     - field.field.paragraph.mt_media_tab.field_mt_media_tab_title
     - field.field.paragraph.mt_media_tab.field_mt_media_title
     - field.field.paragraph.mt_media_tab.field_mt_media_video
-    - image.style.thumbnail
     - paragraphs.paragraphs_type.mt_media_tab
   module:
-    - image
+    - entity_browser
     - link
     - text
     - video_embed_field
@@ -40,10 +40,16 @@ content:
   field_mt_media_image:
     weight: 3
     settings:
-      progress_indicator: throbber
+      entity_browser: browse_files
+      field_widget_remove: true
+      selection_mode: selection_append
       preview_image_style: thumbnail
+      field_widget_edit: true
+      field_widget_replace: false
+      open: false
+      view_mode: default
     third_party_settings: {  }
-    type: image_image
+    type: entity_browser_file
     region: content
   field_mt_media_tab_title:
     weight: 0

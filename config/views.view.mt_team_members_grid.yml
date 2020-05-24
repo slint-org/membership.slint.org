@@ -311,7 +311,7 @@ display:
       row:
         type: fields
         options: {  }
-      path: about-us/board-members
+      path: about-us/members/board-members
       fields:
         path:
           id: path
@@ -577,15 +577,17 @@ display:
     position: 1
     display_options:
       display_extenders: {  }
-      path: team-members
+      path: about-us/members
       display_description: ''
       defaults:
         style: true
         row: true
+        title: false
       menu:
         enabled: true
         expanded: false
-      enabled: false
+      enabled: true
+      title: Members
     cache_metadata:
       max-age: -1
       contexts:

@@ -3,16 +3,16 @@ langcode: en
 status: true
 dependencies:
   config:
+    - entity_browser.browser.browse_files
     - field.field.paragraph.mt_fancy_linked_image.field_mt_fli_button_fa_icon
     - field.field.paragraph.mt_fancy_linked_image.field_mt_fli_image
     - field.field.paragraph.mt_fancy_linked_image.field_mt_fli_link
     - field.field.paragraph.mt_fancy_linked_image.field_mt_fli_shape
     - field.field.paragraph.mt_fancy_linked_image.field_mt_fli_title
-    - image.style.thumbnail
     - paragraphs.paragraphs_type.mt_fancy_linked_image
   module:
+    - entity_browser
     - fontawesome
-    - image
     - link
 id: paragraph.mt_fancy_linked_image.default
 targetEntityType: paragraph
@@ -28,10 +28,16 @@ content:
   field_mt_fli_image:
     weight: 1
     settings:
-      progress_indicator: throbber
+      entity_browser: browse_files
+      field_widget_remove: true
+      selection_mode: selection_append
       preview_image_style: thumbnail
+      field_widget_edit: true
+      field_widget_replace: false
+      open: false
+      view_mode: default
     third_party_settings: {  }
-    type: image_image
+    type: entity_browser_file
     region: content
   field_mt_fli_link:
     type: link_default
