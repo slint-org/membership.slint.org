@@ -11,7 +11,7 @@ dependencies:
     - slint2020
 id: aboutusmissionstatement
 theme: slint2020
-region: content_top
+region: content_top_highlighted
 weight: -9
 provider: null
 plugin: 'block_content:4f92ccf1-2832-4717-9393-1a0f01a0aacd'

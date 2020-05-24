@@ -89,7 +89,7 @@ footer_top_layout_container: container
 footer_top_region_paddings: 1
 footer_top_separator: region--no-separator
 hero_top_animation_effect: no-animation
-hero_top_background_color: 'region--dark-typography region--colored-background'
+hero_top_background_color: 'region--light-typography region--dark-colored-background'
 hero_top_blocks_paddings: 1
 hero_top_id: hero-top
 hero_top_layout_container: container
@@ -147,9 +147,9 @@ isotope_layout_mode: fitRows
 layout_mode: wide
 main_content_layout_container: container
 main_content_animation_effect: fadeIn
-main_content_blocks_paddings: 1
+main_content_blocks_paddings: 0
 main_content_id: main-content
-main_content_region_paddings: 1
+main_content_region_paddings: 0
 main_content_separator: region--no-separator
 owl_albums_autoplay: 1
 owl_albums_effect_time: '5'

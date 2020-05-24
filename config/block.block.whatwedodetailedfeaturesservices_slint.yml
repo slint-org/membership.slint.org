@@ -11,7 +11,7 @@ dependencies:
     - slint2020
 id: whatwedodetailedfeaturesservices_slint
 theme: slint2020
-region: content_top
+region: content
 weight: 0
 provider: null
 plugin: 'block_content:6d5de0ad-48ea-40c5-bbef-061aa3e8ceb4'

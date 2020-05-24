@@ -61,6 +61,7 @@ module:
   path_alias: 0
   quickedit: 0
   rdf: 0
+  realname: 0
   search: 0
   serialization: 0
   settings_tray: 0

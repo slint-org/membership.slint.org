@@ -1,9 +1,0 @@
-/**
- * @file
- * Visual styles for SLINT's slider revolution boxed width.
- */
-@media (max-width: 575px) {
-  .view-mt-slideshow-boxed-width {
-    margin: 0 -15px;
-  }
-}

@@ -4,6 +4,9 @@ status: true
 dependencies:
   config:
     - core.entity_view_mode.user.compact
+    - field.field.user.user.field_first_name
+    - field.field.user.user.field_last_name
+    - field.field.user.user.field_nick_name
     - field.field.user.user.user_picture
     - image.style.thumbnail
   module:
@@ -27,4 +30,8 @@ hidden:
   civicrm_dashboard: true
   civicrm_profiles: true
   civicrm_record: true
+  field_first_name: true
+  field_last_name: true
+  field_nick_name: true
   member_for: true
+  realname: true
