@@ -1,0 +1,31 @@
+uuid: 7e2c1afb-e32e-41e7-889f-4665d0b1fbec
+langcode: en
+status: true
+dependencies:
+  content:
+    - 'block_content:mt_hero_form:f7c14057-9a1c-42b8-8a4d-34c593c8df11'
+  module:
+    - block_content
+    - system
+  theme:
+    - slint2020
+id: getinvolvedheroformformright_slint
+theme: slint2020
+region: content_top_highlighted
+weight: -10
+provider: null
+plugin: 'block_content:f7c14057-9a1c-42b8-8a4d-34c593c8df11'
+settings:
+  id: 'block_content:f7c14057-9a1c-42b8-8a4d-34c593c8df11'
+  label: 'Get Involved: Hero Form - Form Right'
+  provider: block_content
+  label_display: '0'
+  status: true
+  info: ''
+  view_mode: full
+visibility:
+  request_path:
+    id: request_path
+    pages: /node/11
+    negate: false
+    context_mapping: {  }

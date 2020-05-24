@@ -1,0 +1,31 @@
+uuid: 50e82bd0-1dab-4b17-b8ab-7240de369434
+langcode: en
+status: true
+dependencies:
+  content:
+    - 'block_content:mt_detailed_feature:6d5de0ad-48ea-40c5-bbef-061aa3e8ceb4'
+  module:
+    - block_content
+    - system
+  theme:
+    - slint2020
+id: whatwedodetailedfeaturesservices_slint
+theme: slint2020
+region: content_top
+weight: 0
+provider: null
+plugin: 'block_content:6d5de0ad-48ea-40c5-bbef-061aa3e8ceb4'
+settings:
+  id: 'block_content:6d5de0ad-48ea-40c5-bbef-061aa3e8ceb4'
+  label: 'What We do: Detailed Features Services'
+  provider: block_content
+  label_display: '0'
+  status: true
+  info: ''
+  view_mode: full
+visibility:
+  request_path:
+    id: request_path
+    pages: /node/12
+    negate: false
+    context_mapping: {  }

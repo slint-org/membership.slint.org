@@ -1,0 +1,20 @@
+uuid: 0bdeba1b-3532-4674-8ff7-a915d2d74980
+langcode: en
+status: true
+dependencies:
+  theme:
+    - slint2020
+_core:
+  default_config_hash: _nYW-yb6UJTgPr1jJGmQFwqqN-I5pJGweoGCxSiZADo
+id: slint2020_local_actions
+theme: slint2020
+region: content
+weight: -17
+provider: null
+plugin: local_actions_block
+settings:
+  id: local_actions_block
+  label: 'Primary admin actions'
+  provider: core
+  label_display: '0'
+visibility: {  }

@@ -1,0 +1,5 @@
+# Schema for the configuration files of the SLINT2020 theme.
+
+slint2020.settings:
+  type: theme_settings
+  label: 'SLINT2020 settings'

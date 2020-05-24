@@ -5,7 +5,7 @@ slogan: 'Sierra Leoneans in Technology'
 page:
   403: ''
   404: /node/4
-  front: /node/1
+  front: /node/3
 admin_compact_mode: false
 weight_select_max: 100
 langcode: en

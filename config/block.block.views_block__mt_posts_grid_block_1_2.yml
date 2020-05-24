@@ -1,0 +1,30 @@
+uuid: 25f10252-1064-4b98-9a2d-5dcd95c55e68
+langcode: en
+status: true
+dependencies:
+  config:
+    - views.view.mt_posts_grid
+  module:
+    - system
+    - views
+  theme:
+    - slint2020
+id: views_block__mt_posts_grid_block_1_2
+theme: slint2020
+region: highlighted
+weight: 0
+provider: null
+plugin: 'views_block:mt_posts_grid-block_1'
+settings:
+  id: 'views_block:mt_posts_grid-block_1'
+  label: Blog
+  provider: views
+  label_display: visible
+  views_label: Blog
+  items_per_page: none
+visibility:
+  request_path:
+    id: request_path
+    pages: '<front>'
+    negate: false
+    context_mapping: {  }

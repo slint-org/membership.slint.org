@@ -1,0 +1,25 @@
+uuid: 8a4deffb-83c9-4b7f-808c-8454ab2a39c6
+langcode: en
+status: true
+dependencies:
+  content:
+    - 'block_content:basic:65eb7748-07b7-4019-8862-5c3418848090'
+  module:
+    - block_content
+  theme:
+    - slint2020
+id: homewhatwedoheadercta
+theme: slint2020
+region: hidden_blocks_collection
+weight: 0
+provider: null
+plugin: 'block_content:65eb7748-07b7-4019-8862-5c3418848090'
+settings:
+  id: 'block_content:65eb7748-07b7-4019-8862-5c3418848090'
+  label: 'Home: What we do Header CTA'
+  provider: block_content
+  label_display: '0'
+  status: true
+  info: ''
+  view_mode: full
+visibility: {  }

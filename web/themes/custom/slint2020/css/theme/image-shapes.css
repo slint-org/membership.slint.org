@@ -1,0 +1,33 @@
+/**
+ * @file
+ * Styles for SLINT2020's images.
+ */
+/*global styles*/
+.mt-style-sharp img,
+.mt-style-sharp .overlay {
+  -webkit-border-radius: 0px;
+  -moz-border-radius: 0px;
+  border-radius: 0px;
+}
+.mt-style-oval img,
+.mt-style-rounded img,
+.mt-style-oval .overlay,
+.mt-style-rounded .overlay {
+  -webkit-border-radius: 5px;
+  -moz-border-radius: 5px;
+  border-radius: 5px;
+}
+
+/*images specific styles*/
+.mt-style-image-sharp img,
+.mt-style-image-sharp .overlay {
+  -webkit-border-radius: 0px;
+  -moz-border-radius: 0px;
+  border-radius: 0px;
+}
+.mt-style-image-rounded img,
+.mt-style-image-rounded .overlay {
+  -webkit-border-radius: 5px;
+  -moz-border-radius: 5px;
+  border-radius: 5px;
+}

@@ -1,0 +1,31 @@
+uuid: a9d11865-16c9-4894-a6d7-46af96feb6fb
+langcode: en
+status: true
+dependencies:
+  content:
+    - 'block_content:mt_detailed_feature:9ebf7f8e-337e-411d-839e-2d42ad871b44'
+  module:
+    - block_content
+    - system
+  theme:
+    - slint2020
+id: homedetailedfeaturingslintactivitiesandservices_slint
+theme: slint2020
+region: content_top
+weight: -10
+provider: null
+plugin: 'block_content:9ebf7f8e-337e-411d-839e-2d42ad871b44'
+settings:
+  id: 'block_content:9ebf7f8e-337e-411d-839e-2d42ad871b44'
+  label: 'What we do'
+  provider: block_content
+  label_display: visible
+  status: true
+  info: ''
+  view_mode: full
+visibility:
+  request_path:
+    id: request_path
+    pages: '<front>'
+    negate: false
+    context_mapping: {  }

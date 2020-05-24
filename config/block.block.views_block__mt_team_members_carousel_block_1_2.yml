@@ -1,0 +1,30 @@
+uuid: 8de1da7f-5e8d-48a2-98c2-8e3f3ea3f724
+langcode: en
+status: true
+dependencies:
+  config:
+    - views.view.mt_team_members_carousel
+  module:
+    - system
+    - views
+  theme:
+    - slint2020
+id: views_block__mt_team_members_carousel_block_1_2
+theme: slint2020
+region: content_top_highlighted
+weight: -9
+provider: null
+plugin: 'views_block:mt_team_members_carousel-block_1'
+settings:
+  id: 'views_block:mt_team_members_carousel-block_1'
+  label: 'Interim Board Members'
+  provider: views
+  label_display: '0'
+  views_label: 'Interim Board Members'
+  items_per_page: none
+visibility:
+  request_path:
+    id: request_path
+    pages: /about-us
+    negate: false
+    context_mapping: {  }

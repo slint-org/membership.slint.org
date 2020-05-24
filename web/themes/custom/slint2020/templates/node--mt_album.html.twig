@@ -1,0 +1,12 @@
+{#
+/**
+ * @file
+ * SLINT2020's theme implementation to display a Album node.
+ */
+#}
+
+{% extends "node.html.twig" %}
+{% block content %}
+  {{ attach_library('slint2020/node-album') }}
+  {{ content }}
+{% endblock %}
