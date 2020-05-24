@@ -19,7 +19,7 @@ settings:
   id: 'views_block:mt_team_members_carousel-block_1'
   label: 'Interim Board Members'
   provider: views
-  label_display: '0'
+  label_display: visible
   views_label: 'Interim Board Members'
   items_per_page: none
 visibility:

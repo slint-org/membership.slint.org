@@ -143,6 +143,7 @@ class ComposerStaticInit48d66cb5465d039f638a968314d18c40
         array (
             'Composer\\Semver\\' => 16,
             'Composer\\Installers\\' => 20,
+            'CommerceGuys\\Addressing\\' => 24,
             'CloudFlarePhpSdk\\' => 17,
             'Civi\\Cxn\\Rpc\\' => 13,
             'Civi\\AssetPlugin\\' => 17,
@@ -428,6 +429,10 @@ class ComposerStaticInit48d66cb5465d039f638a968314d18c40
         'Composer\\Installers\\' => 
         array (
             0 => __DIR__ . '/..' . '/composer/installers/src/Composer/Installers',
+        ),
+        'CommerceGuys\\Addressing\\' => 
+        array (
+            0 => __DIR__ . '/..' . '/commerceguys/addressing/src',
         ),
         'CloudFlarePhpSdk\\' => 
         array (

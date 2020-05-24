@@ -264,7 +264,7 @@ features:
   favicon: true
 logo:
   use_default: false
-  path: themes/custom/slint2020/slint-logo.png
+  path: themes/custom/slint2020/slint-logo-small.png
 favicon:
   use_default: false
   path: themes/custom/slint2020/favicon.ico

@@ -11,15 +11,15 @@ dependencies:
     - slint2020
 id: aboutusmissionstatement
 theme: slint2020
-region: content_top_highlighted
+region: content_top
 weight: -9
 provider: null
 plugin: 'block_content:4f92ccf1-2832-4717-9393-1a0f01a0aacd'
 settings:
   id: 'block_content:4f92ccf1-2832-4717-9393-1a0f01a0aacd'
-  label: 'About us: Mission Statement'
+  label: 'Mission Statement'
   provider: block_content
-  label_display: '0'
+  label_display: visible
   status: true
   info: ''
   view_mode: full

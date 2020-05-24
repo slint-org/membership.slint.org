@@ -74,6 +74,7 @@ return array(
     'Doctrine\\Common\\' => array($vendorDir . '/doctrine/common/lib/Doctrine/Common'),
     'Composer\\Semver\\' => array($vendorDir . '/composer/semver/src'),
     'Composer\\Installers\\' => array($vendorDir . '/composer/installers/src/Composer/Installers'),
+    'CommerceGuys\\Addressing\\' => array($vendorDir . '/commerceguys/addressing/src'),
     'CloudFlarePhpSdk\\' => array($vendorDir . '/d8-contrib-modules/cloudflarephpsdk/src'),
     'Civi\\Cxn\\Rpc\\' => array($vendorDir . '/civicrm/civicrm-cxn-rpc/src'),
     'Civi\\AssetPlugin\\' => array($vendorDir . '/civicrm/civicrm-asset-plugin/src'),

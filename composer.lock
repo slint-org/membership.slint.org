@@ -4,7 +4,7 @@
         "Read more about it at https://getcomposer.org/doc/01-basic-usage.md#installing-dependencies",
         "This file is @generated automatically"
     ],
-    "content-hash": "be23aedf6a40af02bfaa08d702d2b1fc",
+    "content-hash": "df1bd7314fb8ab3d29582853b180fe8b",
     "packages": [
         {
             "name": "adrienrn/php-mimetyper",
@@ -798,6 +798,65 @@
             ],
             "description": "Composer plugin for downloading additional files within any composer package.",
             "time": "2019-08-28T00:33:51+00:00"
+        },
+        {
+            "name": "commerceguys/addressing",
+            "version": "v1.0.7",
+            "source": {
+                "type": "git",
+                "url": "https://github.com/commerceguys/addressing.git",
+                "reference": "fa434c03e99a416de0b37d98068c6c0bdfd78cde"
+            },
+            "dist": {
+                "type": "zip",
+                "url": "https://api.github.com/repos/commerceguys/addressing/zipball/fa434c03e99a416de0b37d98068c6c0bdfd78cde",
+                "reference": "fa434c03e99a416de0b37d98068c6c0bdfd78cde",
+                "shasum": ""
+            },
+            "require": {
+                "doctrine/collections": "~1.0",
+                "php": ">=7.0.8"
+            },
+            "require-dev": {
+                "mikey179/vfsstream": "1.*",
+                "phpunit/phpunit": "^6.0",
+                "squizlabs/php_codesniffer": "2.*",
+                "symfony/validator": "^3.4"
+            },
+            "suggest": {
+                "symfony/validator": "to validate addresses"
+            },
+            "type": "library",
+            "extra": {
+                "branch-alias": {
+                    "dev-master": "1.x-dev"
+                }
+            },
+            "autoload": {
+                "psr-4": {
+                    "CommerceGuys\\Addressing\\": "src"
+                }
+            },
+            "notification-url": "https://packagist.org/downloads/",
+            "license": [
+                "MIT"
+            ],
+            "authors": [
+                {
+                    "name": "Bojan Zivanovic"
+                },
+                {
+                    "name": "Damien Tournoud"
+                }
+            ],
+            "description": "Addressing library powered by CLDR and Google's address data.",
+            "keywords": [
+                "address",
+                "internationalization",
+                "localization",
+                "postal"
+            ],
+            "time": "2020-01-24T16:21:06+00:00"
         },
         {
             "name": "composer/installers",
@@ -1613,6 +1672,74 @@
             "time": "2020-02-20T03:52:51+00:00"
         },
         {
+            "name": "drupal/address",
+            "version": "1.8.0",
+            "source": {
+                "type": "git",
+                "url": "https://git.drupalcode.org/project/address.git",
+                "reference": "8.x-1.8"
+            },
+            "dist": {
+                "type": "zip",
+                "url": "https://ftp.drupal.org/files/projects/address-8.x-1.8.zip",
+                "reference": "8.x-1.8",
+                "shasum": "ded73be392ba9257fca9289719757928a8826275"
+            },
+            "require": {
+                "commerceguys/addressing": "^1.0.7",
+                "drupal/core": "^8.7.7 || ^9"
+            },
+            "require-dev": {
+                "drupal/token": "^1.0"
+            },
+            "type": "drupal-module",
+            "extra": {
+                "drupal": {
+                    "version": "8.x-1.8",
+                    "datestamp": "1583988119",
+                    "security-coverage": {
+                        "status": "covered",
+                        "message": "Covered by Drupal's security advisory policy"
+                    }
+                }
+            },
+            "notification-url": "https://packages.drupal.org/8/downloads",
+            "license": [
+                "GPL-2.0+"
+            ],
+            "authors": [
+                {
+                    "name": "bojanz",
+                    "homepage": "https://www.drupal.org/user/86106"
+                },
+                {
+                    "name": "dww",
+                    "homepage": "https://www.drupal.org/user/46549"
+                },
+                {
+                    "name": "googletorp",
+                    "homepage": "https://www.drupal.org/user/386230"
+                },
+                {
+                    "name": "jsacksick",
+                    "homepage": "https://www.drupal.org/user/972218"
+                },
+                {
+                    "name": "mglaman",
+                    "homepage": "https://www.drupal.org/user/2416470"
+                },
+                {
+                    "name": "rszrama",
+                    "homepage": "https://www.drupal.org/user/49344"
+                }
+            ],
+            "description": "Provides functionality for storing, validating and displaying international postal addresses.",
+            "homepage": "http://drupal.org/project/address",
+            "support": {
+                "source": "https://git.drupalcode.org/project/address"
+            }
+        },
+        {
             "name": "drupal/admin_toolbar",
             "version": "2.2.0",
             "source": {
@@ -1756,6 +1883,52 @@
             "support": {
                 "source": "http://cgit.drupalcode.org/admin_toolbar",
                 "issues": "https://www.drupal.org/project/issues/admin_toolbar"
+            }
+        },
+        {
+            "name": "drupal/adminimal_admin_toolbar",
+            "version": "1.11.0",
+            "source": {
+                "type": "git",
+                "url": "https://git.drupalcode.org/project/adminimal_admin_toolbar.git",
+                "reference": "8.x-1.11"
+            },
+            "dist": {
+                "type": "zip",
+                "url": "https://ftp.drupal.org/files/projects/adminimal_admin_toolbar-8.x-1.11.zip",
+                "reference": "8.x-1.11",
+                "shasum": "913dd21e07dd60aa20807a2e0650e11b4c15cc17"
+            },
+            "require": {
+                "drupal/admin_toolbar": "*",
+                "drupal/core": "^8 || ^9"
+            },
+            "type": "drupal-module",
+            "extra": {
+                "drupal": {
+                    "version": "8.x-1.11",
+                    "datestamp": "1588102631",
+                    "security-coverage": {
+                        "status": "covered",
+                        "message": "Covered by Drupal's security advisory policy"
+                    }
+                }
+            },
+            "notification-url": "https://packages.drupal.org/8/downloads",
+            "license": [
+                "GPL-2.0+"
+            ],
+            "authors": [
+                {
+                    "name": "Ted Slesinski",
+                    "homepage": "https://www.drupal.org/u/energee"
+                }
+            ],
+            "description": "Adminimal styling brought to admin toolbar.",
+            "homepage": "https://www.drupal.org/project/adminimal_admin_toolbar",
+            "support": {
+                "source": "http://cgit.drupalcode.org/adminimal_admin_toolbar",
+                "issues": "https://www.drupal.org/project/issues/adminimal_admin_toolbar"
             }
         },
         {
@@ -2132,6 +2305,64 @@
             "homepage": "https://www.drupal.org/project/captcha",
             "support": {
                 "source": "https://git.drupalcode.org/project/captcha"
+            }
+        },
+        {
+            "name": "drupal/clientside_validation",
+            "version": "1.2.0",
+            "source": {
+                "type": "git",
+                "url": "https://git.drupalcode.org/project/clientside_validation.git",
+                "reference": "8.x-1.2"
+            },
+            "dist": {
+                "type": "zip",
+                "url": "https://ftp.drupal.org/files/projects/clientside_validation-8.x-1.2.zip",
+                "reference": "8.x-1.2",
+                "shasum": "533b0cc78b5f9cbaf75ddc37b94b808ef42bb04a"
+            },
+            "require": {
+                "drupal/core": "~8.0",
+                "php": ">=7.0.0"
+            },
+            "require-dev": {
+                "drupal/clientside_validation_demo": "*",
+                "drupal/clientside_validation_jquery": "*"
+            },
+            "type": "drupal-module",
+            "extra": {
+                "drupal": {
+                    "version": "8.x-1.2",
+                    "datestamp": "1558864688",
+                    "security-coverage": {
+                        "status": "covered",
+                        "message": "Covered by Drupal's security advisory policy"
+                    }
+                }
+            },
+            "notification-url": "https://packages.drupal.org/8/downloads",
+            "license": [
+                "GPL-2.0+"
+            ],
+            "authors": [
+                {
+                    "name": "Jelle_S",
+                    "homepage": "https://www.drupal.org/user/829198"
+                },
+                {
+                    "name": "attiks",
+                    "homepage": "https://www.drupal.org/user/105002"
+                },
+                {
+                    "name": "nikunjkotecha",
+                    "homepage": "https://www.drupal.org/user/694082"
+                }
+            ],
+            "description": "This module adds clientside validation",
+            "homepage": "https://www.drupal.org/project/clientside_validation",
+            "support": {
+                "source": "https://cgit.drupalcode.org/clientside_validation",
+                "issues": "https://drupal.org/project/issues/clientside_validation"
             }
         },
         {
@@ -3603,6 +3834,108 @@
             "support": {
                 "source": "http://cgit.drupalcode.org/fontyourface",
                 "issues": "https://drupal.org/project/issues/fontyourface"
+            }
+        },
+        {
+            "name": "drupal/ga",
+            "version": "1.8.0",
+            "source": {
+                "type": "git",
+                "url": "https://git.drupalcode.org/project/ga.git",
+                "reference": "8.x-1.8"
+            },
+            "dist": {
+                "type": "zip",
+                "url": "https://ftp.drupal.org/files/projects/ga-8.x-1.8.zip",
+                "reference": "8.x-1.8",
+                "shasum": "c15b53a274a4bb0822b9fd6516322f4b613618ee"
+            },
+            "require": {
+                "drupal/core": "^8 || ^9"
+            },
+            "require-dev": {
+                "drupal/csp": "^1.6"
+            },
+            "type": "drupal-module",
+            "extra": {
+                "drupal": {
+                    "version": "8.x-1.8",
+                    "datestamp": "1590283156",
+                    "security-coverage": {
+                        "status": "covered",
+                        "message": "Covered by Drupal's security advisory policy"
+                    }
+                }
+            },
+            "notification-url": "https://packages.drupal.org/8/downloads",
+            "license": [
+                "GPL-2.0+"
+            ],
+            "authors": [
+                {
+                    "name": "gapple",
+                    "homepage": "https://www.drupal.org/user/490940"
+                }
+            ],
+            "description": "Google Analytics Support",
+            "homepage": "https://www.drupal.org/project/ga",
+            "keywords": [
+                "Drupal"
+            ],
+            "support": {
+                "source": "http://cgit.drupalcode.org/ga",
+                "issues": "http://drupal.org/project/issues/ga"
+            }
+        },
+        {
+            "name": "drupal/ga_webform",
+            "version": "1.0.0-alpha3",
+            "source": {
+                "type": "git",
+                "url": "https://git.drupalcode.org/project/ga_webform.git",
+                "reference": "8.x-1.0-alpha3"
+            },
+            "dist": {
+                "type": "zip",
+                "url": "https://ftp.drupal.org/files/projects/ga_webform-8.x-1.0-alpha3.zip",
+                "reference": "8.x-1.0-alpha3",
+                "shasum": "dd0a44772c7a04f30aa6d74d2739d1daa64beac6"
+            },
+            "require": {
+                "drupal/core": "~8.0",
+                "drupal/ga": "~1.3",
+                "drupal/webform": "~5.0"
+            },
+            "type": "drupal-module",
+            "extra": {
+                "branch-alias": {
+                    "dev-1.x": "1.x-dev"
+                },
+                "drupal": {
+                    "version": "8.x-1.0-alpha3",
+                    "datestamp": "1541509680",
+                    "security-coverage": {
+                        "status": "not-covered",
+                        "message": "Project has not opted into security advisory coverage!"
+                    }
+                }
+            },
+            "notification-url": "https://packages.drupal.org/8/downloads",
+            "license": [
+                "GPL-2.0+"
+            ],
+            "authors": [
+                {
+                    "name": "Mag. Andreas Mayr (agoradesign)",
+                    "homepage": "https://www.drupal.org/u/agoradesign",
+                    "role": "Maintainer"
+                }
+            ],
+            "description": "Provides integration for Webform into Googalytics module.",
+            "homepage": "https://drupal.org/project/ga_webform",
+            "support": {
+                "source": "http://cgit.drupalcode.org/ga_webform",
+                "issues": "https://www.drupal.org/project/issues/ga_webform?version=8.x"
             }
         },
         {
@@ -5705,6 +6038,112 @@
             }
         },
         {
+            "name": "drupal/slack",
+            "version": "1.2.0",
+            "source": {
+                "type": "git",
+                "url": "https://git.drupalcode.org/project/slack.git",
+                "reference": "8.x-1.2"
+            },
+            "dist": {
+                "type": "zip",
+                "url": "https://ftp.drupal.org/files/projects/slack-8.x-1.2.zip",
+                "reference": "8.x-1.2",
+                "shasum": "d978cdf635c0053881ad09c7679c323dfb248e6f"
+            },
+            "require": {
+                "drupal/core": "~8.0"
+            },
+            "type": "drupal-module",
+            "extra": {
+                "branch-alias": {
+                    "dev-1.x": "1.x-dev"
+                },
+                "drupal": {
+                    "version": "8.x-1.2",
+                    "datestamp": "1508381049",
+                    "security-coverage": {
+                        "status": "covered",
+                        "message": "Covered by Drupal's security advisory policy"
+                    }
+                }
+            },
+            "notification-url": "https://packages.drupal.org/8/downloads",
+            "license": [
+                "GPL-2.0-or-later"
+            ],
+            "authors": [
+                {
+                    "name": "Serge_Konst",
+                    "homepage": "https://www.drupal.org/user/3285403"
+                },
+                {
+                    "name": "adci_contributor",
+                    "homepage": "https://www.drupal.org/user/1830536"
+                },
+                {
+                    "name": "adcillc",
+                    "homepage": "https://www.drupal.org/user/366450"
+                },
+                {
+                    "name": "hxdef",
+                    "homepage": "https://www.drupal.org/user/2622115"
+                }
+            ],
+            "description": "Integration with Slack.com service.",
+            "homepage": "https://www.drupal.org/project/slack",
+            "support": {
+                "source": "https://git.drupalcode.org/project/slack"
+            }
+        },
+        {
+            "name": "drupal/slack_invite",
+            "version": "1.1.0",
+            "source": {
+                "type": "git",
+                "url": "https://git.drupalcode.org/project/slack_invite.git",
+                "reference": "8.x-1.1"
+            },
+            "dist": {
+                "type": "zip",
+                "url": "https://ftp.drupal.org/files/projects/slack_invite-8.x-1.1.zip",
+                "reference": "8.x-1.1",
+                "shasum": "2faf9dbec129545a3bfcc51fc39a9f860b3b341f"
+            },
+            "require": {
+                "drupal/core": "~8.0"
+            },
+            "type": "drupal-module",
+            "extra": {
+                "branch-alias": {
+                    "dev-1.x": "1.x-dev"
+                },
+                "drupal": {
+                    "version": "8.x-1.1",
+                    "datestamp": "1448039339",
+                    "security-coverage": {
+                        "status": "covered",
+                        "message": "Covered by Drupal's security advisory policy"
+                    }
+                }
+            },
+            "notification-url": "https://packages.drupal.org/8/downloads",
+            "license": [
+                "GPL-2.0-or-later"
+            ],
+            "authors": [
+                {
+                    "name": "BTMash",
+                    "homepage": "https://www.drupal.org/user/60422"
+                }
+            ],
+            "description": "Invite your users to your slack team",
+            "homepage": "https://www.drupal.org/project/slack_invite",
+            "support": {
+                "source": "https://git.drupalcode.org/project/slack_invite"
+            }
+        },
+        {
             "name": "drupal/social_api",
             "version": "1.1.0",
             "source": {
@@ -5994,6 +6433,57 @@
             "homepage": "https://www.drupal.org/project/typed_data",
             "support": {
                 "source": "https://git.drupalcode.org/project/typed_data"
+            }
+        },
+        {
+            "name": "drupal/validators",
+            "version": "1.1.0",
+            "source": {
+                "type": "git",
+                "url": "https://git.drupalcode.org/project/validators.git",
+                "reference": "8.x-1.1"
+            },
+            "dist": {
+                "type": "zip",
+                "url": "https://ftp.drupal.org/files/projects/validators-8.x-1.1.zip",
+                "reference": "8.x-1.1",
+                "shasum": "b0abd4319abdc0feaba304a4803af8ded1d4ec56"
+            },
+            "require": {
+                "drupal/core": "~8.0",
+                "symfony/validator": "^3.4"
+            },
+            "type": "drupal-module",
+            "extra": {
+                "branch-alias": {
+                    "dev-1.x": "1.x-dev"
+                },
+                "drupal": {
+                    "version": "8.x-1.1",
+                    "datestamp": "1519056480",
+                    "security-coverage": {
+                        "status": "covered",
+                        "message": "Covered by Drupal's security advisory policy"
+                    }
+                }
+            },
+            "notification-url": "https://packages.drupal.org/8/downloads",
+            "license": [
+                "GPL-2.0+"
+            ],
+            "authors": [
+                {
+                    "name": "Levi Govaerts (legovaer)",
+                    "homepage": "https://www.drupal.org/u/legovaer",
+                    "role": "Maintainer"
+                }
+            ],
+            "description": "Symfony (form) Validators for Drupal 8.",
+            "homepage": "https://drupal.org/project/validators",
+            "support": {
+                "source": "https://cgit.drupalcode.org/validators",
+                "issues": "https://drupal.org/project/issues/validators",
+                "irc": "irc://irc.freenode.org/drupal-contribute"
             }
         },
         {
@@ -6291,6 +6781,54 @@
             }
         },
         {
+            "name": "drupal/webform_alias_container",
+            "version": "1.0.0-beta1",
+            "source": {
+                "type": "git",
+                "url": "https://git.drupalcode.org/project/webform_alias_container.git",
+                "reference": "8.x-1.0-beta1"
+            },
+            "dist": {
+                "type": "zip",
+                "url": "https://ftp.drupal.org/files/projects/webform_alias_container-8.x-1.0-beta1.zip",
+                "reference": "8.x-1.0-beta1",
+                "shasum": "e901bfec7a428c88a20756215001ad8214666754"
+            },
+            "require": {
+                "drupal/core": "^8.5",
+                "drupal/webform": "*"
+            },
+            "type": "drupal-module",
+            "extra": {
+                "branch-alias": {
+                    "dev-1.x": "1.x-dev"
+                },
+                "drupal": {
+                    "version": "8.x-1.0-beta1",
+                    "datestamp": "1568595785",
+                    "security-coverage": {
+                        "status": "not-covered",
+                        "message": "Project has not opted into security advisory coverage!"
+                    }
+                }
+            },
+            "notification-url": "https://packages.drupal.org/8/downloads",
+            "license": [
+                "GPL-2.0-or-later"
+            ],
+            "authors": [
+                {
+                    "name": "bwong",
+                    "homepage": "https://www.drupal.org/user/161967"
+                }
+            ],
+            "description": "Provides an aliased Webform container for composite elements",
+            "homepage": "https://www.drupal.org/project/webform_alias_container",
+            "support": {
+                "source": "https://git.drupalcode.org/project/webform_alias_container"
+            }
+        },
+        {
             "name": "drupal/webform_civicrm",
             "version": "5.0.0-alpha2",
             "source": {
@@ -6342,6 +6880,255 @@
                 "source": "http://cgit.drupalcode.org/webform_civicrm",
                 "error": "Invalid dependency: \"civicrm\" is an unknown drupal 8 package name",
                 "issues": "https://www.drupal.org/project/issues/webform_civicrm"
+            }
+        },
+        {
+            "name": "drupal/webform_composite",
+            "version": "1.0.0-rc1",
+            "source": {
+                "type": "git",
+                "url": "https://git.drupalcode.org/project/webform_composite.git",
+                "reference": "8.x-1.0-rc1"
+            },
+            "dist": {
+                "type": "zip",
+                "url": "https://ftp.drupal.org/files/projects/webform_composite-8.x-1.0-rc1.zip",
+                "reference": "8.x-1.0-rc1",
+                "shasum": "b930ab8c0e3dbeb31b0b8d0eaf909b6ffae940d4"
+            },
+            "require": {
+                "drupal/core": "^8 | ^9",
+                "drupal/webform": "*"
+            },
+            "type": "drupal-module",
+            "extra": {
+                "drupal": {
+                    "version": "8.x-1.0-rc1",
+                    "datestamp": "1589912003",
+                    "security-coverage": {
+                        "status": "not-covered",
+                        "message": "Project has not opted into security advisory coverage!"
+                    }
+                }
+            },
+            "notification-url": "https://packages.drupal.org/8/downloads",
+            "license": [
+                "GPL-2.0-or-later"
+            ],
+            "authors": [
+                {
+                    "name": "richgerdes",
+                    "homepage": "https://www.drupal.org/user/3437973"
+                }
+            ],
+            "description": "Additional tools for Webform Composites.",
+            "homepage": "https://www.drupal.org/project/webform_composite",
+            "support": {
+                "source": "https://git.drupalcode.org/project/webform_composite"
+            }
+        },
+        {
+            "name": "drupal/webform_hierarchy",
+            "version": "1.0.0",
+            "source": {
+                "type": "git",
+                "url": "https://git.drupalcode.org/project/webform_hierarchy.git",
+                "reference": "8.x-1.0"
+            },
+            "dist": {
+                "type": "zip",
+                "url": "https://ftp.drupal.org/files/projects/webform_hierarchy-8.x-1.0.zip",
+                "reference": "8.x-1.0",
+                "shasum": "92390748c7b15b8db2929185dc0f892095bea0f8"
+            },
+            "require": {
+                "drupal/core": "~8.0",
+                "drupal/webform": "*"
+            },
+            "type": "drupal-module",
+            "extra": {
+                "branch-alias": {
+                    "dev-1.x": "1.x-dev"
+                },
+                "drupal": {
+                    "version": "8.x-1.0",
+                    "datestamp": "1570037287",
+                    "security-coverage": {
+                        "status": "not-covered",
+                        "message": "Project has not opted into security advisory coverage!"
+                    }
+                }
+            },
+            "notification-url": "https://packages.drupal.org/8/downloads",
+            "license": [
+                "GPL-2.0-or-later"
+            ],
+            "authors": [
+                {
+                    "name": "maximpodorov",
+                    "homepage": "https://www.drupal.org/user/515310"
+                }
+            ],
+            "description": "Provides hierarchical widget for webforms.",
+            "homepage": "https://www.drupal.org/project/webform_hierarchy",
+            "support": {
+                "source": "https://git.drupalcode.org/project/webform_hierarchy"
+            }
+        },
+        {
+            "name": "drupal/webform_layout_container",
+            "version": "1.1.0",
+            "source": {
+                "type": "git",
+                "url": "https://git.drupalcode.org/project/webform_layout_container.git",
+                "reference": "8.x-1.1"
+            },
+            "dist": {
+                "type": "zip",
+                "url": "https://ftp.drupal.org/files/projects/webform_layout_container-8.x-1.1.zip",
+                "reference": "8.x-1.1",
+                "shasum": "5ffccf73ea873f230da2f54144a5c3a15be21e84"
+            },
+            "require": {
+                "drupal/core": "~8.0",
+                "drupal/webform": "*"
+            },
+            "type": "drupal-module",
+            "extra": {
+                "branch-alias": {
+                    "dev-1.x": "1.x-dev"
+                },
+                "drupal": {
+                    "version": "8.x-1.1",
+                    "datestamp": "1498657743",
+                    "security-coverage": {
+                        "status": "covered",
+                        "message": "Covered by Drupal's security advisory policy"
+                    }
+                }
+            },
+            "notification-url": "https://packages.drupal.org/8/downloads",
+            "license": [
+                "GPL-2.0-or-later"
+            ],
+            "authors": [
+                {
+                    "name": "dpape",
+                    "homepage": "https://www.drupal.org/user/2409608"
+                }
+            ],
+            "description": "Provides a layout container element to add to a webform.",
+            "homepage": "https://www.drupal.org/project/webform_layout_container",
+            "support": {
+                "source": "https://git.drupalcode.org/project/webform_layout_container"
+            }
+        },
+        {
+            "name": "drupal/webform_promotion_code",
+            "version": "1.0.0-alpha1",
+            "source": {
+                "type": "git",
+                "url": "https://git.drupalcode.org/project/webform_promotion_code.git",
+                "reference": "8.x-1.0-alpha1"
+            },
+            "dist": {
+                "type": "zip",
+                "url": "https://ftp.drupal.org/files/projects/webform_promotion_code-8.x-1.0-alpha1.zip",
+                "reference": "8.x-1.0-alpha1",
+                "shasum": "45b3c4a0fbc7fcc1a6f8c2681c2264891ab4800d"
+            },
+            "require": {
+                "drupal/core": "~8.0",
+                "drupal/webform": "*"
+            },
+            "type": "drupal-module",
+            "extra": {
+                "branch-alias": {
+                    "dev-1.x": "1.x-dev"
+                },
+                "drupal": {
+                    "version": "8.x-1.0-alpha1",
+                    "datestamp": "1565070185",
+                    "security-coverage": {
+                        "status": "not-covered",
+                        "message": "Project has not opted into security advisory coverage!"
+                    }
+                }
+            },
+            "notification-url": "https://packages.drupal.org/8/downloads",
+            "license": [
+                "GPL-2.0-or-later"
+            ],
+            "authors": [
+                {
+                    "name": "bertonha",
+                    "homepage": "https://www.drupal.org/user/3491139"
+                }
+            ],
+            "description": "Provides a promotion code Webform element.",
+            "homepage": "https://www.drupal.org/project/webform_promotion_code",
+            "support": {
+                "source": "https://git.drupalcode.org/project/webform_promotion_code"
+            }
+        },
+        {
+            "name": "drupal/webform_views",
+            "version": "5.0.0-alpha7",
+            "source": {
+                "type": "git",
+                "url": "https://git.drupalcode.org/project/webform_views.git",
+                "reference": "8.x-5.0-alpha7"
+            },
+            "dist": {
+                "type": "zip",
+                "url": "https://ftp.drupal.org/files/projects/webform_views-8.x-5.0-alpha7.zip",
+                "reference": "8.x-5.0-alpha7",
+                "shasum": "6c9bb51735a106729dcfa08372e987ebf95d38f2"
+            },
+            "require": {
+                "drupal/core": "*",
+                "drupal/webform": "*"
+            },
+            "type": "drupal-module",
+            "extra": {
+                "branch-alias": {
+                    "dev-5.x": "5.x-dev"
+                },
+                "drupal": {
+                    "version": "8.x-5.0-alpha7",
+                    "datestamp": "1557288185",
+                    "security-coverage": {
+                        "status": "not-covered",
+                        "message": "Alpha releases are not covered by Drupal security advisories."
+                    }
+                }
+            },
+            "notification-url": "https://packages.drupal.org/8/downloads",
+            "license": [
+                "GPL-2.0-or-later"
+            ],
+            "authors": [
+                {
+                    "name": "bucefal91",
+                    "homepage": "https://www.drupal.org/user/504128"
+                },
+                {
+                    "name": "jrockowitz",
+                    "homepage": "https://www.drupal.org/user/371407"
+                },
+                {
+                    "name": "matio89",
+                    "homepage": "https://www.drupal.org/user/2320090"
+                },
+                {
+                    "name": "ws.agency",
+                    "homepage": "https://www.drupal.org/user/2851415"
+                }
+            ],
+            "description": "Webform integration with views.",
+            "homepage": "https://www.drupal.org/project/webform_views",
+            "support": {
+                "source": "https://git.drupalcode.org/project/webform_views"
             }
         },
         {
@@ -10796,6 +11583,7 @@
         "drupal/cloudflare": 10,
         "drupal/cloudflarepurger": 10,
         "drupal/flippy": 10,
+        "drupal/ga_webform": 15,
         "drupal/imageapi_optimize": 10,
         "drupal/imageapi_optimize_binaries": 15,
         "drupal/imageapi_optimize_tinypng": 10,
@@ -10811,7 +11599,11 @@
         "drupal/rules": 15,
         "drupal/security_review": 15,
         "drupal/tvi": 10,
+        "drupal/webform_alias_container": 10,
         "drupal/webform_civicrm": 15,
+        "drupal/webform_composite": 5,
+        "drupal/webform_promotion_code": 15,
+        "drupal/webform_views": 15,
         "drupal/webp": 10,
         "drupal/whatsappshare": 5,
         "drupal/xmlsitemap": 5
