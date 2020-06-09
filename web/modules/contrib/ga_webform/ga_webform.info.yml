@@ -1,0 +1,13 @@
+name: 'Googalytics Webform'
+type: module
+description: 'Provides integration for Webform into Googalytics module.'
+# core: 8.x
+dependencies:
+  - ga:ga
+  - webform:webform
+
+# Information added by Drupal.org packaging script on 2018-11-06
+version: '8.x-1.0-alpha3'
+core: '8.x'
+project: 'ga_webform'
+datestamp: 1541509683

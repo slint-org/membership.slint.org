@@ -1,0 +1,19 @@
+uuid: de2caab6-3061-4885-8b6f-36e82a79d8fc
+langcode: en
+status: true
+dependencies:
+  config:
+    - block_content.type.mt_frontpage_cover
+    - field.storage.block_content.field_mt_fpcb_title
+id: block_content.mt_frontpage_cover.field_mt_fpcb_title
+field_name: field_mt_fpcb_title
+entity_type: block_content
+bundle: mt_frontpage_cover
+label: Title
+description: ''
+required: false
+translatable: false
+default_value: {  }
+default_value_callback: ''
+settings: {  }
+field_type: string

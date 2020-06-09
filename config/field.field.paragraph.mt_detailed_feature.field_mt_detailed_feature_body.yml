@@ -1,0 +1,21 @@
+uuid: 0ddad003-80e2-4463-be02-ef7a611bf6c3
+langcode: en
+status: true
+dependencies:
+  config:
+    - field.storage.paragraph.field_mt_detailed_feature_body
+    - paragraphs.paragraphs_type.mt_detailed_feature
+  module:
+    - text
+id: paragraph.mt_detailed_feature.field_mt_detailed_feature_body
+field_name: field_mt_detailed_feature_body
+entity_type: paragraph
+bundle: mt_detailed_feature
+label: Body
+description: ''
+required: true
+translatable: false
+default_value: {  }
+default_value_callback: ''
+settings: {  }
+field_type: text_long

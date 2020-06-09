@@ -1,0 +1,23 @@
+uuid: 4e7fd618-251b-400c-8ed8-7bc2d45f6c19
+langcode: en
+status: true
+dependencies:
+  config:
+    - block_content.type.mt_hero
+    - field.storage.block_content.field_mt_hero_link
+  module:
+    - link
+id: block_content.mt_hero.field_mt_hero_link
+field_name: field_mt_hero_link
+entity_type: block_content
+bundle: mt_hero
+label: Link
+description: ''
+required: false
+translatable: false
+default_value: {  }
+default_value_callback: ''
+settings:
+  link_type: 17
+  title: 2
+field_type: link

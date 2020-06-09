@@ -1,0 +1,30 @@
+uuid: 1d074437-fd84-420b-afa8-82bb0f0bb7df
+langcode: en
+status: true
+dependencies:
+  config:
+    - field.field.paragraph.mt_prd_specification.field_mt_prd_specification_label
+    - field.field.paragraph.mt_prd_specification.field_mt_prd_specification_value
+    - paragraphs.paragraphs_type.mt_prd_specification
+id: paragraph.mt_prd_specification.default
+targetEntityType: paragraph
+bundle: mt_prd_specification
+mode: default
+content:
+  field_mt_prd_specification_label:
+    weight: 0
+    label: hidden
+    settings:
+      link_to_entity: false
+    third_party_settings: {  }
+    type: string
+    region: content
+  field_mt_prd_specification_value:
+    weight: 1
+    label: hidden
+    settings:
+      link_to_entity: false
+    third_party_settings: {  }
+    type: string
+    region: content
+hidden: {  }

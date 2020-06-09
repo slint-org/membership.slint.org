@@ -1,0 +1,20 @@
+uuid: 5ef1230e-1c53-4f94-bd8a-e75ffc133bb7
+langcode: en
+status: true
+dependencies:
+  module:
+    - datetime
+    - paragraphs
+id: paragraph.field_mt_tml_timeline_date
+field_name: field_mt_tml_timeline_date
+entity_type: paragraph
+type: datetime
+settings:
+  datetime_type: date
+module: datetime
+locked: false
+cardinality: 1
+translatable: true
+indexes: {  }
+persist_with_no_fields: false
+custom_storage: false

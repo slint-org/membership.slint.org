@@ -1,0 +1,25 @@
+uuid: d9b87547-9229-41e3-98d9-882e49d9be9b
+langcode: en
+status: true
+dependencies:
+  config:
+    - block_content.type.mt_icon_features
+    - core.entity_view_mode.block_content.mt_tile_large
+    - field.field.block_content.mt_icon_features.field_mt_if_item
+  module:
+    - entity_reference_revisions
+id: block_content.mt_icon_features.mt_tile_large
+targetEntityType: block_content
+bundle: mt_icon_features
+mode: mt_tile_large
+content:
+  field_mt_if_item:
+    type: entity_reference_revisions_entity_view
+    weight: 2
+    label: hidden
+    settings:
+      view_mode: mt_tile_large
+      link: ''
+    third_party_settings: {  }
+    region: content
+hidden: {  }

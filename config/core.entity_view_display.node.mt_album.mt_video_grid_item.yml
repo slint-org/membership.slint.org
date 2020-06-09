@@ -1,0 +1,42 @@
+uuid: de4c9180-ab7c-42f5-af1b-3d9c2335b59b
+langcode: en
+status: false
+dependencies:
+  config:
+    - core.entity_view_mode.node.mt_video_grid_item
+    - field.field.node.mt_album.field_mt_alb_body
+    - field.field.node.mt_album.field_mt_alb_image
+    - field.field.node.mt_album.field_mt_alb_tags
+    - field.field.node.mt_album.field_mt_alb_video
+    - image.style.mt_large
+    - node.type.mt_album
+  module:
+    - text
+    - user
+    - video_embed_field
+id: node.mt_album.mt_video_grid_item
+targetEntityType: node
+bundle: mt_album
+mode: mt_video_grid_item
+content:
+  field_mt_alb_body:
+    weight: 1
+    label: hidden
+    settings:
+      trim_length: 100
+    third_party_settings: {  }
+    type: text_summary_or_trimmed
+    region: content
+  field_mt_alb_video:
+    weight: 0
+    label: hidden
+    settings:
+      image_style: mt_large
+      link_image_to: content
+    third_party_settings: {  }
+    type: video_embed_field_thumbnail
+    region: content
+hidden:
+  field_mt_alb_image: true
+  field_mt_alb_tags: true
+  links: true

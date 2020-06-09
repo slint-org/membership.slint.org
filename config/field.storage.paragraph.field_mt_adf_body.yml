@@ -1,0 +1,19 @@
+uuid: 851aa3f7-591e-4600-8cea-72f84de9aaab
+langcode: en
+status: true
+dependencies:
+  module:
+    - paragraphs
+    - text
+id: paragraph.field_mt_adf_body
+field_name: field_mt_adf_body
+entity_type: paragraph
+type: text_long
+settings: {  }
+module: text
+locked: false
+cardinality: 1
+translatable: true
+indexes: {  }
+persist_with_no_fields: false
+custom_storage: false

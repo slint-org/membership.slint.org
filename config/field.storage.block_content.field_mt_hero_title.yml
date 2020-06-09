@@ -1,0 +1,20 @@
+uuid: a5c56d5d-5076-46f8-a269-e2aa339bf81a
+langcode: en
+status: true
+dependencies:
+  module:
+    - block_content
+    - text
+id: block_content.field_mt_hero_title
+field_name: field_mt_hero_title
+entity_type: block_content
+type: text
+settings:
+  max_length: 255
+module: text
+locked: false
+cardinality: -1
+translatable: true
+indexes: {  }
+persist_with_no_fields: false
+custom_storage: false

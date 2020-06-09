@@ -1,0 +1,18 @@
+uuid: a6075381-4677-4fd0-9570-0d4bdbe7fae0
+langcode: en
+status: true
+dependencies:
+  config:
+    - field.field.paragraph.mt_map_location.field_mt_ml_latitude
+    - field.field.paragraph.mt_map_location.field_mt_ml_location_name
+    - field.field.paragraph.mt_map_location.field_mt_ml_longitude
+    - paragraphs.paragraphs_type.mt_map_location
+id: paragraph.mt_map_location.default
+targetEntityType: paragraph
+bundle: mt_map_location
+mode: default
+content: {  }
+hidden:
+  field_mt_ml_latitude: true
+  field_mt_ml_location_name: true
+  field_mt_ml_longitude: true

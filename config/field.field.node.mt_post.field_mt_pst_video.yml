@@ -1,0 +1,25 @@
+uuid: c284d144-0795-484b-9b31-e67df27b6532
+langcode: en
+status: true
+dependencies:
+  config:
+    - field.storage.node.field_mt_pst_video
+    - node.type.mt_post
+  module:
+    - video_embed_field
+id: node.mt_post.field_mt_pst_video
+field_name: field_mt_pst_video
+entity_type: node
+bundle: mt_post
+label: Video
+description: ''
+required: false
+translatable: false
+default_value: {  }
+default_value_callback: ''
+settings:
+  allowed_providers:
+    vimeo: vimeo
+    youtube: youtube
+    youtube_playlist: '0'
+field_type: video_embed_field

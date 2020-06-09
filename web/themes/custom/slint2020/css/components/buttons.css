@@ -1,0 +1,154 @@
+/**
+ * @file
+ * Styles for SLINT2020's buttons.
+ */
+a.mt-button,
+.mt-button > a,
+button.mt-button,
+input[type="submit"],
+input[type="reset"],
+input[type="button"] {
+  font-size: 16px;
+  font-weight: 400;
+  padding: 14px 33px;
+  text-decoration: none;
+  display: inline-block;
+  line-height: 1.125;
+  border-width: 1px;
+  border-style: solid;
+  -webkit-transition: all 0.2s ease-in-out;
+  -moz-transition: all 0.2s ease-in-out;
+  -ms-transition: all 0.2s ease-in-out;
+  -o-transition: all 0.2s ease-in-out;
+  transition: all 0.2s ease-in-out;
+  margin: 0;
+  text-align: center;
+  position: relative;
+}
+a.mt-button:hover,
+.mt-button > a:hover,
+button.mt-button:hover,
+input[type="submit"]:hover,
+input[type="reset"]:hover,
+input[type="button"]:hover,
+a.mt-button:focus,
+.mt-button > a:focus,
+button.mt-button:focus,
+input[type="submit"]:focus,
+input[type="reset"]:focus,
+input[type="button"]:focus {
+  background-color: transparent;
+  outline: none;
+}
+button.mt-button {
+  -webkit-appearance: none;
+}
+.headings-wide-spacing-enabled a.mt-button,
+.headings-wide-spacing-enabled .mt-button > a,
+.headings-wide-spacing-enabled button.mt-button,
+.headings-wide-spacing-enabled input[type="submit"],
+.headings-wide-spacing-enabled input[type="reset"],
+.headings-wide-spacing-enabled input[type="button"] {
+  letter-spacing: 0.25em;
+}
+.region--light-typography a.mt-button:hover,
+.region--light-typography .mt-button > a:hover,
+.region--light-typography button.mt-button:hover,
+.region--light-typography input[type="submit"]:hover,
+.region--light-typography input[type="reset"]:hover,
+.region--light-typography input[type="button"]:hover,
+.region--light-typography a.mt-button:focus,
+.region--light-typography .mt-button > a:focus,
+.region--light-typography button.mt-button:focus,
+.region--light-typography input[type="submit"]:focus,
+.region--light-typography input[type="reset"]:focus,
+.region--light-typography input[type="button"]:focus {
+  background-color: transparent;
+  border-color: rgba(255, 255, 255, 0.29);
+  color: #ffffff;
+}
+
+/* button outline */
+a.mt-button.mt-button--outline,
+.mt-button.mt-button--outline > a,
+input[type="submit"][value="Reset"],
+input[type="submit"].mt-button--outline,
+input[type="reset"].mt-button--outline,
+input[type="button"].mt-button--outline {
+  background-color: transparent;
+  border-width: 1px;
+}
+.region--light-typography a.mt-button.mt-button--outline,
+.region--light-typography .mt-button.mt-button--outline > a,
+.region--light-typography input[type="submit"][value="Reset"],
+.region--light-typography input[type="submit"].mt-button--outline,
+.region--light-typography input[type="reset"].mt-button--outline,
+.region--light-typography input[type="button"].mt-button--outline {
+  background-color: transparent;
+  border-color: rgba(255, 255, 255, 0.29);
+  color: #ffffff;
+}
+
+/* small button */
+a.mt-button.mt-button--small,
+.mt-button.mt-button--small > a,
+button.mt-button.mt-button--small {
+  font-size: 14px;
+  padding: 6px 20px;
+  text-transform: none;
+}
+
+/* misc */
+input[type="submit"] + input[type="submit"],
+.mt-button + .mt-button {
+  margin-left: 20px;
+}
+span.mt-button-operator {
+  margin: 0 10px 0 5px;
+}
+a.mt-button .svg-inline--fa {
+  margin-right: 10px;
+}
+a.mt-button--no-margins {
+  margin: 0;
+}
+
+/*Buttons hover style 2*/
+a.mt-button.mt-button--hover-style-2,
+.mt-button.mt-button--hover-style-2 > a {
+  position: relative;
+  z-index: 1;
+  border-width: 2px;
+}
+a.mt-button.mt-button--hover-style-2:hover,
+.mt-button.mt-button--hover-style-2 > a:hover {
+  background: transparent;
+}
+a.mt-button.mt-button--hover-style-2:before,
+.mt-button.mt-button--hover-style-2 > a:before {
+  content:"";
+  position: absolute;
+  z-index: -1;
+  top: 0;
+  bottom: 0;
+  left: 0;
+  right: 0;
+  transform: scaleX(0);
+  border-radius: inherit;
+  -webkit-transition: all 0.3s ease-in-out;
+  -moz-transition: all 0.3s ease-in-out;
+  -ms-transition: all 0.3s ease-in-out;
+  -o-transition: all 0.3s ease-in-out;
+  transition: all 0.3s ease-in-out;
+  background-color: #ffffff;
+}
+a.mt-button.mt-button--hover-style-2:hover:before,
+a.mt-button.mt-button--hover-style-2:focus:before,
+.mt-button.mt-button--hover-style-2 > a:hover:before,
+.mt-button.mt-button--hover-style-2 > a:focus:before {
+  transform: scaleX(1);
+}
+.region--light-typography a.mt-button.mt-button--hover-style-2:before,
+.region--light-typography .mt-button.mt-button--hover-style-2 > a:before {
+  background-color: #ffffff;
+}

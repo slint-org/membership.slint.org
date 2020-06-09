@@ -1,0 +1,19 @@
+uuid: 806793c3-b587-4a22-a8dd-96a9505d7485
+langcode: en
+status: true
+dependencies:
+  module:
+    - media
+name: 'Raws HTML'
+format: raws_html
+weight: 0
+filters:
+  media_embed:
+    id: media_embed
+    provider: media
+    status: false
+    weight: 100
+    settings:
+      default_view_mode: default
+      allowed_media_types: {  }
+      allowed_view_modes: {  }

@@ -1,0 +1,23 @@
+uuid: ad28a8e7-40fa-4533-ab31-3b57e6d34dba
+langcode: en
+status: true
+dependencies:
+  config:
+    - block_content.type.mt_hero_v2
+    - field.storage.block_content.field_mt_hero_v2_action
+  module:
+    - link
+id: block_content.mt_hero_v2.field_mt_hero_v2_action
+field_name: field_mt_hero_v2_action
+entity_type: block_content
+bundle: mt_hero_v2
+label: Actions
+description: ''
+required: false
+translatable: false
+default_value: {  }
+default_value_callback: ''
+settings:
+  link_type: 17
+  title: 2
+field_type: link

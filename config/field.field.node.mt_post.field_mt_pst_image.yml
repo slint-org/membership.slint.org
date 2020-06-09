@@ -1,0 +1,28 @@
+uuid: bfeb7afa-fbe3-40c2-a797-667f2cdce87c
+langcode: en
+status: true
+dependencies:
+  config:
+    - field.storage.node.field_mt_pst_image
+    - media.type.mt_mdt_post_image
+    - node.type.mt_post
+id: node.mt_post.field_mt_pst_image
+field_name: field_mt_pst_image
+entity_type: node
+bundle: mt_post
+label: 'In-page Image(s)'
+description: ''
+required: false
+translatable: false
+default_value: {  }
+default_value_callback: ''
+settings:
+  handler: 'default:media'
+  handler_settings:
+    target_bundles:
+      mt_mdt_post_image: mt_mdt_post_image
+    sort:
+      field: _none
+    auto_create: false
+    auto_create_bundle: ''
+field_type: entity_reference

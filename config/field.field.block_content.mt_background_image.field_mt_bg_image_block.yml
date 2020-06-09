@@ -1,0 +1,23 @@
+uuid: 84b6b2d6-7519-4cd3-b4f5-9f17e636b1b6
+langcode: en
+status: true
+dependencies:
+  config:
+    - block_content.type.mt_background_image
+    - field.storage.block_content.field_mt_bg_image_block
+id: block_content.mt_background_image.field_mt_bg_image_block
+field_name: field_mt_bg_image_block
+entity_type: block_content
+bundle: mt_background_image
+label: Block
+description: ''
+required: true
+translatable: false
+default_value: {  }
+default_value_callback: ''
+settings:
+  handler: 'default:block'
+  handler_settings:
+    target_bundles: null
+    auto_create: false
+field_type: entity_reference

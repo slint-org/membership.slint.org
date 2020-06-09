@@ -1,0 +1,180 @@
+uuid: 8309cf5a-1ee5-4c22-9ac9-c7055f0ffb3b
+langcode: en
+status: open
+dependencies: {  }
+open: null
+close: null
+weight: 0
+uid: 1
+template: false
+archive: false
+id: whatsapp_terms_and_conditions
+title: 'WhatsApp terms and conditions'
+description: ''
+category: SLINT
+elements: "markup:\n  '#type': webform_markup\n  '#markup': |\n    SLINT WhatsApp Group Terms and Conditions - Rules Guidelines - Maintaining Ethics and Etiquette<br />\n    <br />\n    This group is created for registered members and none members of Sierra Leoneans in Technology (SLINT), technology-related discussions and SLINT&rsquo;s project-related activities. Please read the complete <a href=\"#\">terms and conditions</a> and submit this form to agree.\n    \nfull_name:\n  '#type': textfield\n  '#title': 'Full name'\n  '#required': true\n  '#format_items': comma\nemail_address:\n  '#type': email\n  '#title': 'Email address'\n  '#required': true\n  '#format_items': comma\nwhatsapp_phone_number:\n  '#type': tel\n  '#title': 'WhatsApp phone number'\n  '#required': true\n  '#format_items': comma\nterms_of_service:\n  '#type': webform_terms_of_service\n  '#required': true\n  '#terms_title': 'WhatsApp Group Participant terms and conditions '\n  '#terms_content': |\n    *SLINT Group Rules Guidelines - Maintaining Ethics and Etiquette*<br />\n    <br />\n    This group is created for members of Sierra Leoneans in Technology (SLINT), technology-related discussions and SLINT&rsquo;s project-related activities. Please stick to the *&ldquo;mission statement.&rdquo;*&nbsp;<br />\n    <br />\n    Mission Statement<br />\n    <br />\n    *&ldquo;Sierra Leoneans in Technology (SLINT) is a nonprofit organization developed to drive innovation in the technology sector in Sierra Leone. Through collaboration, we leverage our technical expertise to build and empower transformational change for Sierra Leoneans at home and abroad. By taking advantage of existing technologies, training and opportunities, SLINT strives to contribute to the socio-economic and entrepreneurial development in Sierra Leone and support Sierra Leoneans in STEM.&rdquo;*<br />\n    <br />\n    <br />\n    *Respect the Purpose and Objective of the Group*&nbsp;<br />\n    <br />\n    Don&rsquo;t use the group to send memes, videos, pictures, and news without reading and reacting to the content shared by others or adding your own thoughts and insight into the content you are sharing.<br />\n    <br />\n    Establish collective conversations with others, when you only place content without reading or interacting, the existence of the group loses its purpose. Avoid monologues and increase conversations.<br />\n    <br />\n    *Unverified Content, Information or &ldquo;News&rdquo;*<br />\n    <br />\n    Posting content whose authenticity has not been definitively proven can be VERY dangerous and harmful. WhatsApp is infested with false information, let&rsquo;s strive to put a stop to them rather than be part of spreading them.<br />\n    <br />\n    *Comfortability and Complaining in the Group*<br />\n    <br />\n    If you feel uncomfortable in the group for any reason, please feel free to reach out to Thomas Kebbie +1 (614) 806-2449 or any of the group&rsquo;s admins to voice your thoughts.&nbsp;<br />\n    <br />\n    *Posts/Responses/Replies*<br />\n    <br />\n    We highly encourage conversations but if someone doesn&rsquo;t respond to your message, don&rsquo;t be angry.&nbsp;<br />\n    <br />\n    Before sharing a post, make its relevant to the group and share your opinion about the post.<br />\n    <br />\n    When replying to a specific post or comment, use the &ldquo;reply&rdquo; function to make sense of your comment and to avoid confusion.<br />\n    <br />\n    If you notice that you are having a dialogue with a &ldquo;single person,&rdquo; consider changing to &ldquo;direct messaging&rdquo; not everyone in the group may be interested in reading your conversation with that individual.<br />\n    <br />\n    Be simple and direct with your responses. Words can be interpreted in multiple ways, so use short sentences that cannot be misinterpreted.<br />\n    <br />\n    Copy/paste of general jokes, videos, cartoons should be avoided.<br />\n    <br />\n    Don&rsquo;t share irrelevant forwarded audio, videos, photos, messages, well wishes or jokes in the group.<br />\n    <br />\n    *Religious and Political Posts*<br />\n    <br />\n    Please do not discuss any religious matter, as there are several schools of thoughts being followed by our members with due respects to all. Besides, we may indirectly or unintentionally disrespect or hurt others in the group. Not everyone believes, needs or appreciates prayers and not everyone has the same sense of humor as you.<br />\n    <br />\n    *Large videos and files*<br />\n    <br />\n    Avoid sending large videos and files. Be mindful, no one likes to saturate the memory of their phones or waste data/internet plans.<br />\n    <br />\n    *Duplicate Posts*<br />\n    <br />\n    Catch up with previous postings since you last visited the group before posting or sharing a new post<br />\n    <br />\n    Posting duplicate posts in the group will be considered spam.<br />\n    <br />\n    *Violent or pornographic messages are strictly prohibited*<br />\n    <br />\n    *Finally! For the love of all things good, do not post those lame chain (forwarded) messages.* &ldquo;Forward this message to 10 people within three minutes and you will see: absolutely nothing will happen.&rdquo;<br />\n    <br />\n    Short Version<br />\n    <br />\n    *Rules of this group*<br />\n    <br />\n    *1* Respect the Purpose and Objective of the Group<br />\n    *2* DO NOT post unverified content, information or &ldquo;news&rdquo;<br />\n    *3* If you are not comfortable with the group or someone makes you uncomfortable, report or voice your thoughts to the Thomas Kebbie +1 (614) 806-2449 or one of the group&rsquo;s admins<br />\n    *4* No personal (birthday or anniversary) greetings or conversations in the group (use direct messaging)<br />\n    *5* No political or religious postings<br />\n    *6* No duplicate messages<br />\n    *7* *Violent* or *pornographic* postings of all types are strictly prohibited<br />\n    <br />\n    <br />\n    *Things Needed in this group*<br />\n    <br />\n    *1* Technology related conversations<br />\n    *2* Technology job-related announcement (advert/advertisement)<br />\n    *3* Technology career or job fair<br />\n    *4* Technology scholarship programs and opportunities&nbsp;<br />\n    <br />\n    Moving forward, anyone who fails to abide by the rules of this group will be temporarily removed from the with no warning until a final decision is made.&nbsp;<br />\n    <br />\n    The *SLINT* Team"
+css: ''
+javascript: ''
+settings:
+  ajax: false
+  ajax_scroll_top: form
+  ajax_progress_type: ''
+  ajax_effect: ''
+  ajax_speed: null
+  page: true
+  page_submit_path: ''
+  page_confirm_path: ''
+  page_admin_theme: false
+  form_title: both
+  form_submit_once: false
+  form_exception_message: ''
+  form_open_message: ''
+  form_close_message: ''
+  form_previous_submissions: true
+  form_confidential: false
+  form_confidential_message: ''
+  form_remote_addr: true
+  form_convert_anonymous: false
+  form_prepopulate: false
+  form_prepopulate_source_entity: false
+  form_prepopulate_source_entity_required: false
+  form_prepopulate_source_entity_type: ''
+  form_reset: false
+  form_disable_autocomplete: false
+  form_novalidate: false
+  form_disable_inline_errors: false
+  form_required: false
+  form_unsaved: false
+  form_disable_back: false
+  form_submit_back: false
+  form_autofocus: false
+  form_details_toggle: false
+  form_access_denied: default
+  form_access_denied_title: ''
+  form_access_denied_message: ''
+  form_access_denied_attributes: {  }
+  form_file_limit: ''
+  submission_label: ''
+  submission_log: false
+  submission_views: {  }
+  submission_views_replace: {  }
+  submission_user_columns: {  }
+  submission_user_duplicate: false
+  submission_access_denied: default
+  submission_access_denied_title: ''
+  submission_access_denied_message: ''
+  submission_access_denied_attributes: {  }
+  submission_exception_message: ''
+  submission_locked_message: ''
+  submission_excluded_elements: {  }
+  submission_exclude_empty: false
+  submission_exclude_empty_checkbox: false
+  previous_submission_message: ''
+  previous_submissions_message: ''
+  autofill: false
+  autofill_message: ''
+  autofill_excluded_elements: {  }
+  wizard_progress_bar: true
+  wizard_progress_pages: false
+  wizard_progress_percentage: false
+  wizard_progress_link: false
+  wizard_progress_states: false
+  wizard_start_label: ''
+  wizard_preview_link: false
+  wizard_confirmation: true
+  wizard_confirmation_label: ''
+  wizard_track: ''
+  preview: 0
+  preview_label: ''
+  preview_title: ''
+  preview_message: ''
+  preview_attributes: {  }
+  preview_excluded_elements: {  }
+  preview_exclude_empty: true
+  preview_exclude_empty_checkbox: false
+  draft: none
+  draft_multiple: false
+  draft_auto_save: false
+  draft_saved_message: ''
+  draft_loaded_message: ''
+  draft_pending_single_message: ''
+  draft_pending_multiple_message: ''
+  confirmation_type: page
+  confirmation_title: ''
+  confirmation_message: ''
+  confirmation_url: ''
+  confirmation_attributes: {  }
+  confirmation_back: true
+  confirmation_back_label: ''
+  confirmation_back_attributes: {  }
+  confirmation_exclude_query: false
+  confirmation_exclude_token: false
+  confirmation_update: false
+  limit_total: null
+  limit_total_interval: null
+  limit_total_message: ''
+  limit_total_unique: false
+  limit_user: null
+  limit_user_interval: null
+  limit_user_message: ''
+  limit_user_unique: false
+  entity_limit_total: null
+  entity_limit_total_interval: null
+  entity_limit_user: null
+  entity_limit_user_interval: null
+  purge: none
+  purge_days: null
+  results_disabled: false
+  results_disabled_ignore: false
+  results_customize: false
+  token_view: false
+  token_update: false
+access:
+  create:
+    roles:
+      - anonymous
+      - authenticated
+    users: {  }
+    permissions: {  }
+  view_any:
+    roles: {  }
+    users: {  }
+    permissions: {  }
+  update_any:
+    roles: {  }
+    users: {  }
+    permissions: {  }
+  delete_any:
+    roles: {  }
+    users: {  }
+    permissions: {  }
+  purge_any:
+    roles: {  }
+    users: {  }
+    permissions: {  }
+  view_own:
+    roles: {  }
+    users: {  }
+    permissions: {  }
+  update_own:
+    roles: {  }
+    users: {  }
+    permissions: {  }
+  delete_own:
+    roles: {  }
+    users: {  }
+    permissions: {  }
+  administer:
+    roles: {  }
+    users: {  }
+    permissions: {  }
+  test:
+    roles: {  }
+    users: {  }
+    permissions: {  }
+  configuration:
+    roles: {  }
+    users: {  }
+    permissions: {  }
+handlers: {  }
+variants: {  }

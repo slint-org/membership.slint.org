@@ -1,0 +1,81 @@
+uuid: 9c07e597-98d6-4a2f-86a1-bb65362aa8f1
+langcode: en
+status: true
+dependencies:
+  config:
+    - core.entity_view_mode.node.mt_teaser_tile
+    - field.field.node.mt_team_member.field_mt_tmm_body
+    - field.field.node.mt_team_member.field_mt_tmm_facebook_account
+    - field.field.node.mt_team_member.field_mt_tmm_featured
+    - field.field.node.mt_team_member.field_mt_tmm_linkedin_account
+    - field.field.node.mt_team_member.field_mt_tmm_member_photo
+    - field.field.node.mt_team_member.field_mt_tmm_member_photo_wide
+    - field.field.node.mt_team_member.field_mt_tmm_subheader_body
+    - field.field.node.mt_team_member.field_mt_tmm_subtitle
+    - field.field.node.mt_team_member.field_mt_tmm_twitter_account
+    - field.field.node.mt_team_member.field_mt_tmm_youtube_account
+    - image.style.mt_member_photo
+    - node.type.mt_team_member
+  module:
+    - image
+    - user
+id: node.mt_team_member.mt_teaser_tile
+targetEntityType: node
+bundle: mt_team_member
+mode: mt_teaser_tile
+content:
+  field_mt_tmm_facebook_account:
+    weight: 2
+    label: hidden
+    settings:
+      link_to_entity: false
+    third_party_settings: {  }
+    type: string
+    region: content
+  field_mt_tmm_linkedin_account:
+    weight: 4
+    label: hidden
+    settings:
+      link_to_entity: false
+    third_party_settings: {  }
+    type: string
+    region: content
+  field_mt_tmm_member_photo:
+    weight: 0
+    label: hidden
+    settings:
+      image_style: mt_member_photo
+      image_link: content
+    third_party_settings: {  }
+    type: image
+    region: content
+  field_mt_tmm_subtitle:
+    weight: 1
+    label: hidden
+    settings:
+      link_to_entity: false
+    third_party_settings: {  }
+    type: string
+    region: content
+  field_mt_tmm_twitter_account:
+    weight: 3
+    label: hidden
+    settings:
+      link_to_entity: false
+    third_party_settings: {  }
+    type: string
+    region: content
+  field_mt_tmm_youtube_account:
+    weight: 5
+    label: hidden
+    settings:
+      link_to_entity: false
+    third_party_settings: {  }
+    type: string
+    region: content
+hidden:
+  field_mt_tmm_body: true
+  field_mt_tmm_featured: true
+  field_mt_tmm_member_photo_wide: true
+  field_mt_tmm_subheader_body: true
+  links: true

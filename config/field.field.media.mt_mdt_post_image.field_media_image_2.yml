@@ -1,0 +1,38 @@
+uuid: aaefe028-5f1a-463a-8a02-bc1310d05e51
+langcode: en
+status: true
+dependencies:
+  config:
+    - field.storage.media.field_media_image_2
+    - media.type.mt_mdt_post_image
+  module:
+    - image
+id: media.mt_mdt_post_image.field_media_image_2
+field_name: field_media_image_2
+entity_type: media
+bundle: mt_mdt_post_image
+label: Image
+description: 'Use the Crop Image widget to adjust the focus of the image for different uses throughout the site.'
+required: true
+translatable: true
+default_value: {  }
+default_value_callback: ''
+settings:
+  file_directory: '[date:custom:Y]-[date:custom:m]'
+  file_extensions: 'png gif jpg jpeg'
+  max_filesize: ''
+  max_resolution: ''
+  min_resolution: ''
+  alt_field: true
+  alt_field_required: true
+  title_field: false
+  title_field_required: false
+  default_image:
+    uuid: ''
+    alt: ''
+    title: ''
+    width: null
+    height: null
+  handler: 'default:file'
+  handler_settings: {  }
+field_type: image

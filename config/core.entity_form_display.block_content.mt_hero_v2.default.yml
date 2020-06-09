@@ -1,0 +1,77 @@
+uuid: 7b3ac0bb-97fe-486d-93d5-af422bfa2883
+langcode: en
+status: true
+dependencies:
+  config:
+    - block_content.type.mt_hero_v2
+    - field.field.block_content.mt_hero_v2.field_mt_hero_v2_action
+    - field.field.block_content.mt_hero_v2.field_mt_hero_v2_description
+    - field.field.block_content.mt_hero_v2.field_mt_hero_v2_image
+    - field.field.block_content.mt_hero_v2.field_mt_hero_v2_layout
+    - field.field.block_content.mt_hero_v2.field_mt_hero_v2_note
+    - field.field.block_content.mt_hero_v2.field_mt_hero_v2_title
+    - image.style.thumbnail
+  module:
+    - image
+    - link
+    - text
+id: block_content.mt_hero_v2.default
+targetEntityType: block_content
+bundle: mt_hero_v2
+mode: default
+content:
+  field_mt_hero_v2_action:
+    weight: 3
+    settings:
+      placeholder_url: ''
+      placeholder_title: ''
+    third_party_settings: {  }
+    type: link_default
+    region: content
+  field_mt_hero_v2_description:
+    weight: 2
+    settings:
+      rows: 5
+      placeholder: ''
+    third_party_settings: {  }
+    type: text_textarea
+    region: content
+  field_mt_hero_v2_image:
+    weight: 5
+    settings:
+      progress_indicator: throbber
+      preview_image_style: thumbnail
+    third_party_settings: {  }
+    type: image_image
+    region: content
+  field_mt_hero_v2_layout:
+    weight: 6
+    settings: {  }
+    third_party_settings: {  }
+    type: options_select
+    region: content
+  field_mt_hero_v2_note:
+    weight: 4
+    settings:
+      size: 60
+      placeholder: ''
+    third_party_settings: {  }
+    type: text_textfield
+    region: content
+  field_mt_hero_v2_title:
+    weight: 1
+    settings:
+      size: 60
+      placeholder: ''
+    third_party_settings: {  }
+    type: string_textfield
+    region: content
+  info:
+    type: string_textfield
+    weight: 0
+    region: content
+    settings:
+      size: 60
+      placeholder: ''
+    third_party_settings: {  }
+hidden: {  }

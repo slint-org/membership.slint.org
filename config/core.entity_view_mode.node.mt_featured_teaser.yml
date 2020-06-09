@@ -1,0 +1,10 @@
+uuid: ef737d3f-9116-459e-86bc-66c52fd6d0f4
+langcode: en
+status: true
+dependencies:
+  module:
+    - node
+id: node.mt_featured_teaser
+label: 'Featured Teaser'
+targetEntityType: node
+cache: true

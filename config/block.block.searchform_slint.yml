@@ -1,0 +1,21 @@
+uuid: af890167-ce6d-4293-8c9b-bd518808786d
+langcode: en
+status: true
+dependencies:
+  module:
+    - search
+  theme:
+    - slint2020
+id: searchform_slint
+theme: slint2020
+region: header
+weight: 0
+provider: null
+plugin: search_form_block
+settings:
+  id: search_form_block
+  label: 'Search form'
+  provider: search
+  label_display: '0'
+  page_id: ''
+visibility: {  }

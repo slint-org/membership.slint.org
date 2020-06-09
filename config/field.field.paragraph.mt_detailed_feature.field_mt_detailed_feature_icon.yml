@@ -1,0 +1,21 @@
+uuid: 5b67a72d-d0f5-478e-b6ca-ae97d2ee8fb0
+langcode: en
+status: true
+dependencies:
+  config:
+    - field.storage.paragraph.field_mt_detailed_feature_icon
+    - paragraphs.paragraphs_type.mt_detailed_feature
+  module:
+    - fontawesome
+id: paragraph.mt_detailed_feature.field_mt_detailed_feature_icon
+field_name: field_mt_detailed_feature_icon
+entity_type: paragraph
+bundle: mt_detailed_feature
+label: Icon
+description: ''
+required: false
+translatable: false
+default_value: {  }
+default_value_callback: ''
+settings: {  }
+field_type: fontawesome_icon

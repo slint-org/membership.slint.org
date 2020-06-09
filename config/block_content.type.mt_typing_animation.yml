@@ -1,0 +1,8 @@
+uuid: 8f88cbe5-4306-4227-9473-211b910c2237
+langcode: en
+status: true
+dependencies: {  }
+id: mt_typing_animation
+label: 'Typing Animation'
+revision: 0
+description: 'Use this custom block type to create blocks with typing animation.'

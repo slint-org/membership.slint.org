@@ -1,0 +1,42 @@
+uuid: 6fc48d93-653a-4551-a51b-8ea9fbcf530e
+langcode: en
+status: true
+dependencies:
+  config:
+    - block_content.type.mt_image_with_overlaid_text
+    - field.field.block_content.mt_image_with_overlaid_text.field_mt_iwot_image
+    - field.field.block_content.mt_image_with_overlaid_text.field_mt_iwot_text
+    - image.style.thumbnail
+  module:
+    - image
+    - text
+id: block_content.mt_image_with_overlaid_text.default
+targetEntityType: block_content
+bundle: mt_image_with_overlaid_text
+mode: default
+content:
+  field_mt_iwot_image:
+    weight: 26
+    settings:
+      progress_indicator: throbber
+      preview_image_style: thumbnail
+    third_party_settings: {  }
+    type: image_image
+    region: content
+  field_mt_iwot_text:
+    weight: 1
+    settings:
+      rows: 5
+      placeholder: ''
+    third_party_settings: {  }
+    type: text_textarea
+    region: content
+  info:
+    type: string_textfield
+    weight: 0
+    region: content
+    settings:
+      size: 60
+      placeholder: ''
+    third_party_settings: {  }
+hidden: {  }

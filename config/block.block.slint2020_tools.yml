@@ -1,0 +1,32 @@
+uuid: d37b9e85-567f-4056-8bfd-b2fbf6660d9a
+langcode: en
+status: true
+dependencies:
+  config:
+    - system.menu.tools
+  module:
+    - system
+  theme:
+    - slint2020
+_core:
+  default_config_hash: yBKNoCXneKb8sjjJKKBgR0kM_cu9pHCpSoiLF12U5j4
+id: slint2020_tools
+theme: slint2020
+region: sidebar_second
+weight: -23
+provider: null
+plugin: 'system_menu_block:tools'
+settings:
+  id: 'system_menu_block:tools'
+  label: Tools
+  provider: system
+  label_display: visible
+  level: 1
+  depth: 0
+  expand_all_items: false
+visibility:
+  request_path:
+    id: request_path
+    pages: /node/2
+    negate: false
+    context_mapping: {  }

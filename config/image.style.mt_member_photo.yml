@@ -1,0 +1,17 @@
+uuid: 6f94818d-bc0a-48f3-828c-c05ea173d640
+langcode: en
+status: true
+dependencies:
+  config:
+    - crop.type.mt_team_member_photo
+  module:
+    - crop
+name: mt_member_photo
+label: 'Member Photo (1300x1300)'
+effects:
+  c3ca902f-d54f-4251-9fa9-94487b378504:
+    uuid: c3ca902f-d54f-4251-9fa9-94487b378504
+    id: crop_crop
+    weight: 1
+    data:
+      crop_type: mt_team_member_photo

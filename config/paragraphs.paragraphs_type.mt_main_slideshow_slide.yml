@@ -1,0 +1,10 @@
+uuid: 152aba89-9a13-429d-88fb-06c83c4583e9
+langcode: en
+status: true
+dependencies: {  }
+id: mt_main_slideshow_slide
+label: 'Main Slideshow Slide'
+icon_uuid: null
+icon_default: null
+description: null
+behavior_plugins: {  }

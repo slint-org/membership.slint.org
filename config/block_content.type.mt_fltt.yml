@@ -1,0 +1,8 @@
+uuid: 624e2e51-55e5-4772-a55e-ebc71222eb91
+langcode: en
+status: true
+dependencies: {  }
+id: mt_fltt
+label: 'Featured Linked Text Tiles'
+revision: 0
+description: 'Use this custom block type to create blocks that display featured linked text tiles.'

@@ -1,0 +1,17 @@
+uuid: 7ec24f5a-49d5-49a9-bb13-0ec2d5d683fd
+langcode: en
+status: true
+dependencies:
+  config:
+    - crop.type.mt_fullscreen_slide_image
+  module:
+    - crop
+name: mt_slideshow_fullscreen
+label: 'Slideshow Full Screen'
+effects:
+  cbae7618-d37f-4c08-afcc-73038c375864:
+    uuid: cbae7618-d37f-4c08-afcc-73038c375864
+    id: crop_crop
+    weight: 1
+    data:
+      crop_type: mt_fullscreen_slide_image

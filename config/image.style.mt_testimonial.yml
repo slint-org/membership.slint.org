@@ -1,0 +1,17 @@
+uuid: e012da00-50ba-4477-ba47-bc487421788d
+langcode: en
+status: true
+dependencies:
+  config:
+    - crop.type.mt_testimonial_image
+  module:
+    - crop
+name: mt_testimonial
+label: 'Testimonial Image (750x750)'
+effects:
+  1e8829d8-6840-408d-a1aa-e821a28946b3:
+    uuid: 1e8829d8-6840-408d-a1aa-e821a28946b3
+    id: crop_crop
+    weight: 1
+    data:
+      crop_type: mt_testimonial_image

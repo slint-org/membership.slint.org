@@ -1,0 +1,68 @@
+uuid: bb8cfea6-d78a-4cce-9eee-a909c25c1a72
+langcode: en
+status: true
+dependencies:
+  config:
+    - entity_browser.browser.browse_files
+    - field.field.paragraph.mt_video_gallery_slide.field_mt_vgs_slide_title
+    - field.field.paragraph.mt_video_gallery_slide.field_mt_vgs_thumbnail
+    - field.field.paragraph.mt_video_gallery_slide.field_mt_vgs_vimeo_id
+    - field.field.paragraph.mt_video_gallery_slide.field_mt_vgs_volume
+    - field.field.paragraph.mt_video_gallery_slide.field_mt_vgs_youtube_id
+    - paragraphs.paragraphs_type.mt_video_gallery_slide
+  module:
+    - entity_browser
+id: paragraph.mt_video_gallery_slide.default
+targetEntityType: paragraph
+bundle: mt_video_gallery_slide
+mode: default
+content:
+  field_mt_vgs_slide_title:
+    weight: 0
+    settings:
+      size: 60
+      placeholder: ''
+    third_party_settings: {  }
+    type: string_textfield
+    region: content
+  field_mt_vgs_thumbnail:
+    weight: 3
+    settings:
+      entity_browser: browse_files
+      field_widget_remove: true
+      selection_mode: selection_append
+      preview_image_style: thumbnail
+      field_widget_edit: true
+      field_widget_replace: false
+      open: false
+      view_mode: default
+    third_party_settings: {  }
+    type: entity_browser_file
+    region: content
+  field_mt_vgs_vimeo_id:
+    weight: 2
+    settings:
+      size: 60
+      placeholder: ''
+    third_party_settings: {  }
+    type: string_textfield
+    region: content
+  field_mt_vgs_volume:
+    weight: 4
+    settings:
+      placeholder: ''
+    third_party_settings: {  }
+    type: number
+    region: content
+  field_mt_vgs_youtube_id:
+    weight: 1
+    settings:
+      size: 60
+      placeholder: ''
+    third_party_settings: {  }
+    type: string_textfield
+    region: content
+hidden:
+  created: true
+  status: true
+  uid: true

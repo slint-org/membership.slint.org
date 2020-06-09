@@ -1,0 +1,71 @@
+uuid: 64159019-e3f2-452a-b6fc-1dee6cba5ed6
+langcode: en
+status: true
+dependencies:
+  config:
+    - field.field.media.mt_mdt_post_image.field_media_image_2
+    - image.style.thumbnail
+    - media.type.mt_mdt_post_image
+  module:
+    - image_widget_crop
+    - path
+id: media.mt_mdt_post_image.default
+targetEntityType: media
+bundle: mt_mdt_post_image
+mode: default
+content:
+  created:
+    type: datetime_timestamp
+    weight: 10
+    region: content
+    settings: {  }
+    third_party_settings: {  }
+  field_media_image_2:
+    weight: 0
+    settings:
+      show_default_crop: true
+      warn_multiple_usages: true
+      preview_image_style: thumbnail
+      crop_preview_image_style: crop_thumbnail
+      crop_list:
+        - mt_large
+        - mt_metro_tile_square
+        - mt_metro_tile_wide
+      progress_indicator: throbber
+      crop_types_required: {  }
+      show_crop_area: false
+    third_party_settings: {  }
+    type: image_widget_crop
+    region: content
+  name:
+    type: string_textfield
+    weight: -5
+    region: content
+    settings:
+      size: 60
+      placeholder: ''
+    third_party_settings: {  }
+  path:
+    type: path
+    weight: 30
+    region: content
+    settings: {  }
+    third_party_settings: {  }
+  status:
+    type: boolean_checkbox
+    settings:
+      display_label: true
+    weight: 100
+    region: content
+    third_party_settings: {  }
+  uid:
+    type: entity_reference_autocomplete
+    weight: 5
+    settings:
+      match_operator: CONTAINS
+      size: 60
+      placeholder: ''
+      match_limit: 10
+    region: content
+    third_party_settings: {  }
+hidden: {  }

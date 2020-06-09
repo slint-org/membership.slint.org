@@ -1,0 +1,28 @@
+/**
+ * @file
+ * Use this CSS file to override base CSS rules
+ */
+
+/* Set default font weight to 300 for better typography in high-density screens */
+/*body {
+  font-weight: 300;
+}*/
+
+/* The following css rules are applied when full-page body border is enabled in theme settings */
+/* Use these rules in order to change the border width and the margins accordingly */
+/*.page-container-border-enabled .page-container {
+  border-width: 10px;
+}
+.page-container-border-enabled.onscroll .header-container {
+  margin-left: -10px;
+  margin-right: -10px;
+}
+@media (min-width: 992px) {
+  .page-container-border-enabled .page-container {
+    border-width: 15px;
+  }
+  .page-container-border-enabled.onscroll .header-container {
+    margin-left: -15px;
+    margin-right: -15px;
+  }
+}*/

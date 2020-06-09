@@ -1,0 +1,49 @@
+uuid: 827c5be4-c38b-4169-84d0-0a78926b16bc
+langcode: en
+status: true
+dependencies:
+  config:
+    - block_content.type.mt_modal
+    - field.field.block_content.mt_modal.field_mt_modal_block
+    - field.field.block_content.mt_modal.field_mt_modal_fa_icon
+    - field.field.block_content.mt_modal.field_mt_modal_trigger_text
+  module:
+    - fontawesome
+id: block_content.mt_modal.default
+targetEntityType: block_content
+bundle: mt_modal
+mode: default
+content:
+  field_mt_modal_block:
+    weight: 2
+    settings:
+      match_operator: CONTAINS
+      size: 60
+      placeholder: ''
+      match_limit: 10
+    third_party_settings: {  }
+    type: entity_reference_autocomplete
+    region: content
+  field_mt_modal_fa_icon:
+    weight: 3
+    settings: {  }
+    third_party_settings: {  }
+    type: fontawesome_icon_widget
+    region: content
+  field_mt_modal_trigger_text:
+    weight: 4
+    settings:
+      size: 60
+      placeholder: ''
+    third_party_settings: {  }
+    type: string_textfield
+    region: content
+  info:
+    type: string_textfield
+    weight: 0
+    region: content
+    settings:
+      size: 60
+      placeholder: ''
+    third_party_settings: {  }
+hidden: {  }

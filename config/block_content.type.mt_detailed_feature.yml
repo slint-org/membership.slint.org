@@ -1,0 +1,8 @@
+uuid: 03a6690b-d9ff-468b-8d9f-a56db4335245
+langcode: en
+status: true
+dependencies: {  }
+id: mt_detailed_feature
+label: 'Detailed Feature'
+revision: 0
+description: ''

@@ -1,0 +1,42 @@
+uuid: 69a46d5c-dd28-445d-8fc5-26e26b0997bd
+langcode: en
+status: true
+dependencies:
+  config:
+    - field.field.paragraph.mt_dropdown.field_mt_dropdown_block
+    - field.field.paragraph.mt_dropdown.field_mt_dropdown_fa_icon
+    - field.field.paragraph.mt_dropdown.field_mt_dropdown_fa_icon_active
+    - paragraphs.paragraphs_type.mt_dropdown
+  module:
+    - fontawesome
+id: paragraph.mt_dropdown.default
+targetEntityType: paragraph
+bundle: mt_dropdown
+mode: default
+content:
+  field_mt_dropdown_block:
+    weight: 2
+    settings:
+      match_operator: CONTAINS
+      size: 60
+      placeholder: ''
+      match_limit: 10
+    third_party_settings: {  }
+    type: entity_reference_autocomplete
+    region: content
+  field_mt_dropdown_fa_icon:
+    weight: 0
+    settings: {  }
+    third_party_settings: {  }
+    type: fontawesome_icon_widget
+    region: content
+  field_mt_dropdown_fa_icon_active:
+    weight: 1
+    settings: {  }
+    third_party_settings: {  }
+    type: fontawesome_icon_widget
+    region: content
+hidden:
+  created: true
+  status: true
+  uid: true

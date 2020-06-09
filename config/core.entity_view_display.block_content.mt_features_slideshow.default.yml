@@ -1,0 +1,24 @@
+uuid: 3213c53d-83df-41eb-81d0-5bacbe4091e5
+langcode: en
+status: true
+dependencies:
+  config:
+    - block_content.type.mt_features_slideshow
+    - field.field.block_content.mt_features_slideshow.field_mt_feature
+  module:
+    - entity_reference_revisions
+id: block_content.mt_features_slideshow.default
+targetEntityType: block_content
+bundle: mt_features_slideshow
+mode: default
+content:
+  field_mt_feature:
+    type: entity_reference_revisions_entity_view
+    weight: 1
+    label: hidden
+    settings:
+      view_mode: default
+      link: ''
+    third_party_settings: {  }
+    region: content
+hidden: {  }

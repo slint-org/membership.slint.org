@@ -1,0 +1,92 @@
+/**
+ * @file
+ * Visual styles for SLINT2020's node in teaser tile view.
+ */
+.node--view-mode-mt-teaser-tile-text {
+  margin-bottom: 60px;
+}
+.node--view-mode-mt-teaser-tile-text .node__header {
+  padding-bottom: 0;
+}
+.node--view-mode-mt-teaser-tile-text .field--entity-reference-target-type-taxonomy-term,
+.node--view-mode-mt-teaser-tile-text .field--entity-reference-target-type-taxonomy-term.field__item {
+  margin: 0 0 5px;
+  padding: 0;
+  display: inline-block;
+}
+.node--view-mode-mt-teaser-tile-text .field--entity-reference-target-type-taxonomy-term:before,
+.node--view-mode-mt-teaser-tile-text .field--entity-reference-target-type-taxonomy-term.field__item:before {
+  content: "";
+}
+.node--view-mode-mt-teaser-tile-text .field--entity-reference-target-type-taxonomy-term .field__item a,
+.node--view-mode-mt-teaser-tile-text .field--entity-reference-target-type-taxonomy-term.field__item a {
+  font-size: 14px;
+}
+.region--dark-typography .node--view-mode-mt-teaser-tile-text .field--entity-reference-target-type-taxonomy-term .field__item a,
+.region--dark-typography .node--view-mode-mt-teaser-tile-text .field--entity-reference-target-type-taxonomy-term.field__item a {
+  color: #707070;
+}
+.node--view-mode-mt-teaser-tile-text .node__meta {
+  text-transform: capitalize;
+  margin-bottom: 10px;
+  font-size: 14px;
+  display: inline-block;
+}
+.region--dark-typography .node--view-mode-mt-teaser-tile-text .node__meta {
+  color: #707070;
+}
+.node--view-mode-mt-teaser-tile-text .node__meta-item {
+  display: inline-block;
+  margin-bottom: 5px;
+}
+.node--view-mode-mt-teaser-tile-text .node__meta-item a {
+  font-size: 14px;
+}
+.node--view-mode-mt-teaser-tile-text .node__meta-item:after {
+  content: "/";
+  display: inline-block;
+}
+.node--view-mode-mt-teaser-tile-text .node__meta-item:last-child:after {
+  content: "";
+}
+.node--view-mode-mt-teaser-tile-text .profile {
+  display: inline-block;
+}
+.node--view-mode-mt-teaser-tile-text .profile .field--name-user-picture {
+  float: none;
+  margin-right: 0;
+  margin-bottom: 0;
+}
+.node--view-mode-mt-teaser-tile-text .field--name-user-picture img {
+  border-radius: 100%;
+  max-width: 40px;
+  margin-right: 10px;
+}
+
+/* teaser tile text 2 */
+.node--view-mode-mt-teaser-tile-text-2 {
+  height: 100%;
+  margin-bottom: 0;
+  padding-bottom: 40px;
+}
+.node--view-mode-mt-teaser-tile-text-2 .node__container,
+.node--view-mode-mt-teaser-tile-text-2 .node__main-content,
+.node--view-mode-mt-teaser-tile-text-2 .region--bright-background {
+  height: 100%;
+}
+.node--view-mode-mt-teaser-tile-text-2 .region--bright-background {
+  color: var(--mt-color-base);
+  box-shadow: 0 4px 12px rgba(0, 0, 0, 0.1), 0 2px 4px rgba(0, 0, 0, 0.1);
+}
+.node--view-mode-mt-teaser-tile-text-2 .region--bright-background a {
+  text-decoration: none;
+}
+.node--view-mode-mt-teaser-tile-text-2 .teaser-tile-text-footer h4.node__title {
+  font-size: 14px;
+  margin-bottom: 0;
+  font-weight: 400;
+}
+.node--view-mode-mt-teaser-tile-text-2 .teaser-tile-text-footer > div {
+  font-size: 14px;
+  opacity: 0.65;
+}

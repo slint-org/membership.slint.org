@@ -1,0 +1,97 @@
+uuid: ce2e4df4-7742-44e6-a04c-26d3272d1467
+langcode: en
+status: true
+dependencies:
+  config:
+    - field.field.node.mt_team_member.field_mt_tmm_body
+    - field.field.node.mt_team_member.field_mt_tmm_facebook_account
+    - field.field.node.mt_team_member.field_mt_tmm_featured
+    - field.field.node.mt_team_member.field_mt_tmm_linkedin_account
+    - field.field.node.mt_team_member.field_mt_tmm_member_photo
+    - field.field.node.mt_team_member.field_mt_tmm_member_photo_wide
+    - field.field.node.mt_team_member.field_mt_tmm_subheader_body
+    - field.field.node.mt_team_member.field_mt_tmm_subtitle
+    - field.field.node.mt_team_member.field_mt_tmm_twitter_account
+    - field.field.node.mt_team_member.field_mt_tmm_youtube_account
+    - image.style.mt_member_photo
+    - node.type.mt_team_member
+  module:
+    - image
+    - text
+    - user
+id: node.mt_team_member.default
+targetEntityType: node
+bundle: mt_team_member
+mode: default
+content:
+  field_mt_tmm_body:
+    weight: 6
+    label: hidden
+    settings: {  }
+    third_party_settings: {  }
+    type: text_default
+    region: content
+  field_mt_tmm_facebook_account:
+    weight: 1
+    label: hidden
+    settings:
+      link_to_entity: false
+    third_party_settings: {  }
+    type: string
+    region: content
+  field_mt_tmm_linkedin_account:
+    weight: 3
+    label: hidden
+    settings:
+      link_to_entity: false
+    third_party_settings: {  }
+    type: string
+    region: content
+  field_mt_tmm_member_photo:
+    weight: 7
+    label: hidden
+    settings:
+      image_style: mt_member_photo
+      image_link: file
+    third_party_settings: {  }
+    type: image
+    region: content
+  field_mt_tmm_subheader_body:
+    weight: 5
+    label: hidden
+    settings: {  }
+    third_party_settings: {  }
+    type: text_default
+    region: content
+  field_mt_tmm_subtitle:
+    weight: 0
+    label: hidden
+    settings:
+      link_to_entity: false
+    third_party_settings: {  }
+    type: string
+    region: content
+  field_mt_tmm_twitter_account:
+    weight: 2
+    label: hidden
+    settings:
+      link_to_entity: false
+    third_party_settings: {  }
+    type: string
+    region: content
+  field_mt_tmm_youtube_account:
+    weight: 4
+    label: hidden
+    settings:
+      link_to_entity: false
+    third_party_settings: {  }
+    type: string
+    region: content
+  links:
+    weight: 8
+    region: content
+    settings: {  }
+    third_party_settings: {  }
+hidden:
+  field_mt_tmm_featured: true
+  field_mt_tmm_member_photo_wide: true

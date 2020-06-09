@@ -1,0 +1,27 @@
+uuid: 54ad3d44-08b3-4b79-a22d-7cda429bb2c4
+langcode: en
+status: true
+dependencies:
+  module:
+    - system
+  theme:
+    - slint2020
+_core:
+  default_config_hash: '-2cKICo-ojsiPIE2CpzwgukcfMTseyMZoitF_X0_aVo'
+id: slint2020_page_title
+theme: slint2020
+region: hero_top
+weight: -7
+provider: null
+plugin: page_title_block
+settings:
+  id: page_title_block
+  label: 'Page title'
+  provider: core
+  label_display: '0'
+visibility:
+  request_path:
+    id: request_path
+    pages: '<front>'
+    negate: true
+    context_mapping: {  }

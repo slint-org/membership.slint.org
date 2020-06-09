@@ -1,0 +1,21 @@
+uuid: fad182d2-7d40-4b6f-860d-e90a2c1bb9d6
+langcode: en
+status: true
+dependencies:
+  config:
+    - block_content.type.mt_image_with_overlaid_text
+    - field.storage.block_content.field_mt_iwot_text
+  module:
+    - text
+id: block_content.mt_image_with_overlaid_text.field_mt_iwot_text
+field_name: field_mt_iwot_text
+entity_type: block_content
+bundle: mt_image_with_overlaid_text
+label: Text
+description: ''
+required: false
+translatable: false
+default_value: {  }
+default_value_callback: ''
+settings: {  }
+field_type: text_long

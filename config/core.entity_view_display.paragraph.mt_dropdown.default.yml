@@ -1,0 +1,28 @@
+uuid: abf1b267-6543-45b4-bcf8-0dade7b42cde
+langcode: en
+status: true
+dependencies:
+  config:
+    - field.field.paragraph.mt_dropdown.field_mt_dropdown_block
+    - field.field.paragraph.mt_dropdown.field_mt_dropdown_fa_icon
+    - field.field.paragraph.mt_dropdown.field_mt_dropdown_fa_icon_active
+    - paragraphs.paragraphs_type.mt_dropdown
+id: paragraph.mt_dropdown.default
+targetEntityType: paragraph
+bundle: mt_dropdown
+mode: default
+content:
+  field_mt_dropdown_block:
+    weight: 0
+    label: hidden
+    settings:
+      view_mode: default
+      link: false
+    third_party_settings: {  }
+    type: entity_reference_entity_view
+    region: content
+hidden:
+  created: true
+  field_mt_dropdown_fa_icon: true
+  field_mt_dropdown_fa_icon_active: true
+  uid: true

@@ -1,0 +1,13 @@
+name: Image Optimize - TinyPNG
+type: module
+package: Image Optimize
+description: 'Provides a TinyPNG optimizer for ImageAPI Optimize.'
+# core: 8.x
+dependencies:
+  - imageapi_optimize
+
+# Information added by Drupal.org packaging script on 2018-08-30
+version: '8.x-1.0-beta1'
+core: '8.x'
+project: 'imageapi_optimize_tinypng'
+datestamp: 1535607786

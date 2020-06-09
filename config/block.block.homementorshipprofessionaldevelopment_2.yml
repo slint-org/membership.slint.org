@@ -1,0 +1,25 @@
+uuid: f6ec50f3-96aa-4943-8172-5204d24f340c
+langcode: en
+status: true
+dependencies:
+  content:
+    - 'block_content:basic:6f720a3b-8ed7-4766-9c01-d802410c02c8'
+  module:
+    - block_content
+  theme:
+    - slint2020
+id: homementorshipprofessionaldevelopment_2
+theme: slint2020
+region: hidden_blocks_collection
+weight: 0
+provider: null
+plugin: 'block_content:6f720a3b-8ed7-4766-9c01-d802410c02c8'
+settings:
+  id: 'block_content:6f720a3b-8ed7-4766-9c01-d802410c02c8'
+  label: 'Home: Mentorship/Professional Development'
+  provider: block_content
+  label_display: '0'
+  status: true
+  info: ''
+  view_mode: full
+visibility: {  }

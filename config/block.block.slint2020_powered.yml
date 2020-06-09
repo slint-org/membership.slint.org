@@ -1,0 +1,22 @@
+uuid: cd836225-cbcc-49c0-8732-7a379333d84b
+langcode: en
+status: false
+dependencies:
+  module:
+    - system
+  theme:
+    - slint2020
+_core:
+  default_config_hash: 30c9IcZGwwGNOinrwxypeMfQ4Mm3pDAuCiLTyEsZf7k
+id: slint2020_powered
+theme: slint2020
+region: footer_bottom_fourth
+weight: -8
+provider: null
+plugin: system_powered_by_block
+settings:
+  id: system_powered_by_block
+  label: 'Powered by Drupal'
+  provider: system
+  label_display: '0'
+visibility: {  }

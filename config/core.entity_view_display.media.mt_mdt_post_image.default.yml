@@ -1,0 +1,29 @@
+uuid: a93f3d47-b332-461b-bf1f-90b4a080d368
+langcode: en
+status: true
+dependencies:
+  config:
+    - field.field.media.mt_mdt_post_image.field_media_image_2
+    - image.style.mt_large
+    - media.type.mt_mdt_post_image
+  module:
+    - image
+id: media.mt_mdt_post_image.default
+targetEntityType: media
+bundle: mt_mdt_post_image
+mode: default
+content:
+  field_media_image_2:
+    weight: 0
+    label: hidden
+    settings:
+      image_style: mt_large
+      image_link: file
+    third_party_settings: {  }
+    type: image
+    region: content
+hidden:
+  created: true
+  name: true
+  thumbnail: true
+  uid: true

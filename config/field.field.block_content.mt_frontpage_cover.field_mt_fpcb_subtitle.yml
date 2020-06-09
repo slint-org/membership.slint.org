@@ -1,0 +1,19 @@
+uuid: 4ddf433d-c70b-4293-9350-7de11512d974
+langcode: en
+status: true
+dependencies:
+  config:
+    - block_content.type.mt_frontpage_cover
+    - field.storage.block_content.field_mt_fpcb_subtitle
+id: block_content.mt_frontpage_cover.field_mt_fpcb_subtitle
+field_name: field_mt_fpcb_subtitle
+entity_type: block_content
+bundle: mt_frontpage_cover
+label: Subtitle
+description: ''
+required: false
+translatable: false
+default_value: {  }
+default_value_callback: ''
+settings: {  }
+field_type: string

@@ -1,0 +1,17 @@
+uuid: 5f4b066a-34b1-4537-8d91-358d0ac67a26
+langcode: en
+status: true
+dependencies:
+  config:
+    - crop.type.mt_fullwidth_slide_image
+  module:
+    - crop
+name: mt_slideshow_full_width
+label: 'Slideshow Full Width'
+effects:
+  9b0bac27-7c5c-433e-b8da-ce6516e5b524:
+    uuid: 9b0bac27-7c5c-433e-b8da-ce6516e5b524
+    id: crop_crop
+    weight: 1
+    data:
+      crop_type: mt_fullwidth_slide_image

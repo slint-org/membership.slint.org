@@ -1,0 +1,45 @@
+uuid: 5c226657-c8be-4d0f-b19b-89bcd91738a8
+langcode: en
+status: true
+dependencies:
+  config:
+    - field.field.paragraph.mt_how_it_works_item.field_mt_hiw_body
+    - field.field.paragraph.mt_how_it_works_item.field_mt_hiw_link
+    - field.field.paragraph.mt_how_it_works_item.field_mt_hiw_title
+    - paragraphs.paragraphs_type.mt_how_it_works_item
+  module:
+    - link
+    - text
+id: paragraph.mt_how_it_works_item.default
+targetEntityType: paragraph
+bundle: mt_how_it_works_item
+mode: default
+content:
+  field_mt_hiw_body:
+    weight: 1
+    settings:
+      rows: 5
+      placeholder: ''
+    third_party_settings: {  }
+    type: text_textarea
+    region: content
+  field_mt_hiw_link:
+    weight: 2
+    settings:
+      placeholder_url: ''
+      placeholder_title: ''
+    third_party_settings: {  }
+    type: link_default
+    region: content
+  field_mt_hiw_title:
+    weight: 0
+    settings:
+      size: 60
+      placeholder: ''
+    third_party_settings: {  }
+    type: string_textfield
+    region: content
+hidden:
+  created: true
+  status: true
+  uid: true

@@ -1,0 +1,76 @@
+uuid: 37fde1b8-0ca1-4eda-97c2-2b5f1754ef1c
+langcode: en
+status: true
+dependencies:
+  config:
+    - block_content.type.mt_how_it_works
+    - field.storage.block_content.field_mt_hiw_item
+    - paragraphs.paragraphs_type.mt_how_it_works_item
+  module:
+    - entity_reference_revisions
+id: block_content.mt_how_it_works.field_mt_hiw_item
+field_name: field_mt_hiw_item
+entity_type: block_content
+bundle: mt_how_it_works
+label: Step
+description: ''
+required: false
+translatable: false
+default_value: {  }
+default_value_callback: ''
+settings:
+  handler: 'default:paragraph'
+  handler_settings:
+    negate: 0
+    target_bundles:
+      mt_how_it_works_item: mt_how_it_works_item
+    target_bundles_drag_drop:
+      mt_additional_feature:
+        weight: 17
+        enabled: false
+      mt_collapse:
+        weight: 18
+        enabled: false
+      mt_dropdown:
+        weight: 19
+        enabled: false
+      mt_fancy_linked_image:
+        weight: 20
+        enabled: false
+      mt_fancy_tab:
+        weight: 21
+        enabled: false
+      mt_feature:
+        weight: 22
+        enabled: false
+      mt_featured_linked_text_tile:
+        weight: 23
+        enabled: false
+      mt_highlight:
+        weight: 24
+        enabled: false
+      mt_how_it_works_item:
+        enabled: true
+        weight: 25
+      mt_icon_features:
+        weight: 26
+        enabled: false
+      mt_main_slideshow_slide:
+        weight: 27
+        enabled: false
+      mt_map_location:
+        weight: 28
+        enabled: false
+      mt_media_tab:
+        weight: 29
+        enabled: false
+      mt_tab:
+        weight: 30
+        enabled: false
+      mt_timeline_item:
+        weight: 31
+        enabled: false
+      mt_video_gallery_slide:
+        weight: 32
+        enabled: false
+field_type: entity_reference_revisions

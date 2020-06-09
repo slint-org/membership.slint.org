@@ -1,0 +1,22 @@
+uuid: ebeaa61f-e389-41c9-b63e-00fa70ae3d85
+langcode: en
+status: true
+dependencies:
+  config:
+    - block_content.type.mt_typing_animation
+    - field.field.block_content.mt_typing_animation.field_mt_ta_body
+  module:
+    - text
+id: block_content.mt_typing_animation.default
+targetEntityType: block_content
+bundle: mt_typing_animation
+mode: default
+content:
+  field_mt_ta_body:
+    label: hidden
+    type: text_default
+    weight: 0
+    settings: {  }
+    third_party_settings: {  }
+    region: content
+hidden: {  }

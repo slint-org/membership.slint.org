@@ -1,0 +1,10 @@
+uuid: 577f65d1-e792-4da9-a3fd-18ad2fb4f19f
+langcode: en
+status: true
+dependencies:
+  module:
+    - node
+id: node.mt_metro_tile
+label: 'Metro Tile'
+targetEntityType: node
+cache: true

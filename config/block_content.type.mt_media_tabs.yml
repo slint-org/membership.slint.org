@@ -1,0 +1,8 @@
+uuid: 6b31365d-f1d5-42c4-a511-83ba4d7e8c5a
+langcode: en
+status: true
+dependencies: {  }
+id: mt_media_tabs
+label: 'Media Tabs'
+revision: 0
+description: 'Use this custom block type to create blocks in a tabbed design, using the corresponding Bootstrap feature'

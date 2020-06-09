@@ -1,0 +1,38 @@
+uuid: 1434890f-fa47-4a54-a72c-386f27d6ec3e
+langcode: en
+status: true
+dependencies:
+  config:
+    - block_content.type.mt_frontpage_cover
+    - field.storage.block_content.field_mt_fpcb_background_image
+  module:
+    - image
+id: block_content.mt_frontpage_cover.field_mt_fpcb_background_image
+field_name: field_mt_fpcb_background_image
+entity_type: block_content
+bundle: mt_frontpage_cover
+label: 'Background Image'
+description: ''
+required: false
+translatable: false
+default_value: {  }
+default_value_callback: ''
+settings:
+  file_directory: '[date:custom:Y]-[date:custom:m]'
+  file_extensions: 'png gif jpg jpeg'
+  max_filesize: ''
+  max_resolution: ''
+  min_resolution: ''
+  alt_field: true
+  alt_field_required: true
+  title_field: false
+  title_field_required: false
+  default_image:
+    uuid: ''
+    alt: ''
+    title: ''
+    width: null
+    height: null
+  handler: 'default:file'
+  handler_settings: {  }
+field_type: image

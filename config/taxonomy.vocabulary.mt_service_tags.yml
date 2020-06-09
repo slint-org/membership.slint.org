@@ -1,0 +1,8 @@
+uuid: 4d12c6a1-0da5-4871-ac26-e7fca0e029d4
+langcode: en
+status: true
+dependencies: {  }
+name: 'Service Tags'
+vid: mt_service_tags
+description: ''
+weight: 0

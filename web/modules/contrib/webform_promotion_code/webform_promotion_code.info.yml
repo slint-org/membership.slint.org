@@ -1,0 +1,13 @@
+name: 'Webform Promotion Code'
+type: module
+description: 'Provides a promotion code Webform element.'
+package: 'Webform'
+# core: 8.x
+dependencies:
+  - 'webform:webform'
+
+# Information added by Drupal.org packaging script on 2019-08-06
+version: '8.x-1.0-alpha1'
+core: '8.x'
+project: 'webform_promotion_code'
+datestamp: 1565070187

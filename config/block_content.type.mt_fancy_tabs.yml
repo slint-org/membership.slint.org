@@ -1,0 +1,8 @@
+uuid: d744baf8-d837-4abe-bfa9-494718bf92ce
+langcode: en
+status: true
+dependencies: {  }
+id: mt_fancy_tabs
+label: 'Fancy Tabs'
+revision: 0
+description: 'Use this custom block type to display other blocks in a tabbed design, using the corresponding Bootstrap feature.'

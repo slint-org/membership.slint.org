@@ -1,0 +1,21 @@
+uuid: 35518b83-963e-470c-8eb5-7573047b3d9a
+langcode: en
+status: true
+dependencies:
+  config:
+    - block_content.type.mt_hero
+    - field.storage.block_content.field_mt_hero_title
+  module:
+    - text
+id: block_content.mt_hero.field_mt_hero_title
+field_name: field_mt_hero_title
+entity_type: block_content
+bundle: mt_hero
+label: Title
+description: ''
+required: false
+translatable: false
+default_value: {  }
+default_value_callback: ''
+settings: {  }
+field_type: text

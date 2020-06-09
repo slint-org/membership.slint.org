@@ -1,0 +1,37 @@
+uuid: 513784f6-5acc-4464-94e2-6427d6078b2c
+langcode: en
+status: true
+dependencies:
+  config:
+    - core.entity_view_mode.node.mt_compact_list_item
+    - field.field.node.mt_post.field_mt_pst_banner_image
+    - field.field.node.mt_post.field_mt_pst_body
+    - field.field.node.mt_post.field_mt_pst_category
+    - field.field.node.mt_post.field_mt_pst_comment
+    - field.field.node.mt_post.field_mt_pst_image
+    - field.field.node.mt_post.field_mt_pst_slideshow_image
+    - field.field.node.mt_post.field_mt_pst_slideshow_text
+    - field.field.node.mt_post.field_mt_pst_subheader
+    - field.field.node.mt_post.field_mt_pst_tags
+    - field.field.node.mt_post.field_mt_pst_video
+    - node.type.mt_post
+  module:
+    - user
+id: node.mt_post.mt_compact_list_item
+targetEntityType: node
+bundle: mt_post
+mode: mt_compact_list_item
+content: {  }
+hidden:
+  field_mt_pst_banner_image: true
+  field_mt_pst_body: true
+  field_mt_pst_category: true
+  field_mt_pst_comment: true
+  field_mt_pst_image: true
+  field_mt_pst_slideshow_image: true
+  field_mt_pst_slideshow_text: true
+  field_mt_pst_subheader: true
+  field_mt_pst_tags: true
+  field_mt_pst_video: true
+  flippy_pager: true
+  links: true

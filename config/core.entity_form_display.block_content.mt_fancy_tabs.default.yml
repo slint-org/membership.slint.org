@@ -1,0 +1,35 @@
+uuid: 205bdeac-3bf1-4d0f-9221-38887ad46e68
+langcode: en
+status: true
+dependencies:
+  config:
+    - block_content.type.mt_fancy_tabs
+    - field.field.block_content.mt_fancy_tabs.field_mt_ft_tab
+  module:
+    - paragraphs
+id: block_content.mt_fancy_tabs.default
+targetEntityType: block_content
+bundle: mt_fancy_tabs
+mode: default
+content:
+  field_mt_ft_tab:
+    type: entity_reference_paragraphs
+    weight: 26
+    settings:
+      title: Paragraph
+      title_plural: Paragraphs
+      edit_mode: open
+      add_mode: dropdown
+      form_display_mode: default
+      default_paragraph_type: ''
+    third_party_settings: {  }
+    region: content
+  info:
+    type: string_textfield
+    weight: -5
+    settings:
+      size: 60
+      placeholder: ''
+    third_party_settings: {  }
+    region: content
+hidden: {  }

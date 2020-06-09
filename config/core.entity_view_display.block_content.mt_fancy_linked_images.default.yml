@@ -1,0 +1,24 @@
+uuid: d12bf2ef-1bc6-4bc7-a374-3d6bbbda0939
+langcode: en
+status: true
+dependencies:
+  config:
+    - block_content.type.mt_fancy_linked_images
+    - field.field.block_content.mt_fancy_linked_images.field_mt_fancy_linked_image
+  module:
+    - entity_reference_revisions
+id: block_content.mt_fancy_linked_images.default
+targetEntityType: block_content
+bundle: mt_fancy_linked_images
+mode: default
+content:
+  field_mt_fancy_linked_image:
+    type: entity_reference_revisions_entity_view
+    weight: 1
+    label: hidden
+    settings:
+      view_mode: default
+      link: ''
+    third_party_settings: {  }
+    region: content
+hidden: {  }
