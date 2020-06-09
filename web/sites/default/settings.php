@@ -753,9 +753,9 @@ $settings['entity_update_backup'] = TRUE;
  */
 
 $databases['default']['default'] = array (
-  'database' => 'slint2020proddb',
-  'username' => 'slint2020proddb',
-  'password' => '2177K#l9sLtadyioPt',
+  'database' => 'slintcrmprodb',
+  'username' => 'slintcrmprodb',
+  'password' => 'gb1XRcz$4As1qyos',
   'prefix' => '',
   'host' => 'localhost',
   'port' => '3306',

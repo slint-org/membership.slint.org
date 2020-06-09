@@ -11,6 +11,7 @@ class ComposerStaticInit48d66cb5465d039f638a968314d18c40
         '320cde22f66dd4f5d3fd621d3e88b98f' => __DIR__ . '/..' . '/symfony/polyfill-ctype/bootstrap.php',
         '023d27dca8066ef29e6739335ea73bad' => __DIR__ . '/..' . '/symfony/polyfill-php70/bootstrap.php',
         'bd9634f2d41831496de0d3dfe4c94881' => __DIR__ . '/..' . '/symfony/polyfill-php56/bootstrap.php',
+        '667aeda72477189d0494fecd327c3641' => __DIR__ . '/..' . '/symfony/var-dumper/Resources/functions/dump.php',
         '7b11c4dc42b3b3023073cb14e519683c' => __DIR__ . '/..' . '/ralouphie/getallheaders/src/getallheaders.php',
         'c964ee0ededf28c96ebd9db5099ef910' => __DIR__ . '/..' . '/guzzlehttp/promises/src/functions_include.php',
         'a0edc8309cc5e1d60e3047b5df6b7052' => __DIR__ . '/..' . '/guzzlehttp/psr7/src/functions_include.php',
@@ -28,9 +29,11 @@ class ComposerStaticInit48d66cb5465d039f638a968314d18c40
         '3919eeb97e98d4648304477f8ef734ba' => __DIR__ . '/..' . '/phpseclib/phpseclib/phpseclib/Crypt/Random.php',
         '9e4824c5afbdc1482b6025ce3d4dfde8' => __DIR__ . '/..' . '/league/csv/src/functions_include.php',
         'bad842bce63596a608e2623519fb382c' => __DIR__ . '/..' . '/xkerman/restricted-unserialize/src/function.php',
+        '952683d815ff0a7bf322b93c0be7e4e4' => __DIR__ . '/..' . '/chi-teck/drupal-code-generator/src/bootstrap.php',
+        '801c31d8ed748cfa537fa45402288c95' => __DIR__ . '/..' . '/psy/psysh/src/functions.php',
         '74ed299072414d276bb7568fe71d5b0c' => __DIR__ . '/..' . '/tinify/tinify/lib/Tinify.php',
         '9635627915aaea7a98d6d14d04ca5b56' => __DIR__ . '/..' . '/tinify/tinify/lib/Tinify/Exception.php',
-        'ef21c97c3c18a4683e4225f8acbe0f50' => __DIR__ . '/..' . '/composer/autoload_civicrm_asset.php',
+        '4c745a0c61ec0c4f6bbebe6dc3de866d' => __DIR__ . '/..' . '/composer/autoload_civicrm_asset.php',
     );
 
     public static $prefixLengthsPsr4 = array (
@@ -49,9 +52,19 @@ class ComposerStaticInit48d66cb5465d039f638a968314d18c40
             'Zend\\Escaper\\' => 13,
             'Zend\\Diactoros\\' => 15,
         ),
+        'X' => 
+        array (
+            'XdgBaseDir\\' => 11,
+        ),
         'W' => 
         array (
             'When\\' => 5,
+            'Webmozart\\PathUtil\\' => 19,
+            'Webmozart\\Assert\\' => 17,
+        ),
+        'U' => 
+        array (
+            'Unish\\' => 6,
         ),
         'T' => 
         array (
@@ -68,6 +81,7 @@ class ComposerStaticInit48d66cb5465d039f638a968314d18c40
             'Symfony\\Polyfill\\Iconv\\' => 23,
             'Symfony\\Polyfill\\Ctype\\' => 23,
             'Symfony\\Component\\Yaml\\' => 23,
+            'Symfony\\Component\\VarDumper\\' => 28,
             'Symfony\\Component\\Validator\\' => 28,
             'Symfony\\Component\\Translation\\' => 30,
             'Symfony\\Component\\Serializer\\' => 29,
@@ -86,14 +100,21 @@ class ComposerStaticInit48d66cb5465d039f638a968314d18c40
             'Symfony\\Cmf\\Component\\Routing\\' => 30,
             'Symfony\\Bridge\\PsrHttpMessage\\' => 30,
             'Svg\\' => 4,
+            'SelfUpdate\\' => 11,
+        ),
+        'R' => 
+        array (
+            'Robo\\' => 5,
         ),
         'P' => 
         array (
+            'Psy\\' => 4,
             'Psr\\SimpleCache\\' => 16,
             'Psr\\Log\\' => 8,
             'Psr\\Http\\Message\\' => 17,
             'Psr\\Container\\' => 14,
             'Psr\\Cache\\' => 10,
+            'PhpParser\\' => 10,
             'PhpOffice\\PhpWord\\' => 18,
             'PhpOffice\\Common\\' => 17,
         ),
@@ -109,13 +130,20 @@ class ComposerStaticInit48d66cb5465d039f638a968314d18c40
         'L' => 
         array (
             'League\\Csv\\' => 11,
+            'League\\Container\\' => 17,
             'LastCall\\DownloadsPlugin\\' => 25,
+        ),
+        'I' => 
+        array (
+            'Interop\\Container\\' => 18,
         ),
         'G' => 
         array (
             'GuzzleHttp\\Psr7\\' => 16,
             'GuzzleHttp\\Promise\\' => 19,
             'GuzzleHttp\\' => 11,
+            'Grasmash\\YamlExpander\\' => 22,
+            'Grasmash\\Expander\\' => 18,
         ),
         'F' => 
         array (
@@ -127,11 +155,14 @@ class ComposerStaticInit48d66cb5465d039f638a968314d18c40
         ),
         'D' => 
         array (
+            'Drush\\Internal\\' => 15,
+            'Drush\\' => 6,
             'Drupal\\Driver\\' => 14,
             'Drupal\\Core\\' => 12,
             'Drupal\\Composer\\Plugin\\Scaffold\\' => 32,
             'Drupal\\Composer\\Plugin\\ProjectMessage\\' => 38,
             'Drupal\\Component\\' => 17,
+            'DrupalCodeGenerator\\' => 20,
             'Dompdf\\' => 7,
             'Doctrine\\Common\\Lexer\\' => 22,
             'Doctrine\\Common\\Inflector\\' => 26,
@@ -141,6 +172,10 @@ class ComposerStaticInit48d66cb5465d039f638a968314d18c40
         ),
         'C' => 
         array (
+            'Consolidation\\OutputFormatters\\' => 31,
+            'Consolidation\\Log\\' => 18,
+            'Consolidation\\Config\\' => 21,
+            'Consolidation\\AnnotatedCommand\\' => 31,
             'Composer\\Semver\\' => 16,
             'Composer\\Installers\\' => 20,
             'CommerceGuys\\Addressing\\' => 24,
@@ -182,9 +217,25 @@ class ComposerStaticInit48d66cb5465d039f638a968314d18c40
         array (
             0 => __DIR__ . '/..' . '/zendframework/zend-diactoros/src',
         ),
+        'XdgBaseDir\\' => 
+        array (
+            0 => __DIR__ . '/..' . '/dnoegel/php-xdg-base-dir/src',
+        ),
         'When\\' => 
         array (
             0 => __DIR__ . '/..' . '/tplaner/when/src',
+        ),
+        'Webmozart\\PathUtil\\' => 
+        array (
+            0 => __DIR__ . '/..' . '/webmozart/path-util/src',
+        ),
+        'Webmozart\\Assert\\' => 
+        array (
+            0 => __DIR__ . '/..' . '/webmozart/assert/src',
+        ),
+        'Unish\\' => 
+        array (
+            0 => __DIR__ . '/..' . '/drush/drush/tests',
         ),
         'Twig\\' => 
         array (
@@ -225,6 +276,10 @@ class ComposerStaticInit48d66cb5465d039f638a968314d18c40
         'Symfony\\Component\\Yaml\\' => 
         array (
             0 => __DIR__ . '/..' . '/symfony/yaml',
+        ),
+        'Symfony\\Component\\VarDumper\\' => 
+        array (
+            0 => __DIR__ . '/..' . '/symfony/var-dumper',
         ),
         'Symfony\\Component\\Validator\\' => 
         array (
@@ -298,6 +353,18 @@ class ComposerStaticInit48d66cb5465d039f638a968314d18c40
         array (
             0 => __DIR__ . '/..' . '/phenx/php-svg-lib/src/Svg',
         ),
+        'SelfUpdate\\' => 
+        array (
+            0 => __DIR__ . '/..' . '/consolidation/self-update/src',
+        ),
+        'Robo\\' => 
+        array (
+            0 => __DIR__ . '/..' . '/consolidation/robo/src',
+        ),
+        'Psy\\' => 
+        array (
+            0 => __DIR__ . '/..' . '/psy/psysh/src',
+        ),
         'Psr\\SimpleCache\\' => 
         array (
             0 => __DIR__ . '/..' . '/psr/simple-cache/src',
@@ -317,6 +384,10 @@ class ComposerStaticInit48d66cb5465d039f638a968314d18c40
         'Psr\\Cache\\' => 
         array (
             0 => __DIR__ . '/..' . '/psr/cache/src',
+        ),
+        'PhpParser\\' => 
+        array (
+            0 => __DIR__ . '/..' . '/nikic/php-parser/lib/PhpParser',
         ),
         'PhpOffice\\PhpWord\\' => 
         array (
@@ -354,9 +425,17 @@ class ComposerStaticInit48d66cb5465d039f638a968314d18c40
         array (
             0 => __DIR__ . '/..' . '/league/csv/src',
         ),
+        'League\\Container\\' => 
+        array (
+            0 => __DIR__ . '/..' . '/league/container/src',
+        ),
         'LastCall\\DownloadsPlugin\\' => 
         array (
             0 => __DIR__ . '/..' . '/civicrm/composer-downloads-plugin/src',
+        ),
+        'Interop\\Container\\' => 
+        array (
+            0 => __DIR__ . '/..' . '/container-interop/container-interop/src/Interop/Container',
         ),
         'GuzzleHttp\\Psr7\\' => 
         array (
@@ -370,6 +449,14 @@ class ComposerStaticInit48d66cb5465d039f638a968314d18c40
         array (
             0 => __DIR__ . '/..' . '/guzzlehttp/guzzle/src',
         ),
+        'Grasmash\\YamlExpander\\' => 
+        array (
+            0 => __DIR__ . '/..' . '/grasmash/yaml-expander/src',
+        ),
+        'Grasmash\\Expander\\' => 
+        array (
+            0 => __DIR__ . '/..' . '/grasmash/expander/src',
+        ),
         'FontLib\\' => 
         array (
             0 => __DIR__ . '/..' . '/phenx/php-font-lib/src/FontLib',
@@ -377,6 +464,14 @@ class ComposerStaticInit48d66cb5465d039f638a968314d18c40
         'Egulias\\EmailValidator\\' => 
         array (
             0 => __DIR__ . '/..' . '/egulias/email-validator/EmailValidator',
+        ),
+        'Drush\\Internal\\' => 
+        array (
+            0 => __DIR__ . '/..' . '/drush/drush/internal-copy',
+        ),
+        'Drush\\' => 
+        array (
+            0 => __DIR__ . '/..' . '/drush/drush/src',
         ),
         'Drupal\\Driver\\' => 
         array (
@@ -397,6 +492,10 @@ class ComposerStaticInit48d66cb5465d039f638a968314d18c40
         'Drupal\\Component\\' => 
         array (
             0 => __DIR__ . '/../..' . '/web/core/lib/Drupal/Component',
+        ),
+        'DrupalCodeGenerator\\' => 
+        array (
+            0 => __DIR__ . '/..' . '/chi-teck/drupal-code-generator/src',
         ),
         'Dompdf\\' => 
         array (
@@ -421,6 +520,22 @@ class ComposerStaticInit48d66cb5465d039f638a968314d18c40
         'Doctrine\\Common\\' => 
         array (
             0 => __DIR__ . '/..' . '/doctrine/common/lib/Doctrine/Common',
+        ),
+        'Consolidation\\OutputFormatters\\' => 
+        array (
+            0 => __DIR__ . '/..' . '/consolidation/output-formatters/src',
+        ),
+        'Consolidation\\Log\\' => 
+        array (
+            0 => __DIR__ . '/..' . '/consolidation/log/src',
+        ),
+        'Consolidation\\Config\\' => 
+        array (
+            0 => __DIR__ . '/..' . '/consolidation/config/src',
+        ),
+        'Consolidation\\AnnotatedCommand\\' => 
+        array (
+            0 => __DIR__ . '/..' . '/consolidation/annotated-command/src',
         ),
         'Composer\\Semver\\' => 
         array (
@@ -556,6 +671,10 @@ class ComposerStaticInit48d66cb5465d039f638a968314d18c40
             array (
                 0 => __DIR__ . '/..' . '/doctrine/collections/lib',
             ),
+            'Dflydev\\DotAccessData' => 
+            array (
+                0 => __DIR__ . '/..' . '/dflydev/dot-access-data/src',
+            ),
             'Dflydev\\ApacheMimeTypes' => 
             array (
                 0 => __DIR__ . '/..' . '/dflydev/apache-mime-types/src',
@@ -617,6 +736,7 @@ class ComposerStaticInit48d66cb5465d039f638a968314d18c40
         'DivisionByZeroError' => __DIR__ . '/..' . '/symfony/polyfill-php70/Resources/stubs/DivisionByZeroError.php',
         'Dompdf\\Cpdf' => __DIR__ . '/..' . '/dompdf/dompdf/lib/Cpdf.php',
         'Drupal' => __DIR__ . '/../..' . '/web/core/lib/Drupal.php',
+        'DrupalFinder\\DrupalFinder' => __DIR__ . '/..' . '/webflo/drupal-finder/src/DrupalFinder.php',
         'Drupal\\Component\\Utility\\Timer' => __DIR__ . '/../..' . '/web/core/lib/Drupal/Component/Utility/Timer.php',
         'Drupal\\Component\\Utility\\Unicode' => __DIR__ . '/../..' . '/web/core/lib/Drupal/Component/Utility/Unicode.php',
         'Drupal\\Core\\Database\\Database' => __DIR__ . '/../..' . '/web/core/lib/Drupal/Core/Database/Database.php',
@@ -635,6 +755,7 @@ class ComposerStaticInit48d66cb5465d039f638a968314d18c40
         'ParseError' => __DIR__ . '/..' . '/symfony/polyfill-php70/Resources/stubs/ParseError.php',
         'PclZip' => __DIR__ . '/..' . '/pclzip/pclzip/pclzip.lib.php',
         'QRcode' => __DIR__ . '/..' . '/tecnickcom/tcpdf/include/barcodes/qrcode.php',
+        'SebastianBergmann\\Version' => __DIR__ . '/..' . '/sebastian/version/src/Version.php',
         'SessionUpdateTimestampHandlerInterface' => __DIR__ . '/..' . '/symfony/polyfill-php70/Resources/stubs/SessionUpdateTimestampHandlerInterface.php',
         'TCPDF' => __DIR__ . '/..' . '/tecnickcom/tcpdf/tcpdf.php',
         'TCPDF2DBarcode' => __DIR__ . '/..' . '/tecnickcom/tcpdf/tcpdf_barcodes_2d.php',

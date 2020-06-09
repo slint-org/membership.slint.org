@@ -10,6 +10,7 @@ return array(
     '320cde22f66dd4f5d3fd621d3e88b98f' => $vendorDir . '/symfony/polyfill-ctype/bootstrap.php',
     '023d27dca8066ef29e6739335ea73bad' => $vendorDir . '/symfony/polyfill-php70/bootstrap.php',
     'bd9634f2d41831496de0d3dfe4c94881' => $vendorDir . '/symfony/polyfill-php56/bootstrap.php',
+    '667aeda72477189d0494fecd327c3641' => $vendorDir . '/symfony/var-dumper/Resources/functions/dump.php',
     '7b11c4dc42b3b3023073cb14e519683c' => $vendorDir . '/ralouphie/getallheaders/src/getallheaders.php',
     'c964ee0ededf28c96ebd9db5099ef910' => $vendorDir . '/guzzlehttp/promises/src/functions_include.php',
     'a0edc8309cc5e1d60e3047b5df6b7052' => $vendorDir . '/guzzlehttp/psr7/src/functions_include.php',
@@ -27,7 +28,9 @@ return array(
     '3919eeb97e98d4648304477f8ef734ba' => $vendorDir . '/phpseclib/phpseclib/phpseclib/Crypt/Random.php',
     '9e4824c5afbdc1482b6025ce3d4dfde8' => $vendorDir . '/league/csv/src/functions_include.php',
     'bad842bce63596a608e2623519fb382c' => $vendorDir . '/xkerman/restricted-unserialize/src/function.php',
+    '952683d815ff0a7bf322b93c0be7e4e4' => $vendorDir . '/chi-teck/drupal-code-generator/src/bootstrap.php',
+    '801c31d8ed748cfa537fa45402288c95' => $vendorDir . '/psy/psysh/src/functions.php',
     '74ed299072414d276bb7568fe71d5b0c' => $vendorDir . '/tinify/tinify/lib/Tinify.php',
     '9635627915aaea7a98d6d14d04ca5b56' => $vendorDir . '/tinify/tinify/lib/Tinify/Exception.php',
-    'ef21c97c3c18a4683e4225f8acbe0f50' => $vendorDir . '/composer/autoload_civicrm_asset.php',
+    '4c745a0c61ec0c4f6bbebe6dc3de866d' => $vendorDir . '/composer/autoload_civicrm_asset.php',
 );

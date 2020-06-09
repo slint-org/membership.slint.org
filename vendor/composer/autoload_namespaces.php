@@ -21,6 +21,7 @@ return array(
     'File' => array($vendorDir . '/phpseclib/phpseclib/phpseclib'),
     'EasyRdf_' => array($vendorDir . '/easyrdf/easyrdf/lib'),
     'Doctrine\\Common\\Collections\\' => array($vendorDir . '/doctrine/collections/lib'),
+    'Dflydev\\DotAccessData' => array($vendorDir . '/dflydev/dot-access-data/src'),
     'Dflydev\\ApacheMimeTypes' => array($vendorDir . '/dflydev/apache-mime-types/src'),
     'Crypt' => array($vendorDir . '/phpseclib/phpseclib/phpseclib'),
     'Console' => array($vendorDir . '/pear/console_getopt'),

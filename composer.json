@@ -96,6 +96,7 @@
         "drupal/whatsappshare": "^1.0@RC",
         "drupal/wkhtmltopdf": "^1.2",
         "drupal/xmlsitemap": "^1.0@RC",
+        "drush/drush": "9",
         "pear/pear_exception": "1.0.1 as 1.0.0"
     },
     "conflict": {
