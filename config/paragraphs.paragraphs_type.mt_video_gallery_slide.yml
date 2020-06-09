@@ -1,0 +1,10 @@
+uuid: f13ded1f-127f-4811-9400-a1a88453c4fc
+langcode: en
+status: true
+dependencies: {  }
+id: mt_video_gallery_slide
+label: 'Video Gallery slide'
+icon_uuid: null
+icon_default: null
+description: null
+behavior_plugins: {  }

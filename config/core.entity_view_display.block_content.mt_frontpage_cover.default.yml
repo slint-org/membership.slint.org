@@ -1,0 +1,33 @@
+uuid: 001f12d2-eef5-4ed5-955c-8dfca92e4161
+langcode: en
+status: true
+dependencies:
+  config:
+    - block_content.type.mt_frontpage_cover
+    - field.field.block_content.mt_frontpage_cover.field_mt_fpcb_background_image
+    - field.field.block_content.mt_frontpage_cover.field_mt_fpcb_badge
+    - field.field.block_content.mt_frontpage_cover.field_mt_fpcb_block_height
+    - field.field.block_content.mt_frontpage_cover.field_mt_fpcb_cta_button
+    - field.field.block_content.mt_frontpage_cover.field_mt_fpcb_image_button
+    - field.field.block_content.mt_frontpage_cover.field_mt_fpcb_subtitle
+    - field.field.block_content.mt_frontpage_cover.field_mt_fpcb_title
+id: block_content.mt_frontpage_cover.default
+targetEntityType: block_content
+bundle: mt_frontpage_cover
+mode: default
+content:
+  field_mt_fpcb_title:
+    type: string
+    weight: 0
+    region: content
+    label: hidden
+    settings:
+      link_to_entity: false
+    third_party_settings: {  }
+hidden:
+  field_mt_fpcb_background_image: true
+  field_mt_fpcb_badge: true
+  field_mt_fpcb_block_height: true
+  field_mt_fpcb_cta_button: true
+  field_mt_fpcb_image_button: true
+  field_mt_fpcb_subtitle: true

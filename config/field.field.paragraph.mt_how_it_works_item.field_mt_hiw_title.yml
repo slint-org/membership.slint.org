@@ -1,0 +1,19 @@
+uuid: 490cae97-ae08-4352-8f98-bca4f6a75439
+langcode: en
+status: true
+dependencies:
+  config:
+    - field.storage.paragraph.field_mt_hiw_title
+    - paragraphs.paragraphs_type.mt_how_it_works_item
+id: paragraph.mt_how_it_works_item.field_mt_hiw_title
+field_name: field_mt_hiw_title
+entity_type: paragraph
+bundle: mt_how_it_works_item
+label: Title
+description: ''
+required: false
+translatable: false
+default_value: {  }
+default_value_callback: ''
+settings: {  }
+field_type: string

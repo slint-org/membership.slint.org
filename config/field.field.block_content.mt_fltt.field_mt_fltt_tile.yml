@@ -1,0 +1,91 @@
+uuid: bf39934c-878d-4820-85d6-17b74570ca88
+langcode: en
+status: true
+dependencies:
+  config:
+    - block_content.type.mt_fltt
+    - field.storage.block_content.field_mt_fltt_tile
+    - paragraphs.paragraphs_type.mt_featured_linked_text_tile
+  module:
+    - entity_reference_revisions
+id: block_content.mt_fltt.field_mt_fltt_tile
+field_name: field_mt_fltt_tile
+entity_type: block_content
+bundle: mt_fltt
+label: 'Featured Linked Text Tile'
+description: ''
+required: false
+translatable: false
+default_value: {  }
+default_value_callback: ''
+settings:
+  handler: 'default:paragraph'
+  handler_settings:
+    negate: 0
+    target_bundles:
+      mt_featured_linked_text_tile: mt_featured_linked_text_tile
+    target_bundles_drag_drop:
+      mt_additional_feature:
+        weight: 22
+        enabled: false
+      mt_collapse:
+        weight: 23
+        enabled: false
+      mt_detailed_feature:
+        weight: 24
+        enabled: false
+      mt_dropdown:
+        weight: 25
+        enabled: false
+      mt_fa_icon:
+        weight: 26
+        enabled: false
+      mt_fancy_linked_image:
+        weight: 27
+        enabled: false
+      mt_fancy_tab:
+        weight: 28
+        enabled: false
+      mt_feature:
+        weight: 29
+        enabled: false
+      mt_featured_linked_text_tile:
+        enabled: true
+        weight: 30
+      mt_highlight:
+        weight: 31
+        enabled: false
+      mt_how_it_works_item:
+        weight: 32
+        enabled: false
+      mt_icon_features:
+        weight: 33
+        enabled: false
+      mt_image_button:
+        weight: 34
+        enabled: false
+      mt_image_link:
+        weight: 35
+        enabled: false
+      mt_main_slideshow_slide:
+        weight: 36
+        enabled: false
+      mt_map_location:
+        weight: 37
+        enabled: false
+      mt_media_tab:
+        weight: 38
+        enabled: false
+      mt_prd_specification:
+        weight: 39
+        enabled: false
+      mt_tab:
+        weight: 40
+        enabled: false
+      mt_timeline_item:
+        weight: 41
+        enabled: false
+      mt_video_gallery_slide:
+        weight: 42
+        enabled: false
+field_type: entity_reference_revisions

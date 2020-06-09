@@ -1,0 +1,10 @@
+uuid: baf8fcd6-3953-4ad5-aa95-94bcf07069b2
+langcode: en
+status: true
+dependencies:
+  module:
+    - node
+id: node.mt_listing_item
+label: 'Listing Item'
+targetEntityType: node
+cache: true

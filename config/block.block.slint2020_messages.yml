@@ -1,0 +1,22 @@
+uuid: 8be73675-d2fb-41b9-9e03-4802234059d3
+langcode: en
+status: true
+dependencies:
+  module:
+    - system
+  theme:
+    - slint2020
+_core:
+  default_config_hash: K5p8ILrO8RgA8DEjpXIWDuLiy4-wILhL71v-8qXWTp8
+id: slint2020_messages
+theme: slint2020
+region: system_messages
+weight: -16
+provider: null
+plugin: system_messages_block
+settings:
+  id: system_messages_block
+  label: 'Status messages'
+  provider: system
+  label_display: '0'
+visibility: {  }

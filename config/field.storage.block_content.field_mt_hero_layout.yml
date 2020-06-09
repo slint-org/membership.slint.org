@@ -1,0 +1,27 @@
+uuid: 139a322f-cb00-47b8-9934-53c5c2990691
+langcode: en
+status: true
+dependencies:
+  module:
+    - block_content
+    - options
+id: block_content.field_mt_hero_layout
+field_name: field_mt_hero_layout
+entity_type: block_content
+type: list_string
+settings:
+  allowed_values:
+    -
+      value: stacked
+      label: Stacked
+    -
+      value: overlaid
+      label: Overlaid
+  allowed_values_function: ''
+module: options
+locked: false
+cardinality: 1
+translatable: true
+indexes: {  }
+persist_with_no_fields: false
+custom_storage: false

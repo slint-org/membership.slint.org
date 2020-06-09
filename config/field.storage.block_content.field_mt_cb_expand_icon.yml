@@ -1,0 +1,21 @@
+uuid: 9d2cc788-6d9e-4d4c-8b8f-89be2d19d12a
+langcode: en
+status: true
+dependencies:
+  module:
+    - block_content
+id: block_content.field_mt_cb_expand_icon
+field_name: field_mt_cb_expand_icon
+entity_type: block_content
+type: string
+settings:
+  max_length: 255
+  is_ascii: false
+  case_sensitive: false
+module: core
+locked: false
+cardinality: 1
+translatable: true
+indexes: {  }
+persist_with_no_fields: false
+custom_storage: false

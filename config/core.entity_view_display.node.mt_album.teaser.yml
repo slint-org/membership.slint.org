@@ -1,0 +1,46 @@
+uuid: c0581c0c-70c2-483e-8621-344216e1a1ed
+langcode: en
+status: true
+dependencies:
+  config:
+    - core.entity_view_mode.node.teaser
+    - field.field.node.mt_album.field_mt_alb_body
+    - field.field.node.mt_album.field_mt_alb_image
+    - field.field.node.mt_album.field_mt_alb_tags
+    - field.field.node.mt_album.field_mt_alb_video
+    - image.style.mt_large
+    - node.type.mt_album
+  module:
+    - image
+    - text
+    - user
+id: node.mt_album.teaser
+targetEntityType: node
+bundle: mt_album
+mode: teaser
+content:
+  field_mt_alb_body:
+    type: text_summary_or_trimmed
+    weight: 1
+    region: content
+    label: hidden
+    settings:
+      trim_length: 600
+    third_party_settings: {  }
+  field_mt_alb_image:
+    type: image
+    weight: 0
+    region: content
+    label: hidden
+    settings:
+      image_style: mt_large
+      image_link: content
+    third_party_settings: {  }
+  links:
+    weight: 2
+    region: content
+    settings: {  }
+    third_party_settings: {  }
+hidden:
+  field_mt_alb_tags: true
+  field_mt_alb_video: true

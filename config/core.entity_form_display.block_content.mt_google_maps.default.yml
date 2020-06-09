@@ -1,0 +1,44 @@
+uuid: 9e08b139-7ec0-4857-ad82-32fd99316c5c
+langcode: en
+status: true
+dependencies:
+  config:
+    - block_content.type.mt_google_maps
+    - field.field.block_content.mt_google_maps.field_mt_map_location
+    - field.field.block_content.mt_google_maps.field_mt_map_zoom
+  module:
+    - paragraphs
+id: block_content.mt_google_maps.default
+targetEntityType: block_content
+bundle: mt_google_maps
+mode: default
+content:
+  field_mt_map_location:
+    type: entity_reference_paragraphs
+    weight: 1
+    settings:
+      title: Paragraph
+      title_plural: Paragraphs
+      edit_mode: open
+      add_mode: dropdown
+      form_display_mode: default
+      default_paragraph_type: ''
+    third_party_settings: {  }
+    region: content
+  field_mt_map_zoom:
+    weight: 2
+    settings:
+      size: 60
+      placeholder: ''
+    third_party_settings: {  }
+    type: string_textfield
+    region: content
+  info:
+    type: string_textfield
+    weight: 0
+    settings:
+      size: 60
+      placeholder: ''
+    third_party_settings: {  }
+    region: content
+hidden: {  }

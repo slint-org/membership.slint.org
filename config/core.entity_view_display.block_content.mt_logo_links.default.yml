@@ -1,0 +1,24 @@
+uuid: cb7a348b-63f9-453b-860b-53114e151230
+langcode: en
+status: true
+dependencies:
+  config:
+    - block_content.type.mt_logo_links
+    - field.field.block_content.mt_logo_links.field_mt_logo_links_logo
+  module:
+    - entity_reference_revisions
+id: block_content.mt_logo_links.default
+targetEntityType: block_content
+bundle: mt_logo_links
+mode: default
+content:
+  field_mt_logo_links_logo:
+    type: entity_reference_revisions_entity_view
+    weight: 0
+    label: hidden
+    settings:
+      view_mode: default
+      link: ''
+    third_party_settings: {  }
+    region: content
+hidden: {  }

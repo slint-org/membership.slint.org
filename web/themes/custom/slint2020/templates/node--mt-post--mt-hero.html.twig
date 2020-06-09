@@ -1,0 +1,69 @@
+{#
+/**
+ * @file
+ * SLINT2020's theme implementation to display a Post node in hero view mode.
+ */
+#}
+{%
+  set classes = [
+    'node',
+    'node--type-' ~ node.bundle|clean_class,
+    node.isPromoted() ? 'node--promoted',
+    node.isSticky() ? 'node--sticky',
+    not node.isPublished() ? 'node--unpublished',
+    view_mode ? 'node--view-mode-' ~ view_mode|clean_class,
+  ]
+%}
+{{ attach_library('slint2020/node-view-mode-hero') }}
+<article{{ attributes.addClass(classes) }}>
+  {{ title_prefix }}
+  {{ title_suffix }}
+  {% if not page %}
+    <h2{{ title_attributes.addClass("mt-0 node__title") }}>
+      <a href="{{ url }}" rel="bookmark">{{ label }}</a>
+    </h2>
+  {% endif %}
+
+  <div{{ content_attributes.addClass('node__content') }}>
+    {{ content|without('field_mt_pst_comment', 'field_mt_pst_slideshow_image', 'field_mt_pst_slideshow_text') }}
+  </div>
+  {% if display_submitted or (node.field_mt_pst_comment and comment_count > 0) %}
+    <footer class="d-block node__meta">
+      <div class="d-flex">
+        {% if display_submitted %}
+          <div>
+            {{ author_picture }}
+            <span{{ author_attributes.addClass('node__submitted') }}>
+              {{ author_name }}
+              {{ metadata }}
+            </span>
+          </div>
+        {% endif %}
+        {% if node.field_mt_pst_comment and comment_count > 0 %}
+          <div class="ml-auto align-self-center pb-2 node__comments-count">
+            {% trans %}
+              1 comment
+            {% plural comment_count %}
+              {{ comment_count }} comments
+            {% endtrans %}
+          </div>
+        {% endif %}
+      </div>
+    </footer>
+  {% endif %}
+
+  {% if content.field_mt_pst_slideshow_image|render or content.field_mt_pst_slideshow_text|render %}
+    <div class="overlay-container">
+      <span class="overlay overlay--colored">
+        <a class="overlay-target-link" href="{{ url }}"></a>
+      </span>
+      {{ content.field_mt_pst_slideshow_image }}
+      {% if content.field_mt_pst_slideshow_text|render %}
+        <div class="slideshow-image__caption mt-style-custom-tl region--default-background">
+          {{ content.field_mt_pst_slideshow_text }}
+        </div>
+      {% endif %}
+    </div>
+  {% endif %}
+
+</article>

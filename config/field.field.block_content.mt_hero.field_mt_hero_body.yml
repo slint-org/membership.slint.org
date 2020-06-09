@@ -1,0 +1,21 @@
+uuid: d1607ca9-22a4-4745-9431-0b340435c04d
+langcode: en
+status: true
+dependencies:
+  config:
+    - block_content.type.mt_hero
+    - field.storage.block_content.field_mt_hero_body
+  module:
+    - text
+id: block_content.mt_hero.field_mt_hero_body
+field_name: field_mt_hero_body
+entity_type: block_content
+bundle: mt_hero
+label: Body
+description: ''
+required: false
+translatable: false
+default_value: {  }
+default_value_callback: ''
+settings: {  }
+field_type: text_long

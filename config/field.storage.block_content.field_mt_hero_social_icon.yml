@@ -1,0 +1,21 @@
+uuid: 672e1beb-1d55-4a8b-9893-aa162aa98115
+langcode: en
+status: true
+dependencies:
+  module:
+    - block_content
+    - entity_reference_revisions
+    - paragraphs
+id: block_content.field_mt_hero_social_icon
+field_name: field_mt_hero_social_icon
+entity_type: block_content
+type: entity_reference_revisions
+settings:
+  target_type: paragraph
+module: entity_reference_revisions
+locked: false
+cardinality: -1
+translatable: true
+indexes: {  }
+persist_with_no_fields: false
+custom_storage: false

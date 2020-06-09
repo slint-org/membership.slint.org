@@ -1,0 +1,23 @@
+uuid: 74772fb1-16a9-4ee1-b716-eadffef90b2a
+langcode: en
+status: true
+dependencies:
+  config:
+    - field.storage.node.field_mt_srv_link
+    - node.type.mt_service
+  module:
+    - link
+id: node.mt_service.field_mt_srv_link
+field_name: field_mt_srv_link
+entity_type: node
+bundle: mt_service
+label: 'More Link'
+description: ''
+required: false
+translatable: false
+default_value: {  }
+default_value_callback: ''
+settings:
+  link_type: 17
+  title: 2
+field_type: link

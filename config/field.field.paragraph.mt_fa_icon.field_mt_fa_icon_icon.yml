@@ -1,0 +1,21 @@
+uuid: aefe82b5-49ba-4d15-8c20-7f886ee6e101
+langcode: en
+status: true
+dependencies:
+  config:
+    - field.storage.paragraph.field_mt_fa_icon_icon
+    - paragraphs.paragraphs_type.mt_fa_icon
+  module:
+    - fontawesome
+id: paragraph.mt_fa_icon.field_mt_fa_icon_icon
+field_name: field_mt_fa_icon_icon
+entity_type: paragraph
+bundle: mt_fa_icon
+label: Icon
+description: ''
+required: false
+translatable: false
+default_value: {  }
+default_value_callback: ''
+settings: {  }
+field_type: fontawesome_icon

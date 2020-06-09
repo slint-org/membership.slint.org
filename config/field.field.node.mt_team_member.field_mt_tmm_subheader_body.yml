@@ -1,0 +1,21 @@
+uuid: 07a64df4-2707-420d-9be2-f68c78387bb6
+langcode: en
+status: true
+dependencies:
+  config:
+    - field.storage.node.field_mt_tmm_subheader_body
+    - node.type.mt_team_member
+  module:
+    - text
+id: node.mt_team_member.field_mt_tmm_subheader_body
+field_name: field_mt_tmm_subheader_body
+entity_type: node
+bundle: mt_team_member
+label: 'Subheader body'
+description: ''
+required: false
+translatable: false
+default_value: {  }
+default_value_callback: ''
+settings: {  }
+field_type: text_long

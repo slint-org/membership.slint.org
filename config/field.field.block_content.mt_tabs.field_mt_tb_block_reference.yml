@@ -1,0 +1,23 @@
+uuid: 718418f3-1024-4daa-893f-71381c648f2d
+langcode: en
+status: true
+dependencies:
+  config:
+    - block_content.type.mt_tabs
+    - field.storage.block_content.field_mt_tb_block_reference
+id: block_content.mt_tabs.field_mt_tb_block_reference
+field_name: field_mt_tb_block_reference
+entity_type: block_content
+bundle: mt_tabs
+label: 'Block Reference'
+description: ''
+required: false
+translatable: false
+default_value: {  }
+default_value_callback: ''
+settings:
+  handler: 'default:block'
+  handler_settings:
+    target_bundles: null
+    auto_create: false
+field_type: entity_reference

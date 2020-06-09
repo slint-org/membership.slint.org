@@ -1,0 +1,13 @@
+name: 'CiviCRM Webform'
+type: module
+description: 'CiviCRM and Webform integration'
+core: 8.x
+package: 'Custom'
+dependencies:
+  - webform
+  - civicrm
+
+# Information added by Drupal.org packaging script on 2020-05-13
+version: '8.x-5.0-alpha2'
+project: 'webform_civicrm'
+datestamp: 1589393134

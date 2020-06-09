@@ -1,0 +1,24 @@
+uuid: 15a65e2c-a734-46e1-af1e-e4ac6081e2ce
+langcode: en
+status: true
+dependencies:
+  config:
+    - block_content.type.mt_dropdowns
+    - field.field.block_content.mt_dropdowns.field_mt_drp_dropdown
+  module:
+    - entity_reference_revisions
+id: block_content.mt_dropdowns.default
+targetEntityType: block_content
+bundle: mt_dropdowns
+mode: default
+content:
+  field_mt_drp_dropdown:
+    type: entity_reference_revisions_entity_view
+    weight: 2
+    label: hidden
+    settings:
+      view_mode: default
+      link: ''
+    third_party_settings: {  }
+    region: content
+hidden: {  }

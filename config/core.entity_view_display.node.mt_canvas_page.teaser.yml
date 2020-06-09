@@ -1,0 +1,34 @@
+uuid: fe0aa71e-d467-457f-b0ad-7b63a002ee97
+langcode: en
+status: true
+dependencies:
+  config:
+    - core.entity_view_mode.node.teaser
+    - field.field.node.mt_canvas_page.field_mt_cnv_body
+    - field.field.node.mt_canvas_page.field_mt_pst_slideshow_image
+    - field.field.node.mt_canvas_page.field_mt_pst_slideshow_text
+    - node.type.mt_canvas_page
+  module:
+    - text
+    - user
+id: node.mt_canvas_page.teaser
+targetEntityType: node
+bundle: mt_canvas_page
+mode: teaser
+content:
+  field_mt_cnv_body:
+    type: text_summary_or_trimmed
+    weight: 0
+    region: content
+    label: hidden
+    settings:
+      trim_length: 600
+    third_party_settings: {  }
+  links:
+    weight: 1
+    region: content
+    settings: {  }
+    third_party_settings: {  }
+hidden:
+  field_mt_pst_slideshow_image: true
+  field_mt_pst_slideshow_text: true

@@ -1,0 +1,29 @@
+uuid: e5e17010-37b4-48e6-904e-f37086889240
+langcode: en
+status: true
+dependencies:
+  module:
+    - search
+    - system
+  theme:
+    - slint2020
+_core:
+  default_config_hash: FPTfNd6F-o2zXOw5Kbo0MJ8TC4t1oMBWKZVq3pO1GCI
+id: slint2020_search
+theme: slint2020
+region: sidebar_second
+weight: -24
+provider: null
+plugin: search_form_block
+settings:
+  id: search_form_block
+  label: Search
+  provider: search
+  label_display: visible
+  page_id: ''
+visibility:
+  request_path:
+    id: request_path
+    pages: /node/2
+    negate: false
+    context_mapping: {  }

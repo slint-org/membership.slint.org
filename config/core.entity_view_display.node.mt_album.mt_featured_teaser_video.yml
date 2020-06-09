@@ -1,0 +1,46 @@
+uuid: f314261d-0da9-4e01-9487-5a6e39ecc6f0
+langcode: en
+status: true
+dependencies:
+  config:
+    - core.entity_view_mode.node.mt_featured_teaser_video
+    - field.field.node.mt_album.field_mt_alb_body
+    - field.field.node.mt_album.field_mt_alb_image
+    - field.field.node.mt_album.field_mt_alb_tags
+    - field.field.node.mt_album.field_mt_alb_video
+    - image.style.mt_large
+    - node.type.mt_album
+  module:
+    - text
+    - user
+    - video_embed_field
+id: node.mt_album.mt_featured_teaser_video
+targetEntityType: node
+bundle: mt_album
+mode: mt_featured_teaser_video
+content:
+  field_mt_alb_body:
+    type: text_summary_or_trimmed
+    weight: 1
+    region: content
+    label: hidden
+    settings:
+      trim_length: 600
+    third_party_settings: {  }
+  field_mt_alb_video:
+    weight: 0
+    label: hidden
+    settings:
+      image_style: mt_large
+      link_image_to: provider
+    third_party_settings: {  }
+    type: video_embed_field_thumbnail
+    region: content
+  links:
+    weight: 2
+    region: content
+    settings: {  }
+    third_party_settings: {  }
+hidden:
+  field_mt_alb_image: true
+  field_mt_alb_tags: true

@@ -1,0 +1,10 @@
+uuid: f2dea108-740b-4e34-9deb-8b708a4b2f96
+langcode: en
+status: true
+dependencies:
+  module:
+    - node
+id: node.mt_video_grid_item
+label: 'Video Grid Item'
+targetEntityType: node
+cache: true

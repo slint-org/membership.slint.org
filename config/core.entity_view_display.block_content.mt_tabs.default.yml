@@ -1,0 +1,22 @@
+uuid: 590cacca-2e6e-419a-9e1c-707bea1640d5
+langcode: en
+status: true
+dependencies:
+  config:
+    - block_content.type.mt_tabs
+    - field.field.block_content.mt_tabs.field_mt_tb_block_reference
+id: block_content.mt_tabs.default
+targetEntityType: block_content
+bundle: mt_tabs
+mode: default
+content:
+  field_mt_tb_block_reference:
+    weight: 0
+    label: hidden
+    settings:
+      link: true
+      view_mode: default
+    third_party_settings: {  }
+    type: entity_reference_entity_view
+    region: content
+hidden: {  }

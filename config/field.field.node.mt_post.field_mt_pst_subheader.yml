@@ -1,0 +1,21 @@
+uuid: deb2adb4-66b5-4209-9f71-ad29f236b4e0
+langcode: en
+status: true
+dependencies:
+  config:
+    - field.storage.node.field_mt_pst_subheader
+    - node.type.mt_post
+  module:
+    - text
+id: node.mt_post.field_mt_pst_subheader
+field_name: field_mt_pst_subheader
+entity_type: node
+bundle: mt_post
+label: Subheader
+description: ''
+required: false
+translatable: false
+default_value: {  }
+default_value_callback: ''
+settings: {  }
+field_type: text_long

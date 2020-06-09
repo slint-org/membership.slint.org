@@ -1,0 +1,17 @@
+uuid: 3e48f5e8-2315-4a52-bfd9-753c4e23eab7
+langcode: en
+status: true
+dependencies:
+  config:
+    - crop.type.mt_hero_image
+  module:
+    - crop
+name: mt_hero
+label: 'Hero (1920x1080)'
+effects:
+  62f3ba71-e561-4ffa-9330-345b737f2073:
+    uuid: 62f3ba71-e561-4ffa-9330-345b737f2073
+    id: crop_crop
+    weight: 2
+    data:
+      crop_type: mt_hero_image

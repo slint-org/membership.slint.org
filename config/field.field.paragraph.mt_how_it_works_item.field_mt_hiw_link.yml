@@ -1,0 +1,23 @@
+uuid: 3d2da960-3810-4719-91da-8c4d43e069d8
+langcode: en
+status: true
+dependencies:
+  config:
+    - field.storage.paragraph.field_mt_hiw_link
+    - paragraphs.paragraphs_type.mt_how_it_works_item
+  module:
+    - link
+id: paragraph.mt_how_it_works_item.field_mt_hiw_link
+field_name: field_mt_hiw_link
+entity_type: paragraph
+bundle: mt_how_it_works_item
+label: Link
+description: ''
+required: false
+translatable: false
+default_value: {  }
+default_value_callback: ''
+settings:
+  link_type: 17
+  title: 0
+field_type: link

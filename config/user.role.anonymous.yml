@@ -1,0 +1,24 @@
+uuid: 23f382fa-bf8b-45d3-a6c8-ae292dded830
+langcode: en
+status: true
+dependencies: {  }
+_core:
+  default_config_hash: pq_mEIu_B4widZN7Ap81iCJSjShFFdcL0jEiCi8VrDk
+id: anonymous
+label: 'Anonymous user'
+weight: -10
+is_admin: false
+permissions:
+  - 'access CiviMail subscribe/unsubscribe pages'
+  - 'access comments'
+  - 'access content'
+  - 'access site-wide contact form'
+  - 'make online contributions'
+  - 'profile create'
+  - 'profile edit'
+  - 'register for events'
+  - 'search content'
+  - 'use text format restricted_html'
+  - 'view event info'
+  - 'view event participants'
+  - 'view media'

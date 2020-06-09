@@ -1,0 +1,12 @@
+uuid: 0d89bb9e-b64f-4e45-8d3e-ebbc86663e13
+langcode: en
+status: true
+dependencies: {  }
+id: mt_large
+label: Large
+description: ''
+aspect_ratio: '1350:730'
+soft_limit_width: null
+soft_limit_height: null
+hard_limit_width: null
+hard_limit_height: null

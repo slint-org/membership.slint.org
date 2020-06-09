@@ -1,0 +1,10 @@
+uuid: 2cb125a0-0300-4751-a529-2057f94f01fb
+langcode: en
+status: true
+dependencies: {  }
+id: mt_image_link
+label: 'Image and Link'
+icon_uuid: null
+icon_default: null
+description: ''
+behavior_plugins: {  }

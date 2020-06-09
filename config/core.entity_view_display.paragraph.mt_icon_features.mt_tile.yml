@@ -1,0 +1,68 @@
+uuid: 3678f1c3-67e0-4814-beeb-953110ad36ba
+langcode: en
+status: true
+dependencies:
+  config:
+    - core.entity_view_mode.paragraph.mt_tile
+    - field.field.paragraph.mt_icon_features.field_mt_if_body
+    - field.field.paragraph.mt_icon_features.field_mt_if_fa_icon
+    - field.field.paragraph.mt_icon_features.field_mt_if_image
+    - field.field.paragraph.mt_icon_features.field_mt_if_link
+    - field.field.paragraph.mt_icon_features.field_mt_if_title
+    - image.style.mt_large
+    - paragraphs.paragraphs_type.mt_icon_features
+  module:
+    - fontawesome
+    - image
+    - link
+    - text
+id: paragraph.mt_icon_features.mt_tile
+targetEntityType: paragraph
+bundle: mt_icon_features
+mode: mt_tile
+content:
+  field_mt_if_body:
+    weight: 4
+    label: hidden
+    settings: {  }
+    third_party_settings: {  }
+    type: text_default
+    region: content
+  field_mt_if_fa_icon:
+    weight: 1
+    label: hidden
+    settings:
+      layers: false
+    third_party_settings: {  }
+    type: fontawesome_icon_formatter
+    region: content
+  field_mt_if_image:
+    weight: 2
+    label: hidden
+    settings:
+      image_style: mt_large
+      image_link: ''
+    third_party_settings: {  }
+    type: image
+    region: content
+  field_mt_if_link:
+    weight: 5
+    label: hidden
+    settings:
+      trim_length: 80
+      url_only: false
+      url_plain: false
+      rel: ''
+      target: ''
+    third_party_settings: {  }
+    type: link
+    region: content
+  field_mt_if_title:
+    weight: 3
+    label: hidden
+    settings:
+      link_to_entity: false
+    third_party_settings: {  }
+    type: string
+    region: content
+hidden: {  }

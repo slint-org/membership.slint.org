@@ -1,0 +1,79 @@
+uuid: 5d9a925d-56e1-4dbc-978c-c4622f06c96d
+langcode: en
+status: true
+dependencies:
+  config:
+    - block_content.type.mt_frontpage_cover
+    - field.storage.block_content.field_mt_fpcb_image_button
+    - paragraphs.paragraphs_type.mt_image_button
+  module:
+    - entity_reference_revisions
+id: block_content.mt_frontpage_cover.field_mt_fpcb_image_button
+field_name: field_mt_fpcb_image_button
+entity_type: block_content
+bundle: mt_frontpage_cover
+label: 'Image Buttons'
+description: ''
+required: false
+translatable: false
+default_value: {  }
+default_value_callback: ''
+settings:
+  handler: 'default:paragraph'
+  handler_settings:
+    negate: 0
+    target_bundles:
+      mt_image_button: mt_image_button
+    target_bundles_drag_drop:
+      mt_additional_feature:
+        weight: 18
+        enabled: false
+      mt_collapse:
+        weight: 19
+        enabled: false
+      mt_dropdown:
+        weight: 20
+        enabled: false
+      mt_fancy_linked_image:
+        weight: 21
+        enabled: false
+      mt_fancy_tab:
+        weight: 22
+        enabled: false
+      mt_feature:
+        weight: 23
+        enabled: false
+      mt_featured_linked_text_tile:
+        weight: 24
+        enabled: false
+      mt_highlight:
+        weight: 25
+        enabled: false
+      mt_how_it_works_item:
+        weight: 26
+        enabled: false
+      mt_icon_features:
+        weight: 27
+        enabled: false
+      mt_image_button:
+        enabled: true
+        weight: 28
+      mt_main_slideshow_slide:
+        weight: 29
+        enabled: false
+      mt_map_location:
+        weight: 30
+        enabled: false
+      mt_media_tab:
+        weight: 31
+        enabled: false
+      mt_tab:
+        weight: 32
+        enabled: false
+      mt_timeline_item:
+        weight: 33
+        enabled: false
+      mt_video_gallery_slide:
+        weight: 34
+        enabled: false
+field_type: entity_reference_revisions

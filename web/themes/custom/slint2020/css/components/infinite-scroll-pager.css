@@ -1,0 +1,14 @@
+/**
+ * @file
+ * Styles for SLINT2020's infinite scroll pager.
+ */
+
+.pager[data-drupal-views-infinite-scroll-pager] {
+  margin: 20px 0;
+  padding: 0;
+  font-size: 0;
+  text-align: center;
+}
+.region--dark-typography .pager li.pager__item a.mt-button {
+  color: #ffffff;
+}

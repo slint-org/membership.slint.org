@@ -1,0 +1,22 @@
+uuid: 62e90582-d21c-4590-a77b-6c12f73646d6
+langcode: en
+status: true
+dependencies:
+  module:
+    - node
+id: people
+label: People
+type: 'canonical_entities:node'
+pattern: 'about-us/members/[node:title]'
+selection_criteria:
+  1a2a24e6-5725-4476-81d7-b14bb37521f0:
+    id: node_type
+    bundles:
+      mt_team_member: mt_team_member
+    negate: false
+    context_mapping:
+      node: node
+    uuid: 1a2a24e6-5725-4476-81d7-b14bb37521f0
+selection_logic: and
+weight: -5
+relationships: {  }

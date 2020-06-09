@@ -1,0 +1,22 @@
+uuid: 5ececf9d-d794-4156-a7de-f415997bca1e
+langcode: en
+status: true
+dependencies:
+  config:
+    - block_content.type.mt_nodes_slideshow
+    - field.field.block_content.mt_nodes_slideshow.field_mt_ns_slide
+id: block_content.mt_nodes_slideshow.default
+targetEntityType: block_content
+bundle: mt_nodes_slideshow
+mode: default
+content:
+  field_mt_ns_slide:
+    weight: 0
+    label: hidden
+    settings:
+      view_mode: mt_slide_view
+      link: false
+    third_party_settings: {  }
+    type: entity_reference_entity_view
+    region: content
+hidden: {  }

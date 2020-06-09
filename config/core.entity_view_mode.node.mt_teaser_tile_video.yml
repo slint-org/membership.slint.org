@@ -1,0 +1,10 @@
+uuid: 6c2494cc-0f00-487b-bf36-f4c0c3fb86ca
+langcode: en
+status: true
+dependencies:
+  module:
+    - node
+id: node.mt_teaser_tile_video
+label: 'Teaser Tile Video'
+targetEntityType: node
+cache: true

@@ -1,0 +1,29 @@
+<?php
+
+/**
+ * @file
+ * Webform Hierarchy module.
+ */
+
+/**
+ * Implements hook_theme().
+ */
+function webform_hierarchy_theme() {
+  return [
+    'webform_hierarchy' => [
+      'render element' => 'element',
+    ],
+  ];
+}
+
+/**
+ * Prepares variables for webform hierarchy template.
+ *
+ * @param array $variables
+ *   An associative array containing:
+ *   - element: An associative array containing the properties of the element.
+ */
+function template_preprocess_webform_hierarchy(array &$variables) {
+  module_load_include('inc', 'webform', 'includes/webform.theme.template');
+  _template_preprocess_webform_composite($variables);
+}

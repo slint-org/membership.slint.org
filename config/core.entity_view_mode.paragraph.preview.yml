@@ -1,0 +1,10 @@
+uuid: f5b01b26-393d-4205-bcbf-5847cb65a937
+langcode: en
+status: true
+dependencies:
+  module:
+    - paragraphs
+id: paragraph.preview
+label: Preview
+targetEntityType: paragraph
+cache: true

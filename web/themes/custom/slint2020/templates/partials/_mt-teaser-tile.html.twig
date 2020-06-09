@@ -1,0 +1,82 @@
+{#
+/**
+ * @file
+ * Partial template to display a node in teaser tile view mode.
+ */
+#}
+<article{{ attributes.addClass(classes).addClass('mt-style-custom-all region--bright-background px-4 pt-4 pb-3') }}>
+  {{ title_prefix }}
+  {{ title_suffix }}
+
+  {% if image|render or image_caption|render or (display_submitted and date_overlay) %}
+    <div class="teaser-tile-image-container">
+      {% if image|render %}
+        <div class="teaser-tile-image">
+          {{ image }}
+        </div>
+      {% endif %}
+      {% if display_submitted and date_overlay %}
+        {{ metadata }}
+        <div class="node__submitted-date mt-style-custom-tl mt-style-custom-br region--default-background">
+          <div class="day">{{ submitted_day }}</div>
+          <div class="month-year">
+            {{ submitted_month }}
+            {{ submitted_year }}
+          </div>
+        </div>
+      {% endif %}
+      {% if image_caption|render %}
+        <div class="image-caption mt-style-custom-all">
+          {{ image_caption }}
+        </div>
+      {% endif %}
+    </div>
+  {% endif %}
+
+  {% if teaser_tile_pre_content|render or (display_submitted and not date_overlay) %}
+    <div class="teaser-tile-pre-content">
+      {% if display_submitted and not date_overlay %}
+        <span class="node__submitted-date">
+          {{ node.createdtime|format_date('custom', 'd M Y') }}
+        </span>
+      {% endif %}
+      {% if teaser_tile_pre_content %}
+        {{ teaser_tile_pre_content }}
+      {% endif %}
+    </div>
+  {% endif %}
+
+  {% if not page %}
+    <h4{{ title_attributes.addClass("mt-0 node__title") }}>
+      <a href="{{ url }}" rel="bookmark">{{ label }}</a>
+    </h4>
+  {% endif %}
+
+  {% if teaser_tile_content|render %}
+    <div class="teaser-tile-content">
+      {{ teaser_tile_content }}
+    </div>
+  {% endif %}
+
+  <div{{ content_attributes.addClass('node__content') }}>
+    {{ rendered_content }}
+  </div>
+
+  {% if read_more or display_submitted %}
+    <div class="teaser-tile-footer-wrapper row m-0 align-items-center">
+      {% if read_more %}
+        {% trans %}
+          <a class="mt-link-stylable mb-0" href="{{ url }}">Read more</a>
+        {% endtrans %}
+      {% endif %}
+
+      {% if display_submitted %}
+        <div class="teaser-tile-footer ml-auto d-flex align-items-center">
+          {{ author_name }}
+          {{ author_picture }}
+        </div>
+      {% endif %}
+    </div>
+  {% endif %}
+
+</article>

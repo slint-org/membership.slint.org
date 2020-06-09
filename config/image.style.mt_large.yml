@@ -1,0 +1,25 @@
+uuid: 4dc39535-4610-417c-a6c2-c1f70803f0f5
+langcode: en
+status: true
+dependencies:
+  config:
+    - crop.type.mt_large
+  module:
+    - crop
+name: mt_large
+label: 'Mt Large (1350x730)'
+effects:
+  e3f48a0e-b407-465f-8587-53b8e47b9757:
+    uuid: e3f48a0e-b407-465f-8587-53b8e47b9757
+    id: image_scale_and_crop
+    weight: -9
+    data:
+      width: 1350
+      height: 730
+      anchor: center-center
+  f2acd894-0235-4cff-9910-87e6c329524b:
+    uuid: f2acd894-0235-4cff-9910-87e6c329524b
+    id: crop_crop
+    weight: -10
+    data:
+      crop_type: mt_large

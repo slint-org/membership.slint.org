@@ -1,0 +1,72 @@
+uuid: 8433800a-802e-4632-be20-e19278c94f1c
+langcode: en
+status: true
+dependencies:
+  config:
+    - block_content.type.mt_collapsible
+    - field.field.block_content.mt_collapsible.field_mt_cb_block_reference
+    - field.field.block_content.mt_collapsible.field_mt_cb_collapse_icon
+    - field.field.block_content.mt_collapsible.field_mt_cb_expand_icon
+    - field.field.block_content.mt_collapsible.field_mt_cb_state
+    - field.field.block_content.mt_collapsible.field_mt_cb_title
+    - field.field.block_content.mt_collapsible.field_mt_cb_trigger_position
+id: block_content.mt_collapsible.default
+targetEntityType: block_content
+bundle: mt_collapsible
+mode: default
+content:
+  field_mt_cb_block_reference:
+    weight: 6
+    settings:
+      match_operator: CONTAINS
+      size: 60
+      placeholder: ''
+      match_limit: 10
+    third_party_settings: {  }
+    type: entity_reference_autocomplete
+    region: content
+  field_mt_cb_collapse_icon:
+    weight: 3
+    settings:
+      size: 60
+      placeholder: ''
+    third_party_settings: {  }
+    type: string_textfield
+    region: content
+  field_mt_cb_expand_icon:
+    weight: 2
+    settings:
+      size: 60
+      placeholder: ''
+    third_party_settings: {  }
+    type: string_textfield
+    region: content
+  field_mt_cb_state:
+    weight: 5
+    settings: {  }
+    third_party_settings: {  }
+    type: options_select
+    region: content
+  field_mt_cb_title:
+    weight: 1
+    settings:
+      size: 60
+      placeholder: ''
+    third_party_settings: {  }
+    type: string_textfield
+    region: content
+  field_mt_cb_trigger_position:
+    weight: 4
+    settings: {  }
+    third_party_settings: {  }
+    type: options_select
+    region: content
+  info:
+    type: string_textfield
+    weight: 0
+    settings:
+      size: 60
+      placeholder: ''
+    third_party_settings: {  }
+    region: content
+hidden: {  }

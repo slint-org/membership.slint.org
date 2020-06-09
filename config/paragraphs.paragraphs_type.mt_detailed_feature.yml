@@ -1,0 +1,10 @@
+uuid: ea222fe9-586b-4297-ab64-a611a411c145
+langcode: en
+status: true
+dependencies: {  }
+id: mt_detailed_feature
+label: 'Detailed Feature'
+icon_uuid: null
+icon_default: null
+description: ''
+behavior_plugins: {  }

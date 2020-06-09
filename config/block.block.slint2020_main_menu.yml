@@ -1,0 +1,32 @@
+uuid: fddd6cdb-7806-412b-9814-242a21a70ea5
+langcode: en
+status: true
+dependencies:
+  config:
+    - system.menu.main
+  module:
+    - system
+  theme:
+    - slint2020
+_core:
+  default_config_hash: A_3moe2NLBb_7PugGeIqGVhul7xwYjcHiTugoN2w_AQ
+id: slint2020_main_menu
+theme: slint2020
+region: sidebar_second
+weight: -22
+provider: null
+plugin: 'system_menu_block:main'
+settings:
+  id: 'system_menu_block:main'
+  label: 'Main navigation'
+  provider: system
+  label_display: '0'
+  level: 1
+  depth: 1
+  expand_all_items: false
+visibility:
+  request_path:
+    id: request_path
+    pages: /node/2
+    negate: false
+    context_mapping: {  }

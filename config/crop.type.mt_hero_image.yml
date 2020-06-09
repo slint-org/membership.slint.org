@@ -1,0 +1,12 @@
+uuid: e5d65bf2-2579-4e9e-ac9c-827219b2d842
+langcode: en
+status: true
+dependencies: {  }
+id: mt_hero_image
+label: 'Hero Image'
+description: ''
+aspect_ratio: '1920:1080'
+soft_limit_width: 1920
+soft_limit_height: 1080
+hard_limit_width: null
+hard_limit_height: null

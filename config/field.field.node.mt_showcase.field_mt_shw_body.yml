@@ -1,0 +1,23 @@
+uuid: c66af6d5-c1cd-4c87-b0b7-defea2e5e5e2
+langcode: en
+status: true
+dependencies:
+  config:
+    - field.storage.node.field_mt_shw_body
+    - node.type.mt_showcase
+  module:
+    - text
+id: node.mt_showcase.field_mt_shw_body
+field_name: field_mt_shw_body
+entity_type: node
+bundle: mt_showcase
+label: Body
+description: ''
+required: false
+translatable: false
+default_value: {  }
+default_value_callback: ''
+settings:
+  display_summary: true
+  required_summary: false
+field_type: text_with_summary

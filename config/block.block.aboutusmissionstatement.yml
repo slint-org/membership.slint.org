@@ -1,0 +1,31 @@
+uuid: cc2af1f5-9911-4c61-a8d5-dd384c12e085
+langcode: en
+status: true
+dependencies:
+  content:
+    - 'block_content:basic:4f92ccf1-2832-4717-9393-1a0f01a0aacd'
+  module:
+    - block_content
+    - system
+  theme:
+    - slint2020
+id: aboutusmissionstatement
+theme: slint2020
+region: content_top
+weight: -9
+provider: null
+plugin: 'block_content:4f92ccf1-2832-4717-9393-1a0f01a0aacd'
+settings:
+  id: 'block_content:4f92ccf1-2832-4717-9393-1a0f01a0aacd'
+  label: 'Mission Statement'
+  provider: block_content
+  label_display: visible
+  status: true
+  info: ''
+  view_mode: full
+visibility:
+  request_path:
+    id: request_path
+    pages: /about-us
+    negate: false
+    context_mapping: {  }

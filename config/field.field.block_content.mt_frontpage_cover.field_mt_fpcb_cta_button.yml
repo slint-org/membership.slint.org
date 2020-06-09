@@ -1,0 +1,23 @@
+uuid: bcc8b169-4112-4cb5-9696-ebf9ba20bdc8
+langcode: en
+status: true
+dependencies:
+  config:
+    - block_content.type.mt_frontpage_cover
+    - field.storage.block_content.field_mt_fpcb_cta_button
+  module:
+    - link
+id: block_content.mt_frontpage_cover.field_mt_fpcb_cta_button
+field_name: field_mt_fpcb_cta_button
+entity_type: block_content
+bundle: mt_frontpage_cover
+label: 'Text and link'
+description: ''
+required: false
+translatable: false
+default_value: {  }
+default_value_callback: ''
+settings:
+  link_type: 17
+  title: 2
+field_type: link

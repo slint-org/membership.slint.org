@@ -1,0 +1,34 @@
+uuid: 62dd09c8-821c-47a6-b55a-c05efb2e0af9
+langcode: en
+status: true
+dependencies:
+  config:
+    - core.entity_view_mode.node.mt_metro_tile
+    - field.field.node.mt_album.field_mt_alb_body
+    - field.field.node.mt_album.field_mt_alb_image
+    - field.field.node.mt_album.field_mt_alb_tags
+    - field.field.node.mt_album.field_mt_alb_video
+    - image.style.mt_metro_tile_square
+    - node.type.mt_album
+  module:
+    - image
+    - user
+id: node.mt_album.mt_metro_tile
+targetEntityType: node
+bundle: mt_album
+mode: mt_metro_tile
+content:
+  field_mt_alb_image:
+    weight: 0
+    label: hidden
+    settings:
+      image_style: mt_metro_tile_square
+      image_link: content
+    third_party_settings: {  }
+    type: image
+    region: content
+hidden:
+  field_mt_alb_body: true
+  field_mt_alb_tags: true
+  field_mt_alb_video: true
+  links: true

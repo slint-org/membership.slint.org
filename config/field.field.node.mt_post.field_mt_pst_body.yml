@@ -1,0 +1,23 @@
+uuid: c36c3fc6-a5a8-4d5d-bd4b-d4cbab6bbdae
+langcode: en
+status: true
+dependencies:
+  config:
+    - field.storage.node.field_mt_pst_body
+    - node.type.mt_post
+  module:
+    - text
+id: node.mt_post.field_mt_pst_body
+field_name: field_mt_pst_body
+entity_type: node
+bundle: mt_post
+label: Body
+description: ''
+required: false
+translatable: false
+default_value: {  }
+default_value_callback: ''
+settings:
+  display_summary: true
+  required_summary: false
+field_type: text_with_summary

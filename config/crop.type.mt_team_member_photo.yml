@@ -1,0 +1,12 @@
+uuid: 70b94cb1-2ac8-4101-a2ab-12baec6128a5
+langcode: en
+status: true
+dependencies: {  }
+id: mt_team_member_photo
+label: 'Team Member Photo'
+description: ''
+aspect_ratio: '1:1'
+soft_limit_width: 1300
+soft_limit_height: 1300
+hard_limit_width: null
+hard_limit_height: null

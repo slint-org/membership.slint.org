@@ -1,0 +1,25 @@
+uuid: 33a2ed53-278a-4f85-a820-509a957eea21
+langcode: en
+status: true
+dependencies:
+  config:
+    - crop.type.mt_metro_tile_square
+  module:
+    - crop
+name: mt_metro_tile_square
+label: 'Metro Tile Square'
+effects:
+  89b72394-8481-4176-8dcd-b1f90648feca:
+    uuid: 89b72394-8481-4176-8dcd-b1f90648feca
+    id: crop_crop
+    weight: 1
+    data:
+      crop_type: mt_metro_tile_square
+  04b21727-7deb-40c9-be56-31473307d882:
+    uuid: 04b21727-7deb-40c9-be56-31473307d882
+    id: image_scale_and_crop
+    weight: 2
+    data:
+      width: 840
+      height: 840
+      anchor: center-center

@@ -1,0 +1,21 @@
+uuid: 2ecced3d-624a-4e1b-a5c7-59a3c4d9a5a8
+langcode: en
+status: true
+dependencies:
+  module:
+    - node
+id: node.field_mt_tst_subtitle
+field_name: field_mt_tst_subtitle
+entity_type: node
+type: string
+settings:
+  max_length: 255
+  is_ascii: false
+  case_sensitive: false
+module: core
+locked: false
+cardinality: 1
+translatable: true
+indexes: {  }
+persist_with_no_fields: false
+custom_storage: false

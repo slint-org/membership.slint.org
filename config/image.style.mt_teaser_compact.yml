@@ -1,0 +1,15 @@
+uuid: a264ed46-27cd-4577-9457-8d83ba392e48
+langcode: en
+status: true
+dependencies: {  }
+name: mt_teaser_compact
+label: 'Teaser Compact'
+effects:
+  306a8cc5-7da7-4d0b-8fb6-e41097ed3010:
+    uuid: 306a8cc5-7da7-4d0b-8fb6-e41097ed3010
+    id: image_scale_and_crop
+    weight: 1
+    data:
+      width: 150
+      height: 150
+      anchor: center-center

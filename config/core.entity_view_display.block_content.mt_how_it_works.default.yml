@@ -1,0 +1,24 @@
+uuid: a73ad259-d7b0-4227-b55c-d1e7d682dd6c
+langcode: en
+status: true
+dependencies:
+  config:
+    - block_content.type.mt_how_it_works
+    - field.field.block_content.mt_how_it_works.field_mt_hiw_item
+  module:
+    - entity_reference_revisions
+id: block_content.mt_how_it_works.default
+targetEntityType: block_content
+bundle: mt_how_it_works
+mode: default
+content:
+  field_mt_hiw_item:
+    type: entity_reference_revisions_entity_view
+    weight: 1
+    label: hidden
+    settings:
+      view_mode: default
+      link: ''
+    third_party_settings: {  }
+    region: content
+hidden: {  }

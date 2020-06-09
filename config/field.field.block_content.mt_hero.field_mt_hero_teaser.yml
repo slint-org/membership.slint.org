@@ -1,0 +1,21 @@
+uuid: 8329a1c6-be66-485c-9349-89ffbafc02cc
+langcode: en
+status: true
+dependencies:
+  config:
+    - block_content.type.mt_hero
+    - field.storage.block_content.field_mt_hero_teaser
+  module:
+    - text
+id: block_content.mt_hero.field_mt_hero_teaser
+field_name: field_mt_hero_teaser
+entity_type: block_content
+bundle: mt_hero
+label: Contact
+description: ''
+required: false
+translatable: false
+default_value: {  }
+default_value_callback: ''
+settings: {  }
+field_type: text_long

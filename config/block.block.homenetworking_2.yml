@@ -1,0 +1,25 @@
+uuid: 27c72c40-e116-4c2a-ba4d-5c16bde8243d
+langcode: en
+status: true
+dependencies:
+  content:
+    - 'block_content:basic:6ed7ef53-e3d0-4838-809b-917cff6020ca'
+  module:
+    - block_content
+  theme:
+    - slint2020
+id: homenetworking_2
+theme: slint2020
+region: hidden_blocks_collection
+weight: 0
+provider: null
+plugin: 'block_content:6ed7ef53-e3d0-4838-809b-917cff6020ca'
+settings:
+  id: 'block_content:6ed7ef53-e3d0-4838-809b-917cff6020ca'
+  label: 'Home: Networking '
+  provider: block_content
+  label_display: '0'
+  status: true
+  info: ''
+  view_mode: full
+visibility: {  }

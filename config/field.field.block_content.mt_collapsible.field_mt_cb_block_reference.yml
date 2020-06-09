@@ -1,0 +1,23 @@
+uuid: b0ea30fd-6d84-4355-868a-92d5e7ac17cd
+langcode: en
+status: true
+dependencies:
+  config:
+    - block_content.type.mt_collapsible
+    - field.storage.block_content.field_mt_cb_block_reference
+id: block_content.mt_collapsible.field_mt_cb_block_reference
+field_name: field_mt_cb_block_reference
+entity_type: block_content
+bundle: mt_collapsible
+label: 'Block Reference'
+description: ''
+required: false
+translatable: true
+default_value: {  }
+default_value_callback: ''
+settings:
+  handler: 'default:block'
+  handler_settings:
+    target_bundles: null
+    auto_create: false
+field_type: entity_reference

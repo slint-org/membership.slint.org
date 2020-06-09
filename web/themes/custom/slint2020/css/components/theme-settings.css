@@ -1,0 +1,7 @@
+/**
+ * @file
+ * Visual styles for SLINT2020's theme settings.
+ */
+.theme-settings-title {
+  font-weight: bold;
+}

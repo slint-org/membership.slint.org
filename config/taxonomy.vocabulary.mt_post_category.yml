@@ -1,0 +1,8 @@
+uuid: 0ae7bf72-acc3-490c-afac-5de4fe06448f
+langcode: en
+status: true
+dependencies: {  }
+name: 'Post Categories'
+vid: mt_post_category
+description: ''
+weight: 0

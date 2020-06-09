@@ -1,0 +1,79 @@
+uuid: 8cf65d19-c020-406b-8e51-5b9daf92ad99
+langcode: en
+status: true
+dependencies:
+  config:
+    - entity_browser.browser.browse_files
+    - field.field.paragraph.mt_media_tab.field_mt_media_body
+    - field.field.paragraph.mt_media_tab.field_mt_media_button
+    - field.field.paragraph.mt_media_tab.field_mt_media_image
+    - field.field.paragraph.mt_media_tab.field_mt_media_tab_title
+    - field.field.paragraph.mt_media_tab.field_mt_media_title
+    - field.field.paragraph.mt_media_tab.field_mt_media_video
+    - paragraphs.paragraphs_type.mt_media_tab
+  module:
+    - entity_browser
+    - link
+    - text
+    - video_embed_field
+id: paragraph.mt_media_tab.default
+targetEntityType: paragraph
+bundle: mt_media_tab
+mode: default
+content:
+  field_mt_media_body:
+    weight: 2
+    settings:
+      rows: 5
+      placeholder: ''
+    third_party_settings: {  }
+    type: text_textarea
+    region: content
+  field_mt_media_button:
+    weight: 5
+    settings:
+      placeholder_url: ''
+      placeholder_title: ''
+    third_party_settings: {  }
+    type: link_default
+    region: content
+  field_mt_media_image:
+    weight: 3
+    settings:
+      entity_browser: browse_files
+      field_widget_remove: true
+      selection_mode: selection_append
+      preview_image_style: thumbnail
+      field_widget_edit: true
+      field_widget_replace: false
+      open: false
+      view_mode: default
+    third_party_settings: {  }
+    type: entity_browser_file
+    region: content
+  field_mt_media_tab_title:
+    weight: 0
+    settings:
+      size: 60
+      placeholder: ''
+    third_party_settings: {  }
+    type: string_textfield
+    region: content
+  field_mt_media_title:
+    weight: 1
+    settings:
+      size: 60
+      placeholder: ''
+    third_party_settings: {  }
+    type: string_textfield
+    region: content
+  field_mt_media_video:
+    weight: 4
+    settings: {  }
+    third_party_settings: {  }
+    type: video_embed_field_textfield
+    region: content
+hidden:
+  created: true
+  status: true
+  uid: true

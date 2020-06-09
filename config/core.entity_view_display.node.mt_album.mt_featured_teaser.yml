@@ -1,0 +1,46 @@
+uuid: f65dea1f-ae3e-4c0a-b5df-5e68e0164955
+langcode: en
+status: true
+dependencies:
+  config:
+    - core.entity_view_mode.node.mt_featured_teaser
+    - field.field.node.mt_album.field_mt_alb_body
+    - field.field.node.mt_album.field_mt_alb_image
+    - field.field.node.mt_album.field_mt_alb_tags
+    - field.field.node.mt_album.field_mt_alb_video
+    - image.style.mt_large
+    - node.type.mt_album
+  module:
+    - image
+    - text
+    - user
+id: node.mt_album.mt_featured_teaser
+targetEntityType: node
+bundle: mt_album
+mode: mt_featured_teaser
+content:
+  field_mt_alb_body:
+    weight: 1
+    label: hidden
+    settings:
+      trim_length: 600
+    third_party_settings: {  }
+    type: text_summary_or_trimmed
+    region: content
+  field_mt_alb_image:
+    weight: 0
+    label: hidden
+    settings:
+      image_style: mt_large
+      image_link: content
+    third_party_settings: {  }
+    type: image
+    region: content
+  links:
+    weight: 2
+    region: content
+    settings: {  }
+    third_party_settings: {  }
+hidden:
+  field_mt_alb_tags: true
+  field_mt_alb_video: true

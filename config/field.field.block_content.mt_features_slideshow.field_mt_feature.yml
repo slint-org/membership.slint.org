@@ -1,0 +1,73 @@
+uuid: 4a90d47b-cb70-4a0c-8d9a-fbcb939a71c9
+langcode: en
+status: true
+dependencies:
+  config:
+    - block_content.type.mt_features_slideshow
+    - field.storage.block_content.field_mt_feature
+    - paragraphs.paragraphs_type.mt_feature
+  module:
+    - entity_reference_revisions
+id: block_content.mt_features_slideshow.field_mt_feature
+field_name: field_mt_feature
+entity_type: block_content
+bundle: mt_features_slideshow
+label: Feature
+description: ''
+required: false
+translatable: false
+default_value: {  }
+default_value_callback: ''
+settings:
+  handler: 'default:paragraph'
+  handler_settings:
+    negate: 0
+    target_bundles:
+      mt_feature: mt_feature
+    target_bundles_drag_drop:
+      mt_additional_feature:
+        weight: 16
+        enabled: false
+      mt_collapse:
+        weight: 17
+        enabled: false
+      mt_dropdown:
+        weight: 18
+        enabled: false
+      mt_fancy_linked_image:
+        weight: 19
+        enabled: false
+      mt_fancy_tab:
+        weight: 20
+        enabled: false
+      mt_feature:
+        enabled: true
+        weight: 21
+      mt_featured_linked_text_tile:
+        weight: 22
+        enabled: false
+      mt_highlight:
+        weight: 23
+        enabled: false
+      mt_icon_features:
+        weight: 24
+        enabled: false
+      mt_main_slideshow_slide:
+        weight: 25
+        enabled: false
+      mt_map_location:
+        weight: 26
+        enabled: false
+      mt_media_tab:
+        weight: 27
+        enabled: false
+      mt_tab:
+        weight: 28
+        enabled: false
+      mt_timeline_item:
+        weight: 29
+        enabled: false
+      mt_video_gallery_slide:
+        weight: 30
+        enabled: false
+field_type: entity_reference_revisions

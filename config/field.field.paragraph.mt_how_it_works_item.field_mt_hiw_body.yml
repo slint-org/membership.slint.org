@@ -1,0 +1,21 @@
+uuid: e599ac32-1e5e-4cda-a68a-342c7eeab979
+langcode: en
+status: true
+dependencies:
+  config:
+    - field.storage.paragraph.field_mt_hiw_body
+    - paragraphs.paragraphs_type.mt_how_it_works_item
+  module:
+    - text
+id: paragraph.mt_how_it_works_item.field_mt_hiw_body
+field_name: field_mt_hiw_body
+entity_type: paragraph
+bundle: mt_how_it_works_item
+label: Body
+description: ''
+required: false
+translatable: false
+default_value: {  }
+default_value_callback: ''
+settings: {  }
+field_type: text_long

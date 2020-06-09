@@ -1,0 +1,25 @@
+uuid: 374dda35-7f6a-4d51-8c2a-0418452a75e6
+langcode: en
+status: true
+dependencies:
+  content:
+    - 'block_content:basic:7644fe84-4f3f-423d-9852-54a65d95bd4b'
+  module:
+    - block_content
+  theme:
+    - slint2020
+id: homegetinvolvedheadercta_2
+theme: slint2020
+region: hidden_blocks_collection
+weight: 0
+provider: null
+plugin: 'block_content:7644fe84-4f3f-423d-9852-54a65d95bd4b'
+settings:
+  id: 'block_content:7644fe84-4f3f-423d-9852-54a65d95bd4b'
+  label: 'Home: Get Involved Header CTA'
+  provider: block_content
+  label_display: '0'
+  status: true
+  info: ''
+  view_mode: full
+visibility: {  }
